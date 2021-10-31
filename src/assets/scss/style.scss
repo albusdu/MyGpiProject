@@ -1,70 +1,11 @@
-/* ***** Master Stylesheet ***** */
-
-/* ***** Import All CSS Plugins */
-@import '../vendors/css/bootstrap.min.css';
-@import '../vendors/bootstrap-datepicker/css/datepicker.css';
-@import '../vendors/css/OverlayScrollbars.min.css';
-@import '../vendors/css/intlTelInput.min.css';
-@import '../vendors/css/swiper-bundle.min.css';
-
 // *******************
 //     utilities
 // *******************
-@import 'theme/color';
-@import 'theme/fonts';
-@import 'general/mixins';
-@import 'general/functions';
-@import 'theme/variables';
-@import 'theme/responsive';
-@import 'theme/loader';
-
-// *******************
-//     mixins
-// *******************
-@import 'theme/flex';
-@import 'theme/texts';
-// *******************
+@import "theme/color";
+@import "theme/fonts";
+// @import 'general/mixins';
+@import "theme/variables";
 
 //     stylesheet
 // *******************
-@import 'theme/reboot';
-@import 'theme/spacing';
-@import 'theme/heading';
-@import 'theme/buttons';
-@import 'theme/form';
-@import 'theme/modals';
-
-//partials
-@import 'theme/sidebar';
-@import 'theme/navigation';
-@import 'theme/footer';
-@import 'theme/cards';
-@import 'theme/sliders';
-@import 'theme/underConstruction';
-
-//page dark/light mode
-@import 'theme/theme';
-
-//    pages
-// *******************
-@import 'pages/main';
-@import 'pages/game';
-@import 'pages/profile';
-@import 'pages/static';
-@import 'pages/info';
-@import 'pages/rtp';
-@import 'pages/contact';
-
-//welcome
-@import './welcome/welcome.scss';
-//promotions
-@import './promotions/nonDepositBonus.scss';
-@import './promotions/promo.scss';
-@import './promotions/jetx.scss';
-
-//components
-@import 'components/sliders';
-@import 'components/widget';
-
-//"mustChange" styles
-@import 'theme/mustchange';
+@import "theme/reboot";
