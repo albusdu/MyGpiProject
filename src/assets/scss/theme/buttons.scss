@@ -1,0 +1,522 @@
+.bt {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid $transparent;
+  user-select: none;
+  transition: color .15s ease-in-out,
+  background-color .15s ease-in-out,
+  border-color .15s ease-in-out;
+  padding: .344rem 1.25rem;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 6px;
+  margin: 0;
+  position: relative;
+  font-family: $montMedium;
+  svg{
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    margin-right: -8px;
+    fill: $dark-white;
+    &.m-r{
+      margin-right: 5px;
+      margin-left: -8px;
+    }
+  }
+  &.loading{
+    color: $transparent!important;
+    span{
+      color: $transparent!important;
+    }
+    svg{
+      display: none;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      height: 80%;
+      background-image: url("../img/loader.svg");
+      background-size: contain;
+      background-position: center;
+    }
+  }
+  &.full{
+    display: block;
+    width: 100%;
+  }
+  &.lg{
+    font-size: 15px;
+    padding: .688rem 1.75rem ;
+  }
+  &.sm{
+    font-size: 12px;
+    padding: .198rem 1rem;
+    svg{
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &-red{
+    color: $dark-white;
+    background-color: $component-red;
+    border-color: $component-red;
+    svg{
+      fill: $dark-white;
+    }
+    &:hover{
+      color: $dark-white;
+      background-color: darken($component-red,8%);
+      border-color: darken($component-red,8%);
+    }
+    &-b{
+      @extend .bt-red;
+      background-color: $transparent;
+      color: $dark-white;
+      &:hover{
+        color: $dark-white;
+        background-color: $component-red;
+        border-color: $component-red;
+      }
+    }
+  }
+  &-green{
+    background-color: $component-green;
+    border-color: $component-green;
+    color: $dark-white!important;
+    svg{
+      fill: $dark-white;
+    }
+    &:hover{
+      color: $dark-white;
+      background-color: darken($component-green,8%);
+      border-color: darken($component-green,8%);
+    }
+    &-b{
+      @extend .bt-green;
+      background-color: $transparent;
+      &:hover{
+        background-color: $component-green;
+        border-color: $component-green;
+      }
+    }
+  }
+  &-blue{
+    color: $dark-white;
+    background-color: $component-active-color;
+    border-color: $component-active-color;
+    svg{
+      fill: $dark-white;
+    }
+    &:hover{
+      color: $dark-white;
+      background-color: darken($component-active-color, 5%);
+      border-color: darken($component-active-color, 5%);
+    }
+    &-b{
+      @extend .bt-blue;
+      background-color: $transparent;
+      &:hover{
+        background-color: $component-active-color;
+        border-color: $component-active-color;
+      }
+    }
+  }
+  &-yellow{
+    color: $black;
+    background-color: $component-yellow;
+    border-color: $component-yellow;
+    svg{
+      fill: $black;
+    }
+    &:hover{
+      color: $black;
+      background-color: darken($component-yellow,8%);
+      border-color: darken($component-yellow,8%);
+    }
+    &-b{
+      @extend .bt-yellow;
+      background-color: $transparent;
+      color: $dark-white;
+    }
+  }
+  &-disabled{
+    color: $dark-white;
+    background-color: $component-color-1;
+    border-color: $component-color-1;
+    svg{
+      fill: $dark-white;
+    }
+    &:hover{
+      color: $dark-white;
+      background-color: darken($component-color-1, 5%);
+      border-color: darken($component-color-1, 5%);
+    }
+    &-b{
+      @extend .bt-disabled;
+      background-color: $transparent;
+      &:hover{
+        background-color: $component-color-1;
+        border-color: $component-color-1;
+      }
+    }
+  }
+}
+
+
+.menu-btn{
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid $transparent;
+  transition: .15s;
+  @media #{$breakpoint-md}{
+    border-color: $sidebar-border-color;
+    background-color: $sidebar-border-color;
+  }
+  &::before,
+  &::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: $component-active-color;
+    border-radius: 3px;
+    width: 18px;
+    transition: .15s;
+    left: 50%;
+    transform: translateX(-50%);
+    @media #{$breakpoint-md}{
+      background-color: $dark-white;
+      width: 16px;
+    }
+  }
+  &::before{
+    top: 9px;
+    box-shadow: 0 6px $component-active-color;
+    @media #{$breakpoint-md}{
+      box-shadow: 0 5px $dark-white;
+      top: 10px;
+    }
+  }
+  &::after{
+    bottom: 9px;
+    @media #{$breakpoint-md}{
+      bottom: 10px;
+    }
+  }
+  &:hover{
+    &::before,
+    &::after{
+      width: 12px;
+      height: 3px;
+    }
+    &::before{
+      transform: translate(-50%, 2px) rotate(45deg);
+      box-shadow: unset;
+      @media #{$breakpoint-md}{
+        transform: translate(-50%, 1px) rotate(45deg);
+      }
+    }
+    &::after{
+      transform: translate(-50%, -2px) rotate(-45deg);
+      @media #{$breakpoint-md}{
+        transform: translate(-50%, -1px) rotate(-45deg);
+      }
+    }
+  }
+  &-alt{
+    @extend .menu-btn;
+    margin-right: -5px;
+    &:hover{
+      &::before{
+        transform: translate(-50%, 2px) rotate(-45deg);
+        box-shadow: unset;
+        @media #{$breakpoint-md}{
+          transform: translate(-50%, 1px) rotate(-45deg);
+        }
+      }
+      &::after{
+        transform: translate(-50%, -2px) rotate(45deg);
+        @media #{$breakpoint-md}{
+          transform: translate(-50%, -1px) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.filter__btn{
+  width: 100%;
+  min-height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+  position: relative;
+  cursor: pointer;
+  z-index: 5;
+  margin-bottom: 10px;
+  &.active{
+    .ico{
+      svg{
+        fill: $dark-white;
+      }
+      &.arrow{
+        transform: rotate(180deg);
+      }
+    }
+    .filter__btn-label{
+      color: $dark-white;
+      border-bottom: none;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      &:hover{
+        background-color: darken($component-color-1, 10%);
+      }
+    }
+    .filter__btn-list{
+      display: block;
+    }
+    .filter__btn-counter{
+      background-color: $bg-shade-3;
+    }
+  }
+  &:hover{
+    .filter__btn-counter{
+      background-color: $bg-shade-3;
+    }
+  }
+  &-counter{
+    background-color: $component-color-1;
+    color: $white;
+    font-size: 10px;
+    font-family: $montRegular;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -9px;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.15s;
+  }
+  &-label{
+    user-select: none;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    color: $dark-white;
+    border: 1px solid $component-color-1;
+    padding: 0 15px;
+    border-radius: 6px;
+    transition: background-color .15s;
+    &:hover{
+      background-color: $component-color-1;
+      .ico{
+        svg{
+          fill: $dark-white;
+        }
+      }
+    }
+    span{
+      display: block;
+      margin: 0 10px;
+    }
+    .ico{
+      width: 20px;
+      height: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.arrow{
+        left: unset;
+        right: 0;
+        width: 13px;
+        margin-left: auto;
+        transition: .15s;
+        svg{
+          fill: $component-active-color;
+        }
+      }
+      svg{
+        height: 100%;
+        fill: $component-color-1;
+      }
+    }
+  }
+  &-list{
+    position: absolute;
+    background-color: $component-color-1;
+    width: 100%;
+    top: 0;
+    border-radius: 6px;
+    border: 1px solid $component-color-1;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    color: $dark-white;
+    display: none;
+    .filter-scroller{
+      max-height: 150px;
+      overflow-y: auto;
+    }
+    li{
+      opacity: .9;
+      transition: .2s;
+    }
+    .check{
+      display: flex;
+      align-items: center;
+      input[type=checkbox]{
+        display: none;
+        + label{
+          display: flex;
+          align-items: center;
+          width: 100%;
+          cursor: pointer;
+          margin: 0;
+          padding: 5px 5px 5px 18px;
+          position: relative;
+          font-size: 13px;
+          color: $dark-white;
+          user-select: none;
+          &:active{
+            &::before{
+              box-shadow: 0 0 0px 5px $input-active-green;
+            }
+          }
+          &:hover{
+            color: $dark-white;
+          }
+          &::before{
+            content: "";
+            width: 14px;
+            height: 14px;
+            min-width: 14px;
+            border: 1px solid $dark-white;
+            border-radius: 3px;
+            display: inline-block;
+            margin-right: 10px;
+          }
+          &::after{
+            content: "";
+            width: 8px;
+            height: 6px;
+            border-left: 2px solid $dark-white;
+            border-bottom: 2px solid $dark-white;
+            position: absolute;
+            top: 48%;
+            left: 21px;
+            transform: translateY(-50%) rotate(-45deg);
+            transition: .15s;
+            opacity: 0;
+            visibility: hidden;
+            // @media #{$breakpoint-md}{
+            //   top: 14px;
+            // }
+          }
+        }
+        &:checked + label{
+          &::before{
+            background-color: $component-green;
+            border-color: $component-green;
+          }
+          &::after{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        &:disabled + label{
+          color: $component-color-2;
+          &:hover{
+            color: $component-color-2;
+          }
+        }
+        &:checked:disabled + label{
+          &:hover{
+            color: $component-color-2;
+          }
+          &::before{
+            background-color: $component-color-2;
+            border-color: $component-color-2;
+          }
+          &::after{
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.alert-cls{
+  position: absolute;
+  background-color: $component-color-1;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  top: -10px;
+  right: -10px;
+  transition: background-color .15s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/icons/times-w.svg");
+  background-position: center;
+  background-size: 12px;
+  border: none;
+  outline: none;
+  z-index: 2;
+  &:hover{
+    background-color: lighten($component-color-1, 5%);;
+  }
+}
+
+.deposit-btn{
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  @media #{$breakpoint-lg}{
+    bottom: 10px;
+  }
+}
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+  transition: background 400ms;
+  cursor: pointer;
+  span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  @keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+}

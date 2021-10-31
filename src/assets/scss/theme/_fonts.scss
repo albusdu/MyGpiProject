@@ -1,0 +1,53 @@
+@mixin font-face($font-family, $url) {
+  @font-face {
+    font-family: '#{$font-family}';
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot?#iefix') format('embedded-opentype'),
+    url('#{$url}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@include font-face('montBlack', '../fonts/Montserrat-Black');
+@include font-face('montBold', '../fonts/Montserrat-Bold');
+@include font-face('montSemiBold', '../fonts/Montserrat-SemiBold');
+@include font-face('montMedium', '../fonts/Montserrat-Medium');
+@include font-face('montRegular', '../fonts/Montserrat-Regular');
+@include font-face('montItalic', '../fonts/Montserrat-Italic');
+@include font-face('montExtraBold', '../fonts/Montserrat-ExtraBold');
+
+
+// Fonts
+$fonts: 'montRegular';
+
+$montBold: 'montBold';
+$montSemiBold: 'montSemiBold';
+$montMedium: 'montMedium';
+$montRegular: 'montRegular';
+$montItalic: 'montItalic';
+$montBlack: 'montBlack';
+$montExtraBold: 'montExtraBold';
+.montSemiBold{
+  font-family: $montSemiBold;
+}
+.montBold{
+  font-family: $montBold;
+}
+.montMedium{
+  font-family: $montMedium;
+}
+.montRegular{
+  font-family: $montRegular;
+}
+.montItalic{
+  font-family: $montItalic;
+}
+.montBlack{
+  font-family: $montBlack;
+}
+.montExtraBold{
+  font-family: $montExtraBold;
+}
+
+

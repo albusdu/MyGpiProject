@@ -1,0 +1,1343 @@
+$widgetBlue: #09103A;
+$widgetBlue-style2: #161E51;
+$widgetBlue-style3: #203465;
+$widgetBlue-style4: #0756A5;
+$widgetEuroBlue: #0088FF;
+$widgetBorder: #6073A1;
+$widgetBorder-style2: #BAC8E5;
+$widgetHover: #EBEBEB;
+$widgetOrange: #FF8800;
+$bonusInfoBg: #EFEFEF;
+$bonusLinkBlue: #2337B4;
+$linkColor: #3C56F5;
+$inputBg: rgba(134,176,194,.1);
+$inputGreenBorder: #BAE5BB;
+$inputGreenBg: rgba(134,194,138,.1);
+$scrollbarThumb: #D5D5D5;
+$grayBg: #DEDEDE;
+%switch {
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 49px;
+        height: 24px;
+        @include margin(0,0,0,0);
+        input { 
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: $widgetEuroBlue;
+            -webkit-transition: .4s;
+            transition: .4s;
+            &:before {
+                position: absolute;
+                content: "";
+                height: 18px;
+                width: 18px;
+                left: 4px;
+                bottom: 3px;
+                background-color: $white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            &.round {
+                @include border-radius(34px);
+            }
+            
+            &.round:before {
+                @include border-radius(50%);
+            }
+        }
+        input:checked + .slider:before {
+            @include transform(translateX(22px));
+        }
+    }
+    input:checked + .slider {
+        background-color: $widgetOrange;
+    }
+    input:focus + .slider {
+        box-shadow: 0 0 1px $widgetOrange;
+    }
+}
+%input{
+    @include border-radius(6px);
+    @include border(all,1px,solid,$widgetBorder-style2);
+    @include padding(12px,16px,12px,16px);
+    @include margin(0,0,15px,0);
+    background-color: $inputBg;
+    color: $widgetBlue;
+    font-size: 14px;
+    font-family: $montMedium;
+    &::placeholder {
+        opacity: .43;
+    }
+}
+.first-section{
+    @media #{$breakpoint-md}{
+        min-height: calc(100vh - 65px);
+    }
+    .widget__banner__bg{
+        @media #{$breakpoint-md}{
+            height: calc(100vh - 65px - 90px - 327px);
+        }
+        @media (max-height: 650px){
+            min-height: 200px;
+        }
+        .banner__container{
+            @media #{$breakpoint-md}{
+                height: calc(100vh - 65px - 90px - 327px);
+            }
+            @media (max-height: 650px){
+                min-height: 200px;
+            }
+        }
+    }
+}
+.widget-item{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    &.show{
+        @include flexbox;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        @media #{$breakpoint-md}{
+            z-index: 9999999;
+        }
+    }
+}
+.deposit-widget{
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9;
+    @include flexbox;
+    @include transform(translateY(-50%));
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-xl}{
+        left: 30px;
+        width: 360px;
+    }
+    @media #{$breakpoint-md}{
+        position: relative;
+        width: 355px;
+        margin-top: 15px;
+        top: initial;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @media #{$breakpoint-xxs}{
+        width: 300px;
+    }
+    &__top{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include padding(20px,20px,0,20px);
+        &__title{
+            color: $widgetBlue;
+            opacity: .63;
+            text-transform: uppercase;
+            font-family: $montMedium;
+            font-size: 15px;
+            @include margin(0,0,0,0);
+        }
+        &__lang{
+            @include flexbox;
+            img{
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+            }
+        }
+    }
+    &__amount{
+        position: relative;
+        @include margin(10px,0,0,0);
+        @include padding(0,20px,0,20px);
+        &__valute{
+            position: absolute;
+            top: 50%;
+            font-size: 30px;
+            line-height: 1.25em;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            @include transform(translateY(-50%));
+        }
+        &__input{
+            width: 100%;
+            outline: none;
+            border: 0;
+            font-size: 30px!important;
+            line-height: 1.25em;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            @include padding(2.5px,125px,2.5px,27px);
+            @include border(bottom,1px,solid,rgba(96,115,161,.36));
+            @include transition(padding,.2s);
+        }
+        &__switch{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            @include transform(translateY(-50%));
+            @extend %switch;
+            &__valute{
+                font-size: 14px;
+                font-family: $montSemiBold;
+                color: $widgetBlue;
+                opacity: .46;
+                @include transition(opacity,.4,linear);
+                cursor: pointer;
+                &.active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &__bonus{
+        position: relative;
+        z-index: 2;
+        @include flexbox;
+        @include flex-direction(column);
+        @include padding(15px,20px,0,20px);
+        &.open{
+            .deposit-widget__bonus__chevron{
+                .icon{
+                    transform: rotate(180deg);
+                }
+            }
+            .deposit-widget__bonus__dropdown{
+                display: flex;
+            }
+        }
+        &__title{
+            font-size: 12px;
+            font-family: $montMedium;
+            color: $widgetBlue;
+            margin-bottom: 7px;
+            text-transform: uppercase;
+        }
+        &__chevron{
+            position: absolute;
+            z-index: 11;
+            right: 20px;
+            top: 36px;
+            width: 44px;
+            height: 51px;
+            padding-left: 14px;
+            @include flexbox;
+            @include justify-content(space-between);
+            @include align-items(center);
+            pointer-events: none;
+            &:before{
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 80%;
+                left: 0;
+                top: 50%;
+                @include transform(translateY(-50%));
+                background: $widgetBorder-style2;
+            }
+            .icon{
+                fill: $widgetBorder;
+                width: 16px;
+                position: relative;
+                @include transition(transform,.4s);
+            }
+        }
+        &__clickable-box{
+            @include border(all,1px,solid,$widgetBorder-style2);
+            @include border-radius(6px);
+            .deposit-widget__bonus__block{
+                @include border-radius(6px);
+            }
+        }
+        &__block{
+            @include flexbox;
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include padding(10px,14px,10px,13px);
+            cursor: pointer;
+            height: 49px;
+            &:hover{
+                background: $widgetHover;
+            }
+            &.is-last{
+                order: 11;
+            }
+            &__info{
+                position: absolute;
+                right: 74px;
+                width: 20px;
+                height: 20px;
+                fill: $widgetBorder;
+                cursor: pointer;
+            }
+            &__title{
+                font-size: 10px;
+                font-family: $montMedium;
+                color: $widgetBlue-style2;
+                opacity: .76;
+                text-transform: uppercase;
+                line-height: 1.25em;
+                @include margin(0,0,1px,0);
+            }
+            &__description{
+                @include margin(0,0,0,0);
+                text-transform: capitalize;
+                color: $widgetBlue-style3;
+                font-size: 13px;
+                font-family: $montBold;
+                line-height: 1.25em;
+            }
+        }
+        &__dropdown{
+            position: absolute;
+            top: 36px;
+            width: calc(100% - 40px);
+            background: $white;
+            @include flexbox;
+            @include flex-direction(column);
+            @include border(all,1px,solid,$widgetBorder-style2);
+            @include border-radius(6px);
+            display: none;
+            .deposit-widget__bonus__block__info{
+                display: none;
+            }
+        }
+    }
+    &__btn{
+        @include flexbox;
+        @include margin(15px,20px,0,20px);
+        @include padding(13.5px,0,13.5px,0);
+        font-family: $montBold;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &__payments{
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include margin(15px,30px,0,30px);
+    }
+    &__buy{
+        @include flexbox;
+        @include justify-content(center);
+        @include margin(10px,20px,0,20px);
+        &__link{
+            font-size: 12px;
+            font-family: $montSemiBold;
+            color: $widgetBlue-style4;
+            text-decoration: underline;
+            &.btn-style{
+                background: $widgetBlue-style4;
+                color: $white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.bonus-info{
+    z-index: 999;
+    position: absolute;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    display: none;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        @include border-radii(12px,12px,0,0);
+        position: fixed;
+        bottom: 0!important;
+        top: inherit!important;
+        width: 100%;
+        left: initial!important;
+    }
+    &.show{
+        @include flexbox;
+        @media #{$breakpoint-md}{
+            z-index: 999999999;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -20px;
+            top: 50%;
+            z-index: 999;
+            border-top: 13.5px solid transparent;
+            border-right: 24px solid $white;
+            border-bottom: 13.5px solid transparent;
+            @include transform(translateY(-50%));
+            @media #{$breakpoint-md}{
+                display: none;
+            }
+        }
+        &.fixedWidget{
+            position: fixed;
+            bottom: 100px;
+            z-index: 9999999;
+            &:before{
+                left: 50%;
+                top: calc(100% - 8px);
+                @include transform(translateX(-50%));
+                border-right: 13.5px solid transparent;
+                border-top: 24px solid #fff;
+                border-left: 13.5px solid transparent;
+            }
+        }
+    }
+    .bg-overlay{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.34);
+        display: none;
+        @media #{$breakpoint-md}{
+            display: block;
+        }
+    }
+    &__top{
+        position: relative;
+        @include flexbox;
+        @include justify-content(center);
+        background: $bonusInfoBg;
+        @include padding(20px,0,20px,0);
+        @include border-radii(12px,12px,0,0);
+        &__title{
+            font-size: 16px;
+            color: $widgetBlue;
+            font-family: $montMedium;
+            text-transform: uppercase;
+            @include margin(0,0,0,0);
+        }
+        &__close{
+            position: absolute;
+            top: 50%;
+            right: 18.5px;
+            @include transform(translateY(-50%));
+            cursor: pointer;
+            .icon{
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    &__content{
+        @include padding(14px,18px,0,18px);
+        @include flexbox;
+        @include flex-direction(column);
+        background: $white;
+        position: relative;
+        &__row{
+            @include flexbox;
+            @include justify-content(space-between);
+            @include align-items(center);
+            @include border(bottom,1px,solid,rgba(112,112,112,.15));
+            @include margin(0,0,9px,0);
+            &:last-of-type{
+                @include margin(0,0,0,0);
+            }
+        }
+        &__title{
+            font-size: 12px;
+            font-family: $montMedium;
+            color: $widgetBlue;
+        }
+        &__value{
+            font-size: 12px;
+            font-family: $montBold;
+            color: $widgetBlue;
+            text-align: right;
+        }
+    }
+    &__hint{
+        @include padding(12.5px,18px,0,18px);
+        font-size: 12px;
+        font-family: $montMedium;
+        color: $widgetBlue;
+        background: $white;
+        position: relative;
+    }
+    &__link{
+        color: $bonusLinkBlue;
+        text-decoration: underline;
+        font-size: 12px;
+        font-family: $montMedium;
+        @include padding(10px,18px,0,18px);
+        background: $white;
+        position: relative;
+        flex: 1 0 0;
+        @include border-radii(0,0,12px,12px);
+        @media #{$breakpoint-md}{
+            @include border-radii(0,0,0,0);
+        }
+    }
+}
+.widget-qr{
+    position: absolute;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9999;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(0);
+        @include transform(none);
+    }
+    &__top{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include padding(15px,22px,0,22px);
+        @media #{$breakpoint-md}{
+            @include padding(15px,22px,15px,22px);
+            background: $grayBg;
+        }
+        &__back{
+            .icon{
+                width: 15px;
+                height: 19px;
+                fill: rgba(81,81,81,.5);
+                @include transform(rotate(90deg));
+                @include transition(transform,.4s);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__close{
+            .icon{
+                width: 15px;
+                height: 15px;
+                fill: rgba(81,81,81,.5);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__title{
+            color: $widgetBlue;
+            text-transform: uppercase;
+            font-family: $montMedium;
+            font-size: 16px;
+            @include margin(0,0,0,0);
+        }
+    }
+    &__content{
+        @include flexbox;
+        @include flex-direction(column);
+        @include align-items(center);
+        @include margin(16px,0,0,0);
+        &__span{
+            font-size: 14px;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            a{
+                color: $linkColor;
+            }
+        }
+    }
+    &__block{
+        @include padding(8px,8px,8px,8px);
+        @include box-shadow(0,3px,8px,rgba(0,0,0,0.24));
+        @include margin(14px,0,0,0);
+        @include border-radius(8px);
+    }
+    &__amount{
+        color: $widgetBlue;
+        font-size: 26px;
+        font-family: $montSemiBold;
+        @include margin(8px,0,0,0);
+    }
+    &__address{
+        width: calc(100% - 20px);
+        position: relative;
+        @include margin(0,10px,0,10px);
+        @include padding(3px,9px,4px,9px);
+        @include border(all,1px,solid,rgba(112,112,112,.33));
+        @include border-radius(8px);
+        @include flexbox;
+        @include flex-direction(column);
+        &__span{
+            font-size: 10px;
+            font-family: $montRegular;
+            opacity: .57;
+            color: $widgetBlue;
+            pointer-events: none;
+        }
+        &__code{
+            font-size: 12px;
+            font-family: $montRegular;
+            color: $widgetBlue;
+        }
+        &__img{
+            position: absolute;
+            width: 20px;
+            right: 5px;
+            top: 10px;
+        }
+        .successfull-copied{
+            font-size: 12px;
+            font-family: $montMedium;
+            position: absolute;
+            top: 2px;
+            left: 90px;
+            color: #1EB789;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(opacity,.4s);
+            &.show{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.widget-payments{
+    position: absolute;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9999;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(0);
+        @include transform(none);
+    }
+    &__top{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include padding(15px,22px,0,22px);
+        @media #{$breakpoint-md}{
+            @include padding(15px,22px,15px,22px);
+            background: $grayBg;
+        }
+        &__back{
+            .icon{
+                width: 15px;
+                height: 19px;
+                fill: rgba(81,81,81,.5);
+                @include transform(rotate(90deg));
+                @include transition(transform,.4s);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__close{
+            .icon{
+                width: 15px;
+                height: 15px;
+                fill: rgba(81,81,81,.5);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__title{
+            color: $widgetBlue;
+            text-transform: uppercase;
+            font-family: $montMedium;
+            font-size: 14px;
+            @include margin(0,0,0,0);
+        }
+    }
+    &__list{
+        @include flexbox;
+        @include flex-direction(row);
+        @include align-items(center);
+        @include margin(30px,10px,0,20px);
+        flex-wrap: wrap;
+        padding-right: 10px;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 5px;
+            @include border-radius(12px);
+        }
+        &::-webkit-scrollbar-thumb {
+            background: $scrollbarThumb;
+        }
+        &__item{
+            width: calc(100% / 3 - 7px);
+            @include flexbox;
+            @include justify-content(center);
+            @include padding(10px,0,10px,0);
+            @include border(all,1px,solid,rgba(112,112,112,.33));
+            @include border-radius(8px);
+            @include margin(0px,10px,10px,0);
+            @include transition(background,.1s);
+            &:hover{
+                background: rgba(112,112,112,.2);
+            }
+            &:nth-of-type(3n){
+                margin-right: 0;
+            }
+            a{
+                @include flexbox;
+                @include align-items(center);
+                @include flex-direction(column);
+            }
+            p{
+                @include margin(0,0,0,0);
+                font-size: 12px;
+                color: $widgetBlue;
+                &.limits{
+                    @include margin(8px,0,0,0);
+                    text-align: center;
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+.widget-confirm{
+    position: absolute;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9999;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(0);
+        @include transform(none);
+    }
+    &__top{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include padding(10px,22px,0,22px);
+        @media #{$breakpoint-md}{
+            @include padding(15px,22px,15px,22px);
+            background: $grayBg;
+        }
+        &__back{
+            .icon{
+                width: 15px;
+                height: 19px;
+                fill: rgba(81,81,81,.5);
+                @include transform(rotate(90deg));
+                @include transition(transform,.4s);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__close{
+            .icon{
+                width: 15px;
+                height: 15px;
+                fill: rgba(81,81,81,.5);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__title{
+            color: $widgetBlue;
+            text-transform: uppercase;
+            font-family: $montBold;
+            font-size: 13px;
+            @include margin(0,0,0,0);
+            img{
+                display: block;
+                margin: 2px auto 0;
+                @media #{$breakpoint-md}{
+                    display: none;
+                }
+            }
+            &--sm{
+                margin-top: 10px;
+                text-align: center;
+                display: none;
+                @media #{$breakpoint-md}{
+                    display: block;
+                }
+                img{
+                    @media #{$breakpoint-md}{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__form{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include margin(12px,20px,0,20px);
+        flex-wrap: wrap;
+        width: initial;
+        &__group{
+            width: 100%;
+            position: relative;
+            .amount-label{
+                position: absolute;
+                top: 5px;
+                left: 16px;
+                font-size: 11px;
+                font-family: $montMedium;
+                color: $widgetBlue;
+                opacity: .57;
+            }
+            .valute{
+                font-size: 14px;
+                font-family: $montMedium;
+                color: $widgetBlue;
+                position: absolute;
+                left: 16px;
+                top: 20px;
+            }
+        }
+        &__input{
+            width: 100%;
+            @extend %input;
+            &--33{
+                width: 115px;
+                text-align: center;
+            }
+            &--66{
+                width: 209px;
+            }
+            &--green{
+                border-color: $inputGreenBorder;
+                background: $inputGreenBg;
+                @include padding(19px,0,5px,30px);
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__btn{
+        @include flexbox;
+        @include margin(17px,0,0,0);
+        @include padding(12px,0,12px,0);
+        font-family: $montBold;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 100%;
+    }
+}
+.widget-buyCrypto{
+    position: absolute;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9999;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        @include border-radius(0);
+        @include transform(none);
+    }
+    &__top{
+        @include flexbox;
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include padding(10px,22px,0,22px);
+        @media #{$breakpoint-md}{
+            @include padding(15px,22px,15px,22px);
+            background: $grayBg;
+        }
+        &__back{
+            .icon{
+                width: 15px;
+                height: 19px;
+                fill: rgba(81,81,81,.5);
+                @include transform(rotate(90deg));
+                @include transition(transform,.4s);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__close{
+            .icon{
+                width: 15px;
+                height: 15px;
+                fill: rgba(81,81,81,.5);
+                cursor: pointer;
+                &:hover{
+                    fill: rgb(81,81,81);
+                }
+            }
+        }
+        &__title{
+            color: $widgetBlue;
+            text-transform: uppercase;
+            font-family: $montMedium;
+            font-size: 14px;
+            @include margin(0,0,0,0);
+            img{
+                display: block;
+                margin: 2px auto 0;
+                @media #{$breakpoint-md}{
+                    display: none;
+                }
+            }
+            &--sm{
+                margin-top: 10px;
+                text-align: center;
+                display: none;
+                @media #{$breakpoint-md}{
+                    display: block;
+                }
+                img{
+                    @media #{$breakpoint-md}{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__form{
+        @include flexbox;
+        @include flex-direction(column);
+        @include margin(12px,20px,0,20px);
+        width: initial;
+        &__row{
+            @include flexbox;
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            flex-wrap: wrap;
+        }
+        &__title{
+            font-size: 14px;
+            font-family: $montMedium;
+            color: $widgetBlue;
+            padding-left: 10px;
+            width: 100%;
+            margin-bottom: 4px;
+        }
+        &__input{
+            width: 100%;
+            @extend %input;
+            @include margin(0,0,6px,0);
+            &--66{
+                width: 209px;
+            }
+            &--green{
+                border-color: $inputGreenBorder;
+                background: $inputGreenBg;
+                @include padding(19px,0,5px,30px);
+                margin-bottom: 0;
+            }
+        }
+        .dropdown__elem{
+            width: calc(100% - 209px - 12px);
+            @include margin(0,0,6px,0);
+            @include border(all,1px,solid,$widgetBorder-style2);
+            @include border-radius(6px);
+            &--inner{
+                @include padding(12px,3px,12px,3px);
+                @include justify-content(center);
+                background-color: $inputBg;
+                color: $widgetBlue;
+                font-size: 14px;
+                font-family: $montMedium;
+                .svg__block{
+                    pointer-events: none;
+                    margin-left: 6px;
+                }
+                svg{
+                    fill: black;
+                    width: 10px;
+                }
+                .text{
+                    &--active{
+                        pointer-events: none;
+                        color: black;
+                        @include flexbox;
+                        @include align-items(center);
+                        line-height: 1;
+                        img{
+                            margin-right: 6px;
+                            width: 19px;
+                            height: 19px;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+            .dropdown{
+                padding-top: 0;
+                background-color: #f3f7f9;
+                @include border(all,1px,solid,$widgetBorder-style2);
+                &__item{
+                    font-size: 13px;
+                    @include padding(5px,3px,5px,3px);
+                    @include flexbox;
+                    @include align-items(center);
+                    @include justify-content(center);
+                    color: black;
+                    img{
+                        pointer-events: none;
+                        width: 19px;
+                        height: 19px;
+                        margin-right: 3px;
+                    }
+                    span{
+                        width: 35px;
+                        @include flexbox;
+                        @include justify-content(center);
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+    &__text{
+        @include margin(0,34px,0,34px);
+        font-size: 10px;
+        font-family: $montMedium;
+        text-align: center;
+        line-height: 1.2em;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    &__btn{
+        @include flexbox;
+        @include margin(5px,20px,0,20px);
+        @include padding(12px,0,12px,0);
+        font-family: $montBold;
+        font-size: 14px;
+        text-transform: uppercase;
+        width: initial;
+    }
+}
+//bottom Fixed Widget
+.push-deposit{
+    @include border-radius(8px);
+    position: fixed;
+    align-items: center;
+    bottom: 10px;
+    padding: 10px;
+    left: calc(50% + 320px / 2);
+    transform: translateX(-50%);
+    z-index: 9999999;
+    background: $white;
+    display: none;
+    @media #{$breakpoint-xxl} {
+        left: calc(50% + 240px / 2);
+    }
+    @media #{$breakpoint-lg} {
+        display: none!important;
+    }
+    &__amount{
+        position: relative;
+        margin-right: 10px;
+        width: 202px;
+        &__label{
+            position: absolute;
+            font-size: 10px;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            opacity: .57;
+            left: 13px;
+            top: 4px;
+        }
+        &__valute{
+            position: absolute;
+            font-size: 15px;
+            line-height: 1.25em;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            left: 13px;
+            top: 17px;
+        }
+        &__input{
+            width: 100%;
+            outline: none;
+            border: 0;
+            font-size: 15px;
+            line-height: 1.25em;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            height: 44px;
+            @include padding(10px,0,2.5px,27px);
+            @include border(all,1px,solid,rgba(96,115,161,.36));
+            @include border-radius(8px);
+            @include transition(padding,.2s)
+        }
+        &__switch{
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            @include transform(translateY(-50%));
+            @include flexbox;
+            @include align-items(center);
+            @extend %switch;
+            .switch{
+                width: 40px;
+                height: 19px;
+                margin: 0 6px;
+                .slider{
+                    &:before{
+                        width: 15px;
+                        height: 15px;
+                        left: 3px;
+                        bottom: 2px;
+                    }
+                }
+                input:checked + .slider:before {
+                    @include transform(translateX(19px));
+                }
+            }
+            &__valute{
+                font-size: 11px;
+                font-family: $montSemiBold;
+                color: $widgetBlue;
+                opacity: .46;
+                @include transition(opacity,.4,linear);
+                cursor: pointer;
+                &.active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .deposit-widget__bonus{
+        width: 275px;
+        padding: 0;
+        &__chevron{
+            right: 0;
+            top: 0;
+            height: 42px;
+        }
+        &__block{
+            height: 42px;
+            &__info{
+                right: 54px;
+            }
+            &__description{
+                font-size: 12px;
+            }
+        }
+        &__dropdown{
+            width: 100%;
+            bottom: 0;
+            top: initial;
+        }
+    }
+    .deposit-widget__btn{
+        @include padding(10.5px,18px,10.5px,18px);
+        @include margin(0,0,0,10px);
+    }
+    &__close{
+        @include margin(0,0,0,10px);
+        cursor: pointer;
+        .icon{
+            width: 17px;
+            height: 17px;
+            fill: rgba(0,0,0,0.34);
+        }
+    }
+}
+.push-deposit-sm{
+    max-width: 357px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    @include transform(translateX(-50%));
+    @include border-radius(8px);
+    background: $white;
+    padding: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    display: none;
+    &__amount{
+        @include flexbox;
+        &__label{
+            position: absolute;
+            font-size: 13px;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            opacity: .57;
+            top: 12px;
+            margin: 0;
+        }
+        &__valute{
+            position: absolute;
+            font-size: 18px;
+            color: $widgetBlue;
+            top: 26px;
+        }
+        &__input{
+            width: 100%;
+            outline: none;
+            border: 0;
+            font-size: 18px!important;
+            line-height: 1.25em;
+            font-family: $montRegular;
+            color: $widgetBlue;
+            @include transition(padding,.2s);
+            @include padding(15px,0,0,15px);
+            height: 42px;
+        }
+    }
+    &__switch{
+        @include flexbox;
+        @include align-items(center);
+        &__item{
+            @include padding(8px,7.5px,8px,7.5px);
+            @include border(all,1px,solid,rgba(112,112,112,.33));
+            @include border-radius(6px);
+            background: transparent;
+            color: $widgetBlue;
+            @include transition(all,.4s,ease-in-out);
+            &--eur{
+                margin-right: 7px;
+                &.active{
+                    background: $widgetEuroBlue;
+                    color: $white;
+                }
+            }
+            &--btc{
+                &.active{
+                    background: $widgetOrange;
+                    color: $white;
+                }
+            }
+        }
+    }
+    &__btn{
+        height: 42px;
+        margin-left: 7.5px;
+    }
+    &__close{
+        margin-left: 12px;
+        cursor: pointer;
+        .icon{
+            width: 17px;
+            height: 17px;
+            fill: rgba(0,0,0,0.34);
+        }
+    }
+}
+.deposit-widget-sm{
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    width: 374px;
+    height: 327px;
+    background: $white;
+    z-index: 9999;
+    @include transform(translateY(-50%));
+    @include flexbox;
+    @include flex-direction(column);
+    @include border-radius(12px);
+    @media #{$breakpoint-md}{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99999;
+        @include border-radius(0);
+        @include transform(none);
+    }
+        
+}
+.currency-btn{
+    position: relative;
+    &.open{
+        .icon{
+            transform: rotate(180deg);
+        }
+        .currency-item{
+            opacity: 1;
+            visibility: visible;
+        }
+        .bt-disabled-b{
+            background: #00072e;
+            border-color: #00072e;
+        }
+    }
+    .bt-disabled-b {
+        border-color: #00072e;
+        &:hover{
+            background: #00072e;
+            border-color: #00072e;
+        }
+    }
+    .icon{
+        width: 10px;
+        @include transition(all,.4s);
+    }
+    .currency-item{
+        position: absolute;
+        top: calc(100% + 5px);
+        left: 0;
+        width: 145px;
+        background: #00072e;
+        color: #f6f6f6;
+        @include border-radius(4px);
+        cursor: pointer;
+        padding: .344rem 1.25rem;
+        font-size: 14px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all,.4s);
+    }
+}
+.banner-section .bannerSliderPrev.swiper-button-disabled{
+    opacity: 0;
+}

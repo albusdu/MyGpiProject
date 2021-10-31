@@ -1,0 +1,28 @@
+<svg id="correo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.757" height="18.111" viewBox="0 0 25.757 18.111">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c2e6ff"/>
+      <stop offset="1" stop-color="#fbfdff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_18833" data-name="Group 18833" transform="translate(17.719 1.294)">
+    <g id="Group_18832" data-name="Group 18832">
+      <path id="Path_62409" data-name="Path 62409" d="M360.023,101.721l-7.812,7.761,7.812,7.761a2.238,2.238,0,0,0,.227-.97V102.691A2.238,2.238,0,0,0,360.023,101.721Z" transform="translate(-352.211 -101.721)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_18835" data-name="Group 18835" transform="translate(1.294 0)">
+    <g id="Group_18834" data-name="Group 18834">
+      <path id="Path_62410" data-name="Path 62410" d="M47.921,76H26.691a2.238,2.238,0,0,0-.97.227l9.984,9.934a2.266,2.266,0,0,0,3.2,0l9.984-9.934A2.238,2.238,0,0,0,47.921,76Z" transform="translate(-25.721 -76)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_18837" data-name="Group 18837" transform="translate(0 1.294)">
+    <g id="Group_18836" data-name="Group 18836">
+      <path id="Path_62411" data-name="Path 62411" d="M.227,101.721a2.237,2.237,0,0,0-.227.97v13.583a2.237,2.237,0,0,0,.227.97l7.812-7.761Z" transform="translate(0 -101.721)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+  <g id="Group_18839" data-name="Group 18839" transform="translate(1.294 10.122)">
+    <g id="Group_18838" data-name="Group 18838">
+      <path id="Path_62412" data-name="Path 62412" d="M41.079,277.211l-1.105,1.105a3.777,3.777,0,0,1-5.335,0l-1.105-1.105-7.812,7.761a2.238,2.238,0,0,0,.97.227h21.23a2.238,2.238,0,0,0,.97-.227Z" transform="translate(-25.721 -277.211)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,201 @@
+.rules{
+  padding: 30px 0;
+  &-menu{
+    border-radius: 16px;
+    border: 1px solid $bg-shade-3;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    background-color:$bg-shade-1;
+    position: fixed;
+    max-height: 80vh;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px $bg-shade-2; 
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $component-color-2; 
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: $component-color-2; 
+    }
+    @media #{$breakpoint-lg}{
+      position: static;
+      max-height: none;
+    }
+    @media #{$breakpoint-md}{
+      padding: 20px 10px;
+    }
+    &__list{
+      &-sub{
+        display: none;
+        .rules-menu__list-link{
+          padding-left: 30px;
+          font-size: 12px;
+          &.active{
+            background-color: $bg-shade-2;
+            border-color: $transparent;
+          }
+        }
+      }
+      &-link{
+        padding: 10px;
+        border-radius: 6px;
+        display: block;
+        color: $dark-white;
+        font-size: 13px;
+        font-family: $montMedium;
+        line-height: 1;
+        display: flex;
+        align-items: flex-start;
+        transition: .15s;
+        border: 1px solid $transparent;
+        position: relative;
+        margin-bottom: 4px;
+        user-select: none;
+        svg{
+          display: none;
+        }
+        &:hover{
+          color: $dark-white;
+          background-color: $bg-shade-3;
+          border-color: $bg-shade-3;
+        }
+        &.active{
+          background-color: $bg-shade-3;
+          border-color: $component-color-1;
+          &:hover{
+            color: $dark-white;
+          }
+        }
+        &.toggle{
+          padding-right: 26px;
+          &.active{
+            svg{
+              transform: translateY(-50%) rotate(180deg);
+            }
+          }
+          svg{
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            fill: $dark-white;
+            width: 12px;
+            height: 8px;
+            transition: .15s;
+            display: inline-block;
+          }
+        }
+      }
+      &-number{
+        display: inline-block;
+        margin-right: 5px;
+      }
+      &-title{
+      }
+
+    }
+  }
+  &-container{
+    border-radius: 16px;
+    background-color: $bg-shade-2;
+    padding: 30px 20px;
+    a{
+      color: $component-active-color;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    @media #{$breakpoint-md}{
+      padding: 25px 15px;
+    }
+    *{
+      &:not(a){
+        color: $white;
+      }
+    }
+  }
+}
+
+
+.faq{
+  &-tab{
+    background-color: $transparent;
+    margin-bottom: 0;
+    &__nav{
+      justify-content: center;
+      @media #{$breakpoint-lg}{
+        justify-content: unset;
+      }
+    }
+  }
+  &-header{
+    background-color: $bg-shade-2;
+    &__title{
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-lg}{
+        height: 120px;
+      }
+      @media #{$breakpoint-md}{
+        height: 80px;
+      }
+      h1{
+        color: $dark-white;
+        text-align: center;
+        @include font-size(4rem);
+        @include rfs(50);
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-container{
+    min-height: 10vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+  }
+  &-list{
+    @extend .notify__container;
+    &.active{
+      .faq-list__btn{
+        transform: rotate(180deg)!important;
+      }
+    }
+    &__header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      @extend .notify__header;
+      h2{
+        color: $dark-white;
+        font-size: 15px;
+        font-family: $montRegular;
+        margin: 0;
+      }
+    }
+    &__btn{
+      @extend .notify__btn;
+      border: none;
+    }
+
+    &__body{
+      @extend .notify__content;
+    }
+  }
+}
+
+.xxs-p-0{
+  @media #{$breakpoint-xxs} {
+    padding: 0;
+  }
+}

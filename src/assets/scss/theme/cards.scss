@@ -1,0 +1,1141 @@
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 11%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 11%;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes gifImg {
+  0% {
+    background-position-x: left;
+  }
+  33.33% {
+    background-position-x: center;
+  }
+  66.66% {
+    background-position-x: right;
+  }
+  100% {
+    background-position-x: left;
+  }
+}
+.cards {
+  &-wrap {
+    position: relative;
+    width: 100%;
+  }
+  color: $white;
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  &__container {
+    padding: 0 10px;
+    width: 14.28%;
+    margin-bottom: 20px;
+    @media #{$breakpoint-xl-ex} {
+      width: 16.66%;
+    }
+    @media #{$breakpoint-xl} {
+      width: 20%;
+    }
+    @media #{$breakpoint-lg} {
+      width: 25%;
+    }
+    @media #{$breakpoint-md} {
+      width: 33.33%;
+    }
+    @media #{$breakpoint-sm} {
+      width: 50%;
+    }
+    &.swiper-slide{
+      width: 231px;
+      @media #{$breakpoint-md}{
+        width: 165px;
+      }
+    }
+  }
+  &.lg {
+    .cards__container {
+      padding: 0 10px;
+      width: 20%;
+      margin-bottom: 20px;
+      @media #{$breakpoint-xl-ex} {
+        width: 25%;
+      }
+      @media #{$breakpoint-xl} {
+        width: 33.33%;
+      }
+      @media #{$breakpoint-md} {
+        width: 50%;
+      }
+    }
+  }
+  &__link-mob {
+    background-color: #09103a;
+    color: #fff;
+    border: 1px solid #2f3b75;
+    margin-top: 15px;
+    border-radius: 20px;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    &:hover {
+      .cards__item-action {
+        opacity: 1;
+        visibility: visible;
+      }
+      .cards__item-gif {
+        display: block;
+      }
+      .cards__item-demo {
+        opacity: 1;
+        visibility: visible;
+        bottom: 10px;
+        @media #{$breakpoint-md} {
+          bottom: 5px;
+        }
+      }
+    }
+    &-label {
+      position: absolute;
+      z-index: 4;
+      top: 8px;
+      left: 8px;
+      user-select: none;
+      li {
+        margin-bottom: 3px;
+        line-height: 1;
+        span {
+          font-family: $montMedium;
+          font-size: 10px;
+          line-height: 1.1;
+          background-color: $component-color-2;
+          padding: 0 8px 0 10px;
+          height: 18px;
+          text-align: center;
+          border-radius: 4px;
+          display: inline-flex;
+          align-items: center;
+          text-transform: capitalize;
+          position: relative;
+          background-size: 600% 600%;
+
+          animation: AnimationName 2s ease infinite;
+          @media #{$breakpoint-md} {
+            padding: 0 5px;
+            height: 16px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            right: -4px;
+            height: 12px;
+            z-index: -1;
+            width: 12px;
+            border-radius: 3px;
+            background-color: $component-color-2;
+            transform: rotate(45deg);
+          }
+        }
+        &.new {
+          span {
+            background-color: $new-color;
+            &::after {
+              background-color: $new-color;
+            }
+          }
+        }
+        &.hot {
+          span {
+            background-color: $hot-color;
+            &::after {
+              background-color: $hot-color;
+            }
+          }
+        }
+        &.in-promotion {
+          span {
+            background-color: $in-promotion-color;
+            &::after {
+              background-color: $in-promotion-color;
+            }
+          }
+        }
+        &.featured {
+          span {
+            background-color: $featured-color;
+            &::after {
+              background-color: $featured-color;
+            }
+          }
+        }
+      }
+    }
+    &-favourite {
+      position: absolute;
+      z-index: 4;
+      top: 8px;
+      right: 8px;
+      cursor: pointer;
+      transition: 0.15s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        svg {
+          stroke: $component-yellow;
+          fill: $component-yellow;
+          opacity: 1;
+        }
+      }
+      svg {
+        transition: 0.15s;
+        width: 20px;
+        height: 20px;
+        fill: $white;
+        stroke: $white;
+        stroke-width: 2px;
+        opacity: 0.8;
+      }
+      &.active {
+        svg {
+          fill: $component-yellow;
+          stroke: $component-yellow;
+          stroke-width: 2px;
+          opacity: 1;
+        }
+      }
+    }
+    &-action {
+      position: absolute;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $part-shadow;
+      transition: 0.15s;
+      opacity: 0;
+      visibility: hidden;
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        fill: $white;
+        transform: translate(-50%, -50%);
+        transition: 0.15s;
+        @media #{$breakpoint-sm} {
+          //width: 40px;
+          //height: 40px;
+        }
+        &:hover {
+          transform: translate(-50%, -50%) scale(1.2);
+        }
+      }
+    }
+    &-demo {
+      @extend .bt;
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.15s ease;
+      background-color: $part-shadow;
+      border-color: $component-yellow;
+      color: $dark-white;
+      font-family: $montMedium;
+      font-size: 13px;
+      bottom: -30px;
+      border-radius: 20px;
+      padding: 4px 14px;
+      &:hover {
+        color: $black;
+        background-color: $component-yellow;
+      }
+    }
+    &-tumb {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      display: block;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      background-color: $component-color-1;
+    }
+    &-img {
+      position: relative;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      img {
+        @extend .cover-img;
+      }
+    }
+    &-gif {
+      z-index: 2;
+      @extend .position-center;
+      width: 100%;
+      height: 100%;
+      background-position-y: center;
+      background-position-x: left;
+      background-size: cover;
+      animation: gifImg;
+      animation-duration: 3s;
+      animation-timing-function: steps(1, end);
+      animation-iteration-count: infinite;
+      display: none;
+    }
+  }
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    background-color: $bg-shade-2;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    &-link {
+      width: calc(100% - 20px);
+      a {
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      a:first-child {
+        color: $white;
+        font-size: 13px;
+        font-family: $montSemiBold;
+        margin-bottom: 2px;
+        @media #{$breakpoint-md} {
+          font-size: 12px;
+        }
+      }
+      a:last-child {
+        transition: color 0.15s ease-in-out;
+        color: $component-color-2;
+        font-family: $montMedium;
+        text-transform: uppercase;
+        font-size: 11px;
+        @media #{$breakpoint-md} {
+          font-size: 10px;
+        }
+        &:hover {
+          color: darken($component-color-2, 10%);
+        }
+      }
+    }
+    &.md {
+      align-items: center;
+      .cards__title-link {
+        a {
+          color: $dark-white;
+          font-size: 14px;
+          font-family: $montMedium;
+          padding: 5px 0;
+          text-transform: unset;
+          &:hover {
+            color: $dark-white;
+          }
+          @media #{$breakpoint-md} {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  &__tip {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    background-color: $transparent;
+    @media #{$breakpoint-md} {
+      width: 16px;
+      height: 16px;
+    }
+    &:hover {
+      svg {
+        fill: darken($component-color-2, 10%);
+      }
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+      fill: $component-color-2;
+    }
+  }
+  &__loader {
+    text-align: center;
+    padding: 10px 0;
+    &-title {
+      font-size: 13px;
+      color: $component-color-2;
+      user-select: none;
+    }
+  }
+  &__info {
+    &-icon {
+      width: 16px;
+      height: 16px;
+      border: none;
+      outline: none;
+      background-color: $transparent;
+      @media #{$breakpoint-md} {
+        width: 16px;
+        height: 16px;
+      }
+      &:hover {
+        svg {
+          fill: darken($component-color-2, 10%);
+        }
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        fill: $component-color-2;
+      }
+    }
+    &_game {
+      &-content {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        position: fixed;
+        width: 100%;
+        background-color: $bg-shade-2;
+        overflow: hidden;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        transition: 0.15s;
+        display: none;
+        z-index: 2000;
+        @media #{$breakpoint-md} {
+          display: block;
+        }
+
+        &.active {
+          // bottom: 70px;
+          bottom: 0;
+          transform: translateY(0);
+        }
+      }
+      &-header {
+        background-color: $bg-shade-3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+      }
+      &-title {
+        font-size: 14px;
+        font-family: $montSemiBold;
+        color: $white;
+        &-sm {
+          color: $component-color-2;
+          font-size: 12px;
+          font-family: $montRegular;
+          margin-bottom: 0;
+        }
+      }
+      &-close{
+        position: static;
+      }
+      &-body{
+        padding: 15px;
+      }
+      &-input{
+        background-color: $bg-shade-1;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+        &-text{
+          color: $white;
+          font-size: 14px;
+          font-family: $montRegular;
+        }
+      }
+      &-item{
+        margin: 0 10px 10px 0;
+        color: $white;
+        font-size: 14px;
+        font-family: $montRegular;
+        padding: 5px 20px;
+        border: 1px solid $component-color-2;
+        border-radius: 20px;
+        &-list{
+          display: flex;
+          overflow-x: auto;
+          // &::-webkit-scrollbar {
+          //   height: 3px;
+          // }
+          // &::-webkit-scrollbar-track {
+          //   box-shadow: inset 0 0 1px $component-color-2; 
+          //   border-radius: 10px;
+          // }
+          // &::-webkit-scrollbar-thumb {
+          //   background: $component-color-2; 
+          //   border-radius: 10px;
+          // }
+          // &::-webkit-scrollbar-thumb:hover {
+          //   background: $component-color-2; 
+          // }
+        }
+      }
+      &-btn{
+        &-list{
+          display: flex;
+          justify-content: space-between;
+          margin: 10px 0 20px;
+        }
+        width: 50%;
+        display: flex;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 6px;
+        color: $white;
+        font-family: $montMedium;
+        justify-content: center;
+        align-items: center;
+        &.green{
+          margin-right: 10px;
+          background-color: $component-green;
+        }
+        &.grey{
+          margin-left: 10px;
+          background-color: $component-color-1;
+        }
+        &:hover{
+          color: $white;
+        }
+      }
+    }
+  }
+}
+.cards-slider {
+  .cards__item-demo {
+    @media #{$breakpoint-sm} {
+      font-size: 12px;
+      padding: 5px 14px;
+    }
+  }
+}
+.cards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0 10px 15px;
+  position: relative;
+  &__btn {
+    &.active {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &__dropdown {
+    flex: 0 0 100%;
+    min-height: 1px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: $footer-main-color;
+    border: 1px solid $component-active-color;
+    padding: 10px 5px 5px 5px;
+    display: none;
+  }
+  &__title {
+    color: $white!important;
+    font-family: $montBold;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1;
+    transition: color 0.15s;
+    position: relative;
+    &-img {
+      margin-right: 10px;
+      width: 40px;
+      height: 32px;
+      object-fit: contain;
+      object-position: center;
+    }
+    &:not(h2) {
+      &:hover {
+        color: $component-active-color;
+      }
+    }
+    &-cont {
+      display: flex;
+      align-items: center;
+      &-mobile {
+        @media #{$breakpoint-md} {
+          flex-direction: column;
+          align-items: flex-start;
+          .cards-header__title-img {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    &-small {
+      color: $component-color-12;
+      font-size: 14px;
+      font-family: $montMedium;
+      margin-bottom: 0;
+      margin-top: 6px;
+      // margin-left: 36px;
+    }
+    &-btn {
+      background-color: $component-color-1;
+      color: $white;
+      font-size: 14px;
+      font-family: $montRegular;
+      &:hover {
+        color: $white;
+        background-color: $sidebar-border-color;
+      }
+    }
+  }
+  &__controller {
+    display: flex;
+    .bt {
+      svg {
+        width: 13px;
+        margin-left: 8px;
+        display: none;
+        margin-right: 0;
+      }
+      @media #{$breakpoint-sm} {
+        padding: 4px 0;
+        border: none;
+        line-height: 1.7;
+        background-color: $transparent;
+        svg {
+          display: block;
+        }
+      }
+    }
+  }
+  .cards__arrows {
+    display: flex;
+    margin-right: 15px;
+    @media #{$breakpoint-sm} {
+      display: none;
+    }
+    .arr {
+      background-color: $transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 5px;
+      width: 34px;
+      height: 34px;
+      border: 1px solid $component-color-1;
+      border-radius: 6px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.15s ease;
+      &:first-child {
+        margin-right: 5px;
+      }
+      &:not(.slick-disabled) {
+        &:hover {
+          background-color: $component-color-1;
+        }
+      }
+      svg {
+        fill: $white;
+        width: 16px;
+        height: 20px;
+      }
+    }
+  }
+  .provider-btn {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: $component-color-2;
+    background-color: $bg-shade-3;
+    font-family: $montMedium;
+    &:hover {
+      border-color: $component-active-color;
+    }
+    .qt {
+      color: $dark-white;
+      display: block;
+      margin-left: 10px;
+      margin-right: -13px;
+      padding: 2px 5px;
+      background-color: $bg-shade-2;
+      border-radius: 10px;
+      font-size: 11px;
+      min-width: 20px;
+    }
+    &.active {
+      color: $dark-white;
+      background-color: $component-active-color;
+      border-color: $component-active-color;
+      .qt {
+        color: $dark-white;
+        background-color: darken($component-active-color, 10%);
+      }
+    }
+  }
+}
+
+//search result cards
+.result-card {
+  padding: 8px 0;
+  position: relative;
+  > a {
+    display: flex;
+    align-items: center;
+    &:hover {
+      .result-card__img {
+        svg,
+        &::after {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 70px;
+    min-width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: $card-overlay;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+      z-index: 2;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.15s;
+    }
+    img {
+      @extend .cover-img;
+    }
+  }
+  &__info {
+    &-game {
+      margin-bottom: 0;
+      font-size: 15px;
+      color: $dark-white;
+      font-family: $montMedium;
+    }
+    &-provider {
+      font-size: 13px;
+      color: $component-color-2;
+      margin-bottom: 0;
+    }
+  }
+}
+//******************
+
+//categories cards
+.categories-section {
+  width: 100%;
+  overflow: hidden;
+}
+.categories {
+  @media #{$breakpoint-sm} {
+    margin-left: -5px;
+    margin-right: -15px;
+  }
+  &-item {
+    padding: 10px 8px;
+    @media #{$breakpoint-md} {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    &-numb {
+      color: rgba($color: $white, $alpha: 0.6);
+      font-size: 12px;
+      font-family: $montRegular;
+      background-color: $component-color-1;
+      border-radius: 15px;
+      padding: 2px 15px;
+      margin-top: 10px;
+      @media #{$breakpoint-md} {
+        font-size: 10px;
+        padding: 2px 5px;
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: $bg-shade-3;
+    // padding: 25px 0;
+    padding: 25px 0 14px;
+    transition: 0.15s;
+    @media #{$breakpoint-xl} {
+      height: 120px;
+      padding: 0;
+    }
+    @media #{$breakpoint-md} {
+      height: 100px;
+      padding: 0;
+    }
+    h4 {
+      margin-bottom: 0;
+      font-family: $montMedium;
+      padding: 0 5px;
+      font-size: 13px;
+      white-space: nowrap;
+      @media #{$breakpoint-xl} {
+        font-size: 12px;
+      }
+      @media #{$breakpoint-lg} {
+        font-size: 11px;
+      }
+    }
+    &:hover {
+      .categories__ico {
+        transform: scale(1.2);
+      }
+    }
+  }
+  &__ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    transition: 0.15s;
+    @media #{$breakpoint-xl} {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    @media #{$breakpoint-lg} {
+      width: 30px;
+      height: 30px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    font-family: $montRegular;
+    font-size: 15px;
+    text-align: center;
+    color: $dark-white;
+    width: 100%;
+  }
+}
+//******************
+//promo cards
+.promo {
+  @media #{$breakpoint-sm} {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  &-section {
+    width: 100%;
+    overflow: hidden;
+  }
+  &-card {
+    position: relative;
+    height: 320px;
+    padding: 0 8px;
+    @media #{$breakpoint-lg} {
+      height: 240px;
+    }
+    &__img {
+      height: 100%;
+      width: 100%;
+      border-radius: 16px;
+      overflow: hidden;
+      img {
+        @extend .cover-img;
+      }
+    }
+  }
+}
+//******************
+
+.gameProvider {
+  &-slider {
+    &-section{
+      padding-bottom: 0!important;
+    }
+  }
+  &-item {
+    padding: 0 10px;
+    @media #{$breakpoint-xl} {
+      padding: 0 8px;
+    }
+    &-cont {
+      background-color: $bg-shade-3;
+      border: 1px solid $component-color-1;
+      border-radius: 8px;
+      height: 80px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      @media #{$breakpoint-xxl} {
+        height: 70px;
+      }
+      @media #{$breakpoint-xl} {
+        height: 60px;
+      }
+      @media #{$breakpoint-xxs} {
+        height: 44px;
+      }
+      &-img {
+        // padding: 20px;
+        max-height: 40px;
+        height: 5vh;
+        padding: 0 10px;
+        @media #{$breakpoint-xl} {
+          max-height: 30px;
+          height: 4vh;
+          padding: 0 10px;
+        }
+
+        @media #{$breakpoint-xxs} {
+          max-height: 24px;
+          height: 4vh;
+          padding: 0;
+        }
+      }
+    }
+    &.disabled {
+      .gameProvider-item-cont {
+        cursor: auto;
+        .gameProvider-item-cont-img {
+          filter: grayscale(1);
+          opacity: 0.5;
+        }
+      }
+      &:hover {
+        .gameProvider-item_popover {
+          opacity: 1;
+        }
+      }
+    }
+    &_popover {
+      opacity: 0;
+      background-color: $component-color-1;
+      border-radius: 8px;
+      position: relative;
+      margin: 10px auto 0;
+      transition: 0.3s;
+      color: $white;
+      font-size: 12px;
+      font-family: $montMedium;
+      text-align: center;
+      padding: 10px 5px;
+      width: 145px;
+      &::after {
+        content: "";
+        background-color: $component-color-1;
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -4px;
+        right: 50%;
+        transform: translateX(-50%);
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+.cards__item{
+  &:hover{
+    .cards__item-demo{
+      bottom: 30px;
+    }
+    .cards__item-favourite,.cards__tip,.cards__info-icon{
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .thumb-play-btn{
+      display: flex;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      transition: .5s;
+      z-index: 9;
+      width: 40%;
+      &:hover{
+        transform: translate(-50%,-50%) scale(1.1);
+      }
+    }
+  &-tumb{
+    border-radius: 10px;
+  }
+  &-jetx{
+    height: 284.69px;
+    @media #{$breakpoint-md}{
+      height: 195.64px;
+    }
+  }
+  &-action{
+    &__bg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,84,168,0.7);
+      backdrop-filter: blur(9px) brightness(1.2);
+    }
+    .icon{
+      width: 105px;
+      height: 105px;
+    }
+    &-title{
+      font-size: 14px;
+      color: $white;
+      font-family: $montMedium;
+      position: absolute;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 0 5px;
+      line-height: 1.1;
+      text-align: center;
+      top: 35px;
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+  &-label{
+    z-index: 3;
+  }
+  &-favourite{
+    left: 8px;
+    right: initial;
+    opacity: 0;
+    visibility: hidden;
+    &:hover{
+      svg{
+        stroke: none;
+      }
+    }
+    svg{
+      width: 24px;
+      height: 23px;
+      stroke: none;
+      opacity: 1;
+    }
+  } 
+  .cards__tip,.cards__info-icon{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 4;
+    background: none;
+    border: none;
+    transition: .15s ease-in;
+    opacity: 0;
+    visibility: hidden;
+    width: initial;
+    height: initial;
+    svg{
+      fill: $white;
+      width: 21px;
+      height: 21px;
+    }
+  }
+  &-demo{
+    border: 1px solid #D8DEFF;
+    color: $white;
+    background: rgba(0,0,0,.26);
+    font-size: 14px;
+    padding: 7px 20px 8px;
+    line-height: 1;
+    &:hover{
+      background: $white;
+      border-color: $white;
+      color: #0056b3;
+    }
+  }
+}
+.cards-grid{
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(7,1fr);
+  @media (max-width: 1580px){
+    grid-template-columns: repeat(6,1fr);
+  }
+  @media (max-width: 1380px){
+    grid-template-columns: repeat(5,1fr);
+  }
+  @media (max-width: 768px){
+    grid-template-columns: repeat(4,1fr);
+  }
+  @media (max-width: 580px){
+    grid-template-columns: repeat(3,1fr);
+  }
+  @media (max-width: 480px){
+    grid-template-columns: repeat(2,1fr);
+  }
+  .responsive-images{
+    width: 100%;
+  }
+}
+.logo__img-mobile{
+  position: fixed;
+  left: 10px;
+}

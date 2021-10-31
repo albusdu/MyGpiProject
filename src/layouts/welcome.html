@@ -1,0 +1,173 @@
+{{!-- This is the base layout for your project, and will be used on every page.--}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0, shrink-to-fit=no"
+    />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#1A1F26" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1A1F26" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1A1F26" />
+    <title>{{title}}</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css?v=1.7" />
+  </head>
+
+  <body>
+    <svg width="0" height="0" class="hidden" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="back-arrow" viewBox="0 0 61.258 29.672">
+        <g id="left-arrow_1_" data-name="left-arrow (1)" transform="translate(0 -132)">
+          <g id="Group_19928" data-name="Group 19928" transform="translate(0 132)">
+            <path id="Path_65085" data-name="Path 65085" d="M58.864,144.443H8.188l8.395-8.354a2.393,2.393,0,0,0-3.376-3.392L.7,145.14l0,0a2.4,2.4,0,0,0,0,3.388l0,0,12.5,12.443a2.393,2.393,0,0,0,3.376-3.392l-8.394-8.354H58.864a2.393,2.393,0,0,0,0-4.786Z" transform="translate(0 -132)" fill="#fff"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 22.3 22.3"
+        id="ico-info"
+      >
+        <path
+          d="M11.2 22.3C5 22.3 0 17.3 0 11.2 0 5 5 0 11.2 0c6.1 0 11.2 5 11.2 11.2s-5.1 11.1-11.2 11.1zm0-20.3C6.1 2 2 6.1 2 11.2s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2C20.3 6.1 16.2 2 11.2 2zm1 13.2v-4.1c0-.6-.4-1-1-1s-1 .4-1 1v4.1c0 .6.4 1 1 1s1-.4 1-1zm-.3-7.4c.2-.2.3-.5.3-.7 0-.3-.1-.5-.3-.7-.4-.4-1-.4-1.4 0-.2.1-.2.2-.3.3v.4c0 .1 0 .3.1.4 0 .1.1.2.2.3.1.2.4.3.6.3.3 0 .6-.1.8-.3z"
+        ></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="widgetCloseIcon" viewBox="0 0 15.05 15.049">
+        <g transform="translate(-1.464 -1.48)" opacity="0.52">
+          <g id="Group_20752" data-name="Group 20752" transform="translate(0 0.016)">
+            <path id="Path_66042" data-name="Path 66042" d="M9.182,7.54l5.627-5.627a.825.825,0,0,0,0-1.164L14.316.256a.825.825,0,0,0-1.164,0L7.525,5.883,1.9.256a.825.825,0,0,0-1.164,0L.241.749a.824.824,0,0,0,0,1.164L5.868,7.54.241,13.167a.825.825,0,0,0,0,1.164l.493.493a.825.825,0,0,0,1.164,0L7.525,9.2l5.627,5.627a.817.817,0,0,0,.582.24h0a.817.817,0,0,0,.582-.24l.493-.493a.825.825,0,0,0,0-1.164Z" transform="translate(1.464 1.447)"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 11 6.7"
+        id="ico-chevron-up"
+      >
+        <path
+          d="M1.4 6.5c-.2 0-.5-.1-.7-.3-.4-.4-.4-1-.1-1.4L4.5.5c.2-.2.5-.3.8-.3.3 0 .5.1.7.3l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0L5.3 2.7 2.2 6.1c-.2.3-.5.4-.8.4z"
+        ></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6.7" id="ico-chevron-down">
+        <path d="M5.7 6.5c-.3 0-.5-.1-.7-.3L.7 1.9C.3 1.5.3.9.7.5s1-.4 1.4 0L5.6 4 8.8.5c.4-.4 1-.4 1.4-.1.4.4.4 1 .1 1.4L6.4 6.1c-.2.3-.4.4-.7.4z">
+        </path>
+      </symbol>
+      <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="eye-hidden">
+        <path d="M9.85,6.83,12.71,9.7l0-.15A2.74,2.74,0,0,0,10,6.82ZM10,5a4.54,4.54,0,0,1,4.54,4.54,4.46,4.46,0,0,1-.32,1.66l2.66,2.66A10.76,10.76,0,0,0,20,9.54,10.74,10.74,0,0,0,10,2.73a10.61,10.61,0,0,0-3.62.63l2,2A4.5,4.5,0,0,1,10,5ZM.91,2.52,3,4.6,3.4,5A10.77,10.77,0,0,0,0,9.55a10.74,10.74,0,0,0,13.92,6.07l.06,0,.39.39L17,18.63l1.16-1.15L2.07,1.37Zm5,5L7.34,9a2.35,2.35,0,0,0-.07.6A2.72,2.72,0,0,0,10,12.27h0a2.32,2.32,0,0,0,.59-.07L12,13.6A4.51,4.51,0,0,1,5.93,7.54Z"/>
+    </symbol>
+      <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="eye">
+        <path d="M10,7.27A2.73,2.73,0,1,0,12.73,10,2.73,2.73,0,0,0,10,7.27Zm0-4.09A10.75,10.75,0,0,0,0,10a10.74,10.74,0,0,0,20,0A10.75,10.75,0,0,0,10,3.18Zm0,11.36A4.55,4.55,0,1,1,14.55,10h0A4.55,4.55,0,0,1,10,14.54Z"/>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13.937 13.937"
+        id="close"
+      >
+        <g id="Group_19778" data-name="Group 19778" transform="translate(-11.797 -11.464)">
+          <path id="Path_56362" data-name="Path 56362" d="M218.7,265.609a1.161,1.161,0,0,0-1.982-.821l-4.984,4.984-4.984-4.984a1.161,1.161,0,0,0-1.642,1.642l4.984,4.984-4.984,4.984a1.161,1.161,0,1,0,1.642,1.642l4.984-4.984,4.984,4.984a1.161,1.161,0,0,0,1.642-1.642l-4.984-4.984,4.984-4.984A1.161,1.161,0,0,0,218.7,265.609Z" transform="translate(-192.965 -252.984)" fill="#f2f2f2"/>
+        </g>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16.244 11.117"
+        id="chevron-right"
+      >
+      <path id="Shape" d="M5.24,12.813.273,7.291.256,7.272.25,7.264.241,7.254.232,7.243.226,7.235l-.01-.013,0-.007L.2,7.2.2,7.2l-.01-.014,0-.005-.01-.015,0,0-.01-.015,0-.006L.149,7.121l0-.008L.137,7.1l-.005-.01L.126,7.08.12,7.067l0-.008L.108,7.043l0,0A1.124,1.124,0,0,1,0,6.559a1.092,1.092,0,0,1,.292-.753L5.24.3A.866.866,0,0,1,6.556.3a1.121,1.121,0,0,1,0,1.465L3.18,5.522H18.313a.988.988,0,0,1,.931,1.036.987.987,0,0,1-.931,1.035H3.179l3.377,3.756a1.12,1.12,0,0,1,0,1.464.865.865,0,0,1-1.316,0Z" fill="#fff"/>
+      </symbol>
+      <symbol id="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.869 6.887">
+          <g id="check_1_" data-name="check (1)" transform="translate(-2.208 -4.207)">
+            <path id="Path_65040" data-name="Path 65040" d="M5.6,10.961a.453.453,0,0,1-.64,0L2.407,8.4a.679.679,0,0,1,0-.961l.32-.32a.679.679,0,0,1,.961,0l1.6,1.6L9.6,4.406a.679.679,0,0,1,.961,0l.32.32a.679.679,0,0,1,0,.961Z" fill="#fff"/>
+          </g> 
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6.7" id="ico-chevron-down">
+        <path d="M5.7 6.5c-.3 0-.5-.1-.7-.3L.7 1.9C.3 1.5.3.9.7.5s1-.4 1.4 0L5.6 4 8.8.5c.4-.4 1-.4 1.4-.1.4.4.4 1 .1 1.4L6.4 6.1c-.2.3-.4.4-.7.4z">
+        </path>
+      </symbol>
+      <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="eye-hidden">
+        <path d="M9.85,6.83,12.71,9.7l0-.15A2.74,2.74,0,0,0,10,6.82ZM10,5a4.54,4.54,0,0,1,4.54,4.54,4.46,4.46,0,0,1-.32,1.66l2.66,2.66A10.76,10.76,0,0,0,20,9.54,10.74,10.74,0,0,0,10,2.73a10.61,10.61,0,0,0-3.62.63l2,2A4.5,4.5,0,0,1,10,5ZM.91,2.52,3,4.6,3.4,5A10.77,10.77,0,0,0,0,9.55a10.74,10.74,0,0,0,13.92,6.07l.06,0,.39.39L17,18.63l1.16-1.15L2.07,1.37Zm5,5L7.34,9a2.35,2.35,0,0,0-.07.6A2.72,2.72,0,0,0,10,12.27h0a2.32,2.32,0,0,0,.59-.07L12,13.6A4.51,4.51,0,0,1,5.93,7.54Z"/>
+    </symbol>
+      <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="eye">
+        <path d="M10,7.27A2.73,2.73,0,1,0,12.73,10,2.73,2.73,0,0,0,10,7.27Zm0-4.09A10.75,10.75,0,0,0,0,10a10.74,10.74,0,0,0,20,0A10.75,10.75,0,0,0,10,3.18Zm0,11.36A4.55,4.55,0,1,1,14.55,10h0A4.55,4.55,0,0,1,10,14.54Z"/>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 13.937 13.937"
+        id="close"
+      >
+        <g id="Group_19778" data-name="Group 19778" transform="translate(-11.797 -11.464)">
+          <path id="Path_56362" data-name="Path 56362" d="M218.7,265.609a1.161,1.161,0,0,0-1.982-.821l-4.984,4.984-4.984-4.984a1.161,1.161,0,0,0-1.642,1.642l4.984,4.984-4.984,4.984a1.161,1.161,0,1,0,1.642,1.642l4.984-4.984,4.984,4.984a1.161,1.161,0,0,0,1.642-1.642l-4.984-4.984,4.984-4.984A1.161,1.161,0,0,0,218.7,265.609Z" transform="translate(-192.965 -252.984)" fill="#f2f2f2"/>
+        </g>
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 16.244 11.117"
+        id="chevron-right"
+      >
+      <path id="Shape" d="M5.24,12.813.273,7.291.256,7.272.25,7.264.241,7.254.232,7.243.226,7.235l-.01-.013,0-.007L.2,7.2.2,7.2l-.01-.014,0-.005-.01-.015,0,0-.01-.015,0-.006L.149,7.121l0-.008L.137,7.1l-.005-.01L.126,7.08.12,7.067l0-.008L.108,7.043l0,0A1.124,1.124,0,0,1,0,6.559a1.092,1.092,0,0,1,.292-.753L5.24.3A.866.866,0,0,1,6.556.3a1.121,1.121,0,0,1,0,1.465L3.18,5.522H18.313a.988.988,0,0,1,.931,1.036.987.987,0,0,1-.931,1.035H3.179l3.377,3.756a1.12,1.12,0,0,1,0,1.464.865.865,0,0,1-1.316,0Z" fill="#fff"/>
+      </symbol>
+      <symbol id="checked" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.869 6.887">
+          <g id="check_1_" data-name="check (1)" transform="translate(-2.208 -4.207)">
+            <path id="Path_65040" data-name="Path 65040" d="M5.6,10.961a.453.453,0,0,1-.64,0L2.407,8.4a.679.679,0,0,1,0-.961l.32-.32a.679.679,0,0,1,.961,0l1.6,1.6L9.6,4.406a.679.679,0,0,1,.961,0l.32.32a.679.679,0,0,1,0,.961Z" fill="#fff"/>
+          </g> 
+      </symbol>
+    </svg>  
+    {{>modals}}
+    {{>body}}
+    <div class="welcome-footer__wrap">
+      {{>footer}}
+    </div>
+    <div class="bonus-info bonus-info--welcome">
+      <div class="bg-overlay"></div>
+      <div class="bonus-info__top">
+        <h3 class="bonus-info__top__title">Bonus info</h3>
+        <div class="bonus-info__top__close">
+          <svg class="icon">
+            <use xlink:href="#widgetCloseIcon"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="bonus-info__content">
+        <div class="bonus-info__content__row">
+          <h4 class="bonus-info__content__title">Max Bonus</h4>
+          <span class="bonus-info__content__value">100% up  to 300EUR</span>
+        </div>
+        <div class="bonus-info__content__row">
+          <h4 class="bonus-info__content__title">Frees Spins</h4>
+          <span class="bonus-info__content__value">300</span>
+        </div>
+        <div class="bonus-info__content__row">
+          <h4 class="bonus-info__content__title">Min Deposit</h4>
+          <span class="bonus-info__content__value">20EUR</span>
+        </div>
+        <div class="bonus-info__content__row">
+          <h4 class="bonus-info__content__title">Maxbet Per Game Round</h4>
+          <span class="bonus-info__content__value">5EUR</span>
+        </div>
+        <div class="bonus-info__content__row">
+          <h4 class="bonus-info__content__title">Wagering</h4>
+          <span class="bonus-info__content__value">35x</span>
+        </div>
+      </div>
+      <div class="bonus-info__hint">
+        By making your 1st Deposit you will receive an additional 100% to your Deposit - Up to 300 EUR + 300 Free Spins.
+      </div>
+      <a href="#!" class="bonus-info__link">
+        General Terms and Conditions
+      </a>
+    </div>
+    <script src="assets/vendors/js/jquery.min.js"></script>
+    <script src="assets/vendors/js/jquery.overlayScrollbars.min.js"></script>
+    <script src="assets/vendors/js/bootstrap.min.js"></script>
+    <script src="assets/vendors/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="assets/vendors/js/intlTelInput.min.js"></script>
+    <script src="assets/vendors/js/rellax.min.js"></script>
+    <script src="assets/vendors/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,429 @@
+<nav class="navbar login">
+    <div class="container-fluid">
+        <div class="logo">
+            <div class="logo__btn"></div>
+            <div class="logo__img logo__img-mobile">
+                <a href="index.html">
+                    <img src="assets/img/icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="search">
+            <form action="">
+                <div class="search__container">
+                    <div class="search__input">
+                        <input type="text" placeholder="Search for a game">
+                        <svg class="icon">
+                            <use xlink:href="#ico-search"></use>
+                        </svg>
+                    </div>
+                    <div class="search__result">
+                        <div class="search__result-navbar">
+                            <!-- <ul>
+                                <li>
+                                    <button type="button" class="active">All</button>
+                                </li>
+                                <li>
+                                    <button type="button">Games</button>
+                                </li>
+                                <li>
+                                    <button type="button">Live casino</button>
+                                </li>
+                                <li>
+                                    <button type="button">Other</button>
+                                </li>
+                            </ul> -->
+                            <button class="cls">
+                                <svg class="icon">
+                                    <use xlink:href="#ico-times"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="search__result-filter">
+                            <ul>
+                                <li>
+                                    <div class="filter__btn">
+                                        <div class="filter__btn-label filter__btn-placeholder">
+                                            <div class="ico">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-filter"></use>
+                                                </svg>
+                                            </div>
+                                            <span>Categories</span>
+                                            <div class="ico arrow">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-chevron-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="filter__btn-counter">
+                                            <span>12</span>
+                                        </div>
+                                        <div class="filter__btn-list">
+                                            <div class="filter-scroller">
+                                                <ul>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Slots" type="checkbox">
+                                                            <label for="Slots">Slots</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="JackpotSlots" type="checkbox">
+                                                            <label for="JackpotSlots">Jackpot Slots</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Trending" type="checkbox">
+                                                            <label for="Trending">Trending</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="New" type="checkbox">
+                                                            <label for="New">New</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Roulette" type="checkbox">
+                                                            <label for="Roulette">Roulette</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="TableGames" type="checkbox">
+                                                            <label for="TableGames">Table Games</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="SkillGames" type="checkbox">
+                                                            <label for="SkillGames">Skill Games</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="VideoPocker" type="checkbox">
+                                                            <label for="VideoPocker">Video Pocker</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="LiveRoulette" type="checkbox">
+                                                            <label for="LiveRoulette">Live Roulette</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Blackjack" type="checkbox">
+                                                            <label for="Blackjack">Blackjack</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="GameShows" type="checkbox">
+                                                            <label for="GameShows">Game Shows</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Baccarat" type="checkbox">
+                                                            <label for="Baccarat">Baccarat</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="filter__btn">
+                                        <div class="filter__btn-label filter__btn-placeholder">
+                                            <div class="ico">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-filter"></use>
+                                                </svg>
+                                            </div>
+                                            <span>Providers</span>
+                                            <div class="ico arrow">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-chevron-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="filter__btn-counter">
+                                            <span>2</span>
+                                        </div>
+                                        <div class="filter__btn-list">
+                                            <div class="filter-scroller">
+                                                <ul>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="OneTouch" type="checkbox">
+                                                            <label for="OneTouch">OneTouch</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Microgaming" type="checkbox">
+                                                            <label for="Microgaming">Microgaming</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Yggdrasil" type="checkbox">
+                                                            <label for="Yggdrasil">Yggdrasil</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="RedTiger" type="checkbox">
+                                                            <label for="RedTiger">Red Tiger</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="Netent" type="checkbox">
+                                                            <label for="Netent">Netent</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="filter__btn">
+                                        <div class="filter__btn-label filter__btn-placeholder">
+                                            <div class="ico">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-features"></use>
+                                                </svg>
+                                            </div>
+                                            <span>Features</span>
+                                            <div class="ico arrow">
+                                                <svg class="icon">
+                                                    <use xlink:href="#ico-chevron-down"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="filter__btn-counter">
+                                            <span>4</span>
+                                        </div>
+                                        <div class="filter__btn-list">
+                                            <div class="filter-scroller">
+                                                <ul>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature1" type="checkbox">
+                                                            <label for="feature1">feature 1</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature2" type="checkbox">
+                                                            <label for="feature2">feature 2</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature3" type="checkbox">
+                                                            <label for="feature3">feature 3</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature4" type="checkbox">
+                                                            <label for="feature4">feature 4</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature5" type="checkbox">
+                                                            <label for="feature5">feature 5</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature6" type="checkbox">
+                                                            <label for="feature6">feature 6</label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="check">
+                                                            <input id="feature7" type="checkbox">
+                                                            <label for="feature7">feature 7</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search__result-container">
+                            <h4 class="title-sm">Popular Searches</h4>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-3.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-3.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-3.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Medusa Fortune and Glory</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-2.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-2.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Dragon Pearl</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-1.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-1.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Medusa Fortune and Glory</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-2.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-2.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-2.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Dragon Pearl</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-5.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-5.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-5.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Medusa Fortune and Glory</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="result-card">
+                                <a href="#!">
+                                    <div class="result-card__img">
+                                        <svg class="icon">
+                                            <use xlink:href="#ico-play-alt"></use>
+                                        </svg>
+                                        <picture>
+                                            <source srcset="assets/img/games/game-1.webp" type="image/webp">
+                                            <source srcset="assets/img/games/game-1.jpg" type="image/jpg"> 
+                                            <img src="assets/img/games/game-1.jpg" alt="">
+                                        </picture>
+                                    </div>
+                                    <div class="result-card__info">
+                                        <h2 class="result-card__info-game">Dragon Pearl</h2>
+                                        <p class="result-card__info-provider">hacksaw gaming</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search__result_counter-container">
+                            <div class="search__result_counter-text">Total search: <span>58 results</span></div>
+                            <div>
+                                <a href="searchResult.html" class="search__result_counter-link">
+                                    <span>See all</span>
+                                    <svg class="icon">
+                                        <use xlink:href="#ico-chevron-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="user">
+            <div class="user__nav">
+                <duv class="user__nav-search">
+                    <button class="user__nav-search-btn">
+                        <svg class="icon">
+                            <use xlink:href="#ico-search"></use>
+                        </svg>
+                    </button>
+                </duv>
+                <div class="user__nav-login">
+                    <a href="#!" class="bt bt-blue" data-toggle="modal" data-target="#signInModal">Log in</a>
+                    <a href="#!" class="bt bt-green" data-toggle="modal" data-target="#signUpModal">Register</a>
+                </div>
+                <div class="user__nav-lang">
+                    <div class="user__nav-lang-btn">
+                      <img src="../assets/img/icons/england.svg" alt="eng" class="user__nav-lang-btn-img">
+                    </div>
+                    <nav class="user__nav-lang-dropdown-list">
+                      <a href="#!" class="user__nav-lang-dropdown-list-item active">
+                        <img src="../assets/img/icons/england.svg" alt="eng" class="user__nav-lang-dropdown-list-item-img">
+                        <span>eng</span>
+                      </a>
+                      <a href="#!" class="user__nav-lang-dropdown-list-item">
+                        <img src="../assets/img/icons/portugal.svg" alt="por" class="user__nav-lang-dropdown-list-item-img">
+                        <span>por</span>
+                      </a>
+                      <a href="#!" class="user__nav-lang-dropdown-list-item">
+                        <img src="../assets/img/icons/spain.svg" alt="spn" class="user__nav-lang-dropdown-list-item-img">
+                        <span>spn</span>
+                      </a>
+                    </nav>
+                  </div>
+            </div>
+        </div>
+    </div>
+</nav>

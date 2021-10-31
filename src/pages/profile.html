@@ -1,0 +1,2028 @@
+---
+layout: default-logged
+title: Betvili - Profile
+---
+<div class="profile-tab">
+  <div class="container">
+    <ul class="nav profile-tab__nav" id="profile-tabs" role="tablist">
+      <li class="nav-item">
+        <a href="#balance" id="balance-tab" class="bt active show" data-toggle="tab" role="tab" area-controls="balance"
+          area-selected="true">balance</a>
+      </li>
+      <li class="nav-item">
+        <a href="#bonuses" id="bonuses-tab" class="bt" data-toggle="tab" role="tab" area-controls="bonuses"
+          area-selected="false">bonuses</a>
+      </li>
+      <li class="nav-item">
+        <a href="#account" id="account-tab" class="bt" data-toggle="tab" role="tab" area-controls="account"
+          area-selected="false">account</a>
+      </li>
+      <li class="nav-item">
+        <a href="#verification" id="verification-tab" class="bt" data-toggle="tab" role="tab"
+          area-controls="verification" area-selected="false">KYC verification</a>
+      </li>
+      <li class="nav-item">
+        <a href="#security" id="security-tab" class="bt" data-toggle="tab" role="tab" area-controls="security"
+          area-selected="false">security</a>
+      </li>
+      <li class="nav-item">
+        <a href="#history" id="history-tab" class="bt" data-toggle="tab" role="tab" area-controls="history"
+          area-selected="false">history</a>
+      </li>
+      <li class="nav-item">
+        <a href="#notifications" id="notifications-tab" class="bt" data-toggle="tab" role="tab"
+          area-controls="notifications" area-selected="false">notifications</a>
+      </li>
+      <li class="nav-item hidden">
+        <a href="#deposit-now" id="deposit-now-tab" class="bt" data-toggle="tab" role="tab" area-controls="deposit-now"
+          area-selected="false">Deposit</a>
+      </li>
+      <li class="nav-item hidden">
+        <a href="#threestepverification" id="threestepverification-tab" class="bt" data-toggle="tab" role="tab"
+          area-controls="threestepverification" area-selected="false">Deposit</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-9 col-lg-12">
+      <div class="profile-content tab-content">
+        <div class="tab-pane fade  active show" id="balance" role="tabpanel" area-labelledby="balance-tab">
+          <div class="user-alert">
+            <div class="alert-cls"></div>
+            <h4 class="user-alert__title">Personal information</h4>
+            <p class="user-alert__text">To make a withdrawal, you must provide personal information. <a
+                href="profile.html#account">Click here to fill out the form.</a></p>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-lg-6 d-flex mb-3">
+                <div class="balance_page_container">
+                    <div class="balance_page_header">
+                        <h2 class="balance_page_content_title margins">Main Balance</h2>
+                    </div>
+                    <div class="balance_page_content radius">
+                        <div class="balance_page_content-row">
+                            <p class="balance_page_content-text">Currency</p>
+                            <p class="balance_page_content-text white">EUR</p>
+                        </div>
+                        <div class="balance_page_content-row">
+                            <p class="balance_page_content-text">Amount</p>
+                            <p class="balance_page_content-text white">€ 240.50</p>
+                        </div>
+                        <div class="balance_page_content-row">
+                            <p class="balance_page_content-text">Withdrawable </p>
+                            <p class="balance_page_content-text white">€ 180.00</p>
+                        </div>
+                        <div class="balance_page_content_btn-row">
+                            <a href="#!" class="bt balance_page_content_btn green btn-ripple" data-toggle="modal"
+                                data-target="#depositModal">Deposit</a>
+                            <a href="#threestepverification" class="bt balance_page_content_btn disabled">Withdraw in EUR </a>
+                        </div>
+                        <div class="balance_page_content_footer">
+                            <div class="balance_page_content_footer_text_cont">
+                                <picture>
+                                    <source srcset="assets/img/icons/usdc.webp" type="image/webp">
+                                    <source srcset="assets/img/icons/usdc.png" type="image/png">
+                                    <img src="assets/img/icons/usdc.png" alt="usdc" class="balance_page_content_footer_icon">
+                                </picture>
+                                <p class="balance_page_content_footer_text">Enjoy instant withdrawals with USDC</p>
+                            </div>
+                            <p class="balance_page_content_footer_text-sm">
+                                For more info
+                                <a href="#!" data-toggle="modal" data-target="#USDCModal"
+                                    class="balance_page_content_footer_text-sm yellow">click here</a>
+                            </p>
+                            <div>
+                                <a href="#threestepverification" class="bt balance_page_content_btn blue">Withdraw in USDC </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex mb-3">
+                <div class="balance_page_container">
+                    <div class="balance_page_header">
+                        <h2 class="balance_page_content_title margins">bonus balance</h2>
+                    </div>
+                    <div class="balance_page_content">
+                        <div class="balance_page_content-row">
+                            <p class="balance_page_content-text">Currency</p>
+                            <p class="balance_page_content-text white">EUR</p>
+                        </div>
+                        <div class="balance_page_content-row">
+                            <p class="balance_page_content-text">Amount</p>
+                            <p class="balance_page_content-text white">€100</p>
+                        </div>
+                    </div>
+                    <div class="balance_page_footer_bg">
+                        <h3 class="balance_page_footer-title">WAGERING</h3>
+                        <div class="bonuses_section__footer-item-progressBar-cont">
+                            <div class="bonuses_section__footer-item-progressBar-text-cont">
+                                <span class="bonuses_section__footer-item-progressBar-text">52% Completed</span>
+                                <span class="bonuses_section__footer-item-progressBar-text">435$ / 800$</span>
+                            </div>
+                            <div class="bonuses_section__footer-item-progressBar">
+                                <div class="bonuses_section__footer-item-progressBar-fill"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- <div class="profile-tab__container for-tbl d-none d-md-block">
+            <div class="tbl tbl-balance">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Amount</th>
+                    <th>Available Cash Out</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>EUR</td>
+                    <td>€100</td>
+                    <td>€100</td>
+                    <td>
+                      <div class="tbl-balance__action">
+                        <a href="#!" class="bt bt-green mr-3" data-toggle="modal"
+                          data-target="#depositModal">Deposit</a>
+                        <a href="#threestepverification" class="bt bt-disabled">Withdraw</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="profile-tab__container for-tbl d-block d-md-none">
+            <div class="tbl tbl-balance tbl-balance-mobile">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Currency</th>
+                    <th>Amount</th>
+                    <th>Available Cash Out</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="tbl-balance-mobile-td">EUR</td>
+                    <td class="tbl-balance-mobile-td">€100</td>
+                    <td class="tbl-balance-mobile-td">€100</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="tbl-balance__action mt-4">
+                <a href="#!" class="bt bt-green tbl-balance-mobile-btn" data-toggle="modal"
+                  data-target="#depositModal">Deposit</a>
+                <a href="#threestepverification" class="bt bt-disabled tbl-balance-mobile-btn">Withdraw</a>
+              </div>
+            </div>
+          </div> -->
+
+
+        </div>
+        <div class="tab-pane fade" id="account" role="tabpanel" area-labelledby="account-tab">
+          <form action="">
+            <div class="b-form">
+              <div class="b-form__container">
+                <div class="b-form__header">
+                  <h2 class="b-form__header-title">Personal Information</h2>
+                </div>
+                <div class="b-form__body">
+                  <div class="b-form__flex-3">
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="firstName" required type="text">
+                        <label for="firstName">First name</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="lastName" required type="text">
+                        <label for="lastName">Last name</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <select name="" id="gender">
+                          <option value selected>Gender</option>
+                          <option value>Male</option>
+                          <option value>Female</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-form__flex-3">
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="dateOfBirth" required type="text" placeholder="Day / Month / Year">
+                        <label for="dateOfBirth">Date of Birth</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <select name="" id="country">
+                          <option value selected>Country</option>
+                          <option value>Germany</option>
+                          <option value>United kingdom</option>
+                          <option value>United stated</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <select name="" id="State">
+                          <option value selected>State</option>
+                          <option value>Arizona</option>
+                          <option value>California</option>
+                          <option value>Colorado</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="b-form__flex-3 ">
+                    <div class="b-form__flex-sm">
+                      <div class="b-form__wrapper">
+                        <div class="b-form__input">
+                          <input id="city" required type="text">
+                          <label for="city">City</label>
+                        </div>
+                      </div>
+                      <div class="b-form__wrapper" style="margin-left: 15px;">
+                        <div class="b-form__input">
+                          <input id="zipCode" required type="text">
+                          <label for="zipCode">Zip code</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="streetAddress" required type="text">
+                        <label for="streetAddress">Street Address</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="emailAddress" required type="text">
+                        <label for="emailAddress">Email Address</label>
+                        <button type="button" class="b-form__input-btn confirm">Confirm</button>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="b-form__wrapper b-form__wrapper-mobile">
+                    <div class="b-form__input">
+                      <input class="placeholder" id="accMobileNumber" required type="number"
+                        placeholder="Mobile Number">
+                      <button type="button" class="b-form__input-btn confirm">Confirm</button>
+                      <div class="b-form__sms">
+                        <p>We have sent you an SMS with verification code to the mobile
+                          phone number</p>
+                        <div class="b-form__input">
+                          <input id="smsVerify" required type="text" placeholder="Verification code">
+                        </div>
+                        <p class="mt-2">Code will expire in <span>55</span> sec</p>
+                        <button class="bt bt-blue full">Submit</button>
+                        <a href="#!">Resend</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-form__footer">
+                  <button class="b-form__footer-btn green disabled btn-ripple">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <form action="">
+            <div class="b-form mt-4">
+              <div class="b-form__container">
+                <div class="b-form__header">
+                  <h2 class="b-form__header-title">Change Password</h2>
+                </div>
+                <div class="b-form__body">
+                  <div class="b-form__flex-3">
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="oldPassword" required type="password">
+                        <label for="oldPassword">Old Password</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper b-form__wrapper-changePassword">
+                      <div class="b-form__input">
+                        <input id="newPassword" required type="password">
+                        <label for="newPassword">New Password</label>
+                      </div>
+                      <div class="password-must">
+                        <span class="field" id="letter">lowercase letter</span>
+                        <span class="field" id="capital">uppercase letter</span>
+                        <span class="field" id="number">number</span>
+                        <span class="field" id="length">Minimum 6 chracters</span>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="confirmPassword" required type="password">
+                        <label for="confirmPassword">Confirm Password</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="b-form__footer">
+                  <button class="b-form__footer-btn green disabled btn-ripple">Change Password</button>
+                </div>
+              </div>
+              <!-- <div class="b-form-notification-btn error">
+                                <button type="button" class="alert-cls"></button>
+                                    Incorrect data!
+                            </div> -->
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="history" role="tabpanel" area-labelledby="history-tab">
+          <div class="profile-tab__container history-tbl">
+            <div class="history-tbl__header">
+              <ul>
+                <li><a href="#!" class="active">Transaction History</a></li>
+                <li><a href="#!">Bets History</a></li>
+              </ul>
+            </div>
+            <form action="">
+              <div class="tbl-filter">
+                <div class="b-form">
+                  <div class="b-form__flex-3 _ex">
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <input id="dateHistory" required type="text" placeholder="Day / Month / Year">
+                        <label for="dateHistory">Date</label>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <select name="" id="action">
+                          <option value selected>Action</option>
+                          <option value>EUR</option>
+                          <option value>USD</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input">
+                        <select name="" id="status">
+                          <option value selected>Status</option>
+                          <option value>Pending</option>
+                          <option value>Accepted</option>
+                          <option value>Disabled</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="bt bt-green filter-btn">Filter</button>
+              </div>
+            </form>
+            <div class="profile-tab__container kyc-tbl">
+              <div class="kyc-tbl-cont">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="kyc-tbl-cont-th">Date</th>
+                      <th class="kyc-tbl-cont-th">Status</th>
+                      <th class="kyc-tbl-cont-th">Action</th>
+                      <th class="kyc-tbl-cont-th">Payment system</th>
+                      <th class="kyc-tbl-cont-th">Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>04/07/2020 11:14</td>
+                      <td>
+                        <div class="tbl-status pending">
+                          <span>pending</span>
+                          <div class="tip">
+                            <button class="tip-btn">
+                              <svg class="icon">
+                                <use xlink:href="#ico-info"></use>
+                              </svg>
+                            </button>
+                            <div class="tip-container">
+                              <div class="tip-text">We have sent you an SMS with
+                                verification
+                                code to the mobile phone number</div>
+                              <button class="bt bt-red">Cancel operation</button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Deposit</td>
+                      <td>Mir</td>
+                      <td>€250</td>
+                    </tr>
+                    <tr>
+                      <td>04/07/2020 11:14</td>
+                      <td>
+                        <div class="tbl-status rejected">
+                          <span>Rejected</span>
+                        </div>
+                      </td>
+                      <td>Cashout</td>
+                      <td>Qiwi payment</td>
+                      <td>€3500</td>
+                    </tr>
+                    <tr>
+                      <td>04/07/2020 11:14</td>
+                      <td>
+                        <div class="tbl-status accepted">
+                          <span>Accepted</span>
+                        </div>
+                      </td>
+                      <td>Cashout</td>
+                      <td>Skrill</td>
+                      <td>€1000</td>
+                    </tr>
+                    <tr>
+                      <td>04/07/2020 11:14</td>
+                      <td>
+                        <div class="tbl-status pending">
+                          <span>pending</span>
+                          <div class="tip">
+                            <button class="tip-btn">
+                              <svg class="icon">
+                                <use xlink:href="#ico-info"></use>
+                              </svg>
+                            </button>
+                            <div class="tip-container">
+                              <div class="tip-text">We have sent you an SMS with
+                                verification
+                                code to the mobile phone number</div>
+                              <button class="bt bt-red">Cancel operation</button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>Deposit</td>
+                      <td>Mir</td>
+                      <td>€250</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="history-tbl-pagination">
+                  <a href="#" class="history-tbl-pagination-item active">1</a>
+                  <a href="#" class="history-tbl-pagination-item">2</a>
+                  <a href="#" class="history-tbl-pagination-item">3</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="security" role="tabpanel" area-labelledby="security-tab">
+          <form action="">
+            <div class="b-form">
+              <div class="b-form__container">
+                <div class="b-form__header">
+                  <h2 class="b-form__header-title">Security options</h2>
+                </div>
+                <div class="b-form__line">
+                  <div>Notifications</div>
+                  <div class="_ex-flex">
+                    <div>Email</div>
+                    <div>Phone</div>
+                  </div>
+                </div>
+                <ul class="b-form__list">
+                  <li>
+                    <p>Notification for each login</p>
+                    <div class="_ex-flex">
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="mailNotification">
+                        <label for="mailNotification" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="smsNotification">
+                        <label for="smsNotification" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Message for successful cash withdrawal</p>
+                    <div class="_ex-flex">
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="mailWithdrawal">
+                        <label for="mailWithdrawal" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="smsWithdrawal">
+                        <label for="smsWithdrawal" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <p>Notification for each successful deposit</p>
+                    <div class="_ex-flex">
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="mailDeposit">
+                        <label for="mailDeposit" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                      <div class="b-form__toggle">
+                        <input type="checkbox" id="smsDeposit">
+                        <label for="smsDeposit" class="b-form__toggle-label">
+                          <span class="b-form__toggle-label__handler"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="b-form__footer">
+                  <button class="b-form__footer-btn green">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="profile-tab__container history-tbl mt-4">
+            <div class="b-form__header">
+              <h2 class="b-form__header-title">Activity log</h2>
+            </div>
+            <div class="tbl tbl-history">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>IP</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>04/07/2020 11:14</td>
+                    <td>92.51.101.106</td>
+                  </tr>
+                  <tr>
+                    <td>04/07/2020 11:14</td>
+                    <td>92.51.101.106</td>
+                  </tr>
+                  <tr>
+                    <td>04/07/2020 11:14</td>
+                    <td>92.51.101.106</td>
+                  </tr>
+                  <tr>
+                    <td>04/07/2020 11:14</td>
+                    <td>92.51.101.106</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="verification" role="tabpanel" area-labelledby="verification-tab">
+          <form action="">
+            <div class="b-form">
+              <div class="b-form__container">
+                <div class="b-form__header">
+                  <h2 class="b-form__header-title">KYC Verification</h2>
+                </div>
+                <div class="b-form__subheader">
+                  <p>
+                    KYC or Know Your Customer is a mandatory process required by international and
+                    local regulations to identify and verify the identity of our clients.
+                    Please provide the listed documents to have full access to our features and
+                    offers.
+                  </p>
+                </div>
+                <div class="b-form__body">
+                  <div class="b-form__flex-2">
+                    <div class="b-form__wrapper">
+                      <div class="b-form__title">
+                        <h3>Necessary documents</h3>
+                      </div>
+                      <div class="b-form__drag">
+                        <div class="b-form__drag-container">
+                          <input type="file" name="myFile" class="b-form__drag-input">
+                          <div class="b-form__drag-name">
+                            <span>Proof of Identity</span>
+                          </div>
+                          <button class="b-form__drag-btn">Choose file <span> or drag
+                              it</span></button>
+                        </div>
+                        <div class="infotip b-form__drag-name-infotip">
+                          <button>
+                            <svg class="icon b-form__drag-name-infotip-icon">
+                              <use xlink:href="#ico-info"></use>
+                            </svg>
+                          </button>
+                          <div class="infotip-container infotip-container-kyc">
+                            <h3 class="infotip-container-kyc-title">Proof of Identity: Passport, Driving License or
+                              official Government issued ID card.</h3>
+                            <ul>
+                              <li>• Must be a Passport, Driving License or other official Government issued ID card</li>
+                              <li>• Both Front and Back of ID card must be received</li>
+                              <li>• Document must be in date and not expired</li>
+                              <li>• Document must be showing expiry date</li>
+                              <li>• Document must show your unaltered photo</li>
+                              <li>• Document must show your date of birth</li>
+                              <li>• Water marks on documents must be visible</li>
+                              <li>• Document must be with colors</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-form__drag">
+                        <div class="b-form__drag-container">
+                          <input type="file" name="myFile" class="b-form__drag-input">
+                          <div class="b-form__drag-name">
+                            <span>Proof of Address</span>
+                          </div>
+                          <button class="b-form__drag-btn">Choose file <span> or drag
+                              it</span></button>
+                        </div>
+                        <div class="infotip b-form__drag-name-infotip">
+                          <button>
+                            <svg class="icon b-form__drag-name-infotip-icon">
+                              <use xlink:href="#ico-info"></use>
+                            </svg>
+                          </button>
+                          <div class="infotip-container infotip-container-kyc">
+                            <h3 class="infotip-container-kyc-title">Proof of Address: Utility bill, TV bill, Tax bill or
+                              bank statement displaying your name and address in full</h3>
+                            <ul>
+                              <li>• Must be either a utility bill, TV bill, Tax Bill or bank statement (copy of paper
+                                statement)</li>
+                              <li>• Must show your FULL address including any post/ zip codes</li>
+                              <li>• Must show your FULL name</li>
+                              <li>• Must display official logo of issuing company</li>
+                              <li>• Must be dated within the last 90 days</li>
+                              <li>• Must be able to see full document</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-form__drag">
+                        <div class="b-form__drag-container">
+                          <input type="file" name="myFile" class="b-form__drag-input">
+                          <div class="b-form__drag-name">
+                            <span>Proof of Deposit</span>
+                          </div>
+                          <button class="b-form__drag-btn">Choose file span or drag
+                            it</button>
+                        </div>
+                        <div class="infotip b-form__drag-name-infotip">
+                          <button>
+                            <svg class="icon b-form__drag-name-infotip-icon">
+                              <use xlink:href="#ico-info"></use>
+                            </svg>
+                          </button>
+                          <div class="infotip-container infotip-container-kyc">
+                            <h3 class="infotip-container-kyc-title">Proof of Deposit: Photo of credit card,
+                              Skrill/Neteller page, etc. </h3>
+                            You will also have to submit documents to verify your Deposit and/or Withdrawal methods
+                            depending on the chosen method. Please check below information on the methods you have used
+                            to find out what you need to send:
+                            <ul>
+                              <li>• If using Neteller or Skrill: Photo of profile page on Neteller or Skrill showing
+                                profile with postal address visible.</li>
+                              <li>• If using Credit Card: Front and Back of card used to deposit, with middle 6 numbers
+                                and CVC/CVV covered
+                                <span class="d-block"></span>
+                                The first 6 and last 4 digits must be visible
+                                <span class="d-block"></span>
+                                Must correspond with credit card number used on casino
+                              </li>
+                              <li>• Picture must show whole card</li>
+                            </ul>
+                            Note : Screenshots are not accepted.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="b-form__drag">
+                        <div class="b-form__drag-container">
+                          <input type="file" name="myFile" class="b-form__drag-input">
+                          <div class="b-form__drag-name">
+                            <span>Variable</span>
+                          </div>
+                          <button class="b-form__drag-btn">Choose file span or drag
+                            it</button>
+                        </div>
+                        <div class="infotip b-form__drag-name-infotip">
+                          <button>
+                            <svg class="icon b-form__drag-name-infotip-icon">
+                              <use xlink:href="#ico-info"></use>
+                            </svg>
+                          </button>
+                          <div class="infotip-container infotip-container-kyc">
+                            <h3 class="infotip-container-kyc-title">
+                              You can re-upload one of the documents, in this section again. If you have any issues,
+                              please contact us at <a href="mailto:support@betvili.com"
+                                class="info_landing_form-support-text-link">support@betvili.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__title">
+                        <h3>Uploaded documents</h3>
+                      </div>
+                      <div class="b-form__drag-uploaded">
+                        <p class="empty-title">No document uploaded yet If you have some trouble
+                          with verification contact us via <a href="#!">chat</a></p>
+                        <div class="b-form__drag-uploaded__card b-form__drag-uploaded__card-pending">
+                          <div class="alert-cls  b-form__drag-uploaded__card-close"></div>
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Date</th>
+                                <th>Document type</th>
+                                <th>Process</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2020.10.01 13:21</td>
+                                <td>Photo ID</td>
+                                <td>
+                                  <div class="tbl-status b-form__drag-uploaded__card-tbl-status pending">
+                                    <span class="t-yellow">pending</span>
+                                    <div class="tip">
+                                      <button class="tip-btn">
+                                        <svg class="icon">
+                                          <use xlink:href="#ico-info"></use>
+                                        </svg>
+                                      </button>
+                                      <div class="tip-container" style="display: none;">
+                                        <div class="tip-text">We have sent you
+                                          an SMS with verification code to the
+                                          mobile phone number</div>
+                                        <button class="bt bt-blue">Upload
+                                          modified document</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <div class="b-form__drag-uploaded">
+                        <div class="b-form__drag-uploaded__card">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Date</th>
+                                <th>Document type</th>
+                                <th>Process</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2020.10.01 13:21</td>
+                                <td>Photo ID</td>
+                                <td>
+                                  <span class="t-green">Verified</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="profile-tab__container kyc-tbl">
+                    <div class="kyc-tbl-cont">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="kyc-tbl-cont-th">Date</th>
+                            <th class="kyc-tbl-cont-th">Document type</th>
+                            <th class="kyc-tbl-cont-th">Process</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2020.10.01 13:21</td>
+                            <td>Proof of billing</td>
+                            <td>
+                              <div class="tbl-status pending">
+                                <span>pending</span>
+                                <div class="tip">
+                                  <button class="tip-btn">
+                                    <svg class="icon">
+                                      <use xlink:href="#ico-info"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="tip-container">
+                                    <div class="tip-text">We have sent you an SMS
+                                      with verification code to the mobile phone
+                                      number</div>
+                                    <button class="bt bt-blue">Upload modified
+                                      document</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2020.10.01 13:21</td>
+                            <td>Proof of billing</td>
+                            <td>
+                              <div class="tbl-status pending">
+                                <span>pending</span>
+                                <div class="tip">
+                                  <button class="tip-btn">
+                                    <svg class="icon">
+                                      <use xlink:href="#ico-info"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="tip-container">
+                                    <div class="tip-text">We have sent you an SMS
+                                      with verification code to the mobile phone
+                                      number</div>
+                                    <button class="bt bt-blue">Upload modified
+                                      document</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2020.10.01 13:21</td>
+                            <td>Proof of billing</td>
+                            <td>
+                              <div class="tbl-status pending">
+                                <span>pending</span>
+                                <div class="tip">
+                                  <button class="tip-btn">
+                                    <svg class="icon">
+                                      <use xlink:href="#ico-info"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="tip-container">
+                                    <div class="tip-text">We have sent you an SMS
+                                      with verification code to the mobile phone
+                                      number</div>
+                                    <button class="bt bt-blue">Upload modified
+                                      document</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2020.10.01 13:21</td>
+                            <td>Proof of adress</td>
+                            <td>
+                              <div class="tbl-status rejected">
+                                <span>Rejected</span>
+                                <div class="tip">
+                                  <button class="tip-btn">
+                                    <svg class="icon">
+                                      <use xlink:href="#ico-info"></use>
+                                    </svg>
+                                  </button>
+                                  <div class="tip-container">
+                                    <div class="tip-text">We have sent you an SMS
+                                      with verification code to the mobile phone
+                                      number</div>
+                                    <button class="bt bt-blue">Upload modified
+                                      document</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2020.10.01 13:21</td>
+                            <td>Photo ID</td>
+                            <td>
+                              <div class="tbl-status accepted">
+                                <span>Accepted</span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="notifications" role="tabpanel" area-labelledby="notifications-tab">
+          <div class="b-form">
+            <div class="b-form__container">
+              <div class="b-form__header">
+                <h2 class="b-form__header-title">Notifications</h2>
+              </div>
+              <div class="b-form__body">
+                <div class="notify">
+                  <div class="notify__container">
+                    <div class="notify__header">
+                      <div class="notify__check">
+                        <input type="checkbox" id="notify1">
+                        <label for="notify1"></label>
+                      </div>
+                      <div class="notify__title">
+                        <span class="notify__title-date">08.12.2020</span>
+                        <p>Some title of notification for example</p>
+                      </div>
+                      <div class="notify__btn">
+                        <svg class="icon">
+                          <use xlink:href="#ico-chevron-right-alt"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="notify__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquam asperiores aspernatur atque, culpa dignissimos dolor,
+                        error facilis fuga minima perferendis quis quod ullam veniam,
+                        veritatis voluptatum. Nemo nostrum rerum soluta.</p>
+                    </div>
+                  </div>
+                  <div class="notify__container">
+                    <div class="notify__header">
+                      <div class="notify__check">
+                        <input type="checkbox" id="notify2">
+                        <label for="notify2"></label>
+                      </div>
+                      <div class="notify__title">
+                        <span class="notify__title-date">08.12.2020</span>
+                        <p>Some title of notification for example</p>
+                      </div>
+                      <div class="notify__btn">
+                        <svg class="icon">
+                          <use xlink:href="#ico-chevron-right-alt"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="notify__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquam asperiores aspernatur atque, culpa dignissimos dolor,
+                        error facilis fuga minima perferendis quis quod ullam veniam,
+                        veritatis voluptatum. Nemo nostrum rerum soluta.</p>
+                    </div>
+                  </div>
+                  <div class="notify__container">
+                    <div class="notify__header">
+                      <div class="notify__check">
+                        <input type="checkbox" id="notify3">
+                        <label for="notify3"></label>
+                      </div>
+                      <div class="notify__title">
+                        <span class="notify__title-date">03.11.2020</span>
+                        <p>Some title of notification for example</p>
+                      </div>
+                      <div class="notify__btn">
+                        <svg class="icon">
+                          <use xlink:href="#ico-chevron-right-alt"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="notify__content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Aliquam asperiores aspernatur atque, culpa dignissimos dolor,
+                        error facilis fuga minima perferendis quis quod ullam veniam,
+                        veritatis voluptatum. Nemo nostrum rerum soluta.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-form__footer">
+                <button class="b-form__footer-btn red notify-del-btn" id="notifyDelete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="bonuses" role="tabpanel" area-labelledby="bonuses-tab">
+          <div class="b-form">
+            <div class="b-form__container bonuses_section-container">
+              <div class="bonuses_section_header">
+                <h2 class="bonuses_section_header-title">Have a bonus code?</h2>
+                <form class="bonuses_section-form">
+                  <input class="form-control bonuses_section-search-input" type="search" placeholder="Type it here"
+                    aria-label="Search">
+                  <button class="btn bonuses_section-search-btn" type="submit" data-toggle="modal"
+                    data-target="#newBonusActivationModal">Submit</button>
+                </form>
+              </div>
+              <div class="bonuses_section__body">
+                <h2 class="b-form__header-title">Bonus offers</h2>
+                <div class="row">
+
+                  <div class="col-12">
+                    <div class="bonuses_section_offer_item">
+                      <div class="bonuses_section_offer_item-left">
+                        <div class="bonuses_section_offer_item_img-container">
+                          <picture>
+                            <source srcset="assets/img/banners/mini__banner-bonus.webp" type="image/webp">
+                            <source srcset="assets/img/banners/mini__banner-bonus.png" type="image/png">
+                            <img src="assets/img/banners/mini__banner-bonus.png" alt=""
+                              class="bonuses_section_offer_item_img">
+                          </picture>
+                          <div class="promotions__banner__text-bg">
+                            <h3 class="promotions__banner__text-lg yellow">Welcome <span class="d-block"></span> Pack </h3>
+                          </div>
+                        </div>
+                        <div class="bonuses_section_offer_item-bg--light">
+                          <div class="bonuses_section_offer_item_content">
+                            <h2 class="bonuses_section_offer_item_title-lg">5 Stars Welcome Pack</h2>
+                            <h2 class="bonuses_section_offer_item_title-lg--bold">€2,000 OR 0.5 BTC + 300 Free spins</h2>
+                            <div class="bonuses_section_offer_item_btn-container">
+                              <a href="#" data-toggle="modal" data-target="#depositModal"
+                                class="bonuses_section_offer_item_btn btn bt-green green btn-ripple">CLAIM BONUS</a>
+                              <a href="#" data-toggle="modal" data-target="#welcomePackModal"
+                                class="bonuses_section_offer_item_btn btn dark">T&C</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bonuses_section_offer_item-bg--dark">
+                        <div class="bonuses_section_offer_item_text-container">
+                          <p class="bonuses_section_offer_item_text white">MAX BONUS:</p>
+                          <p class="bonuses_section_offer_item_text yellow">100% UP TO €300 OR 0.5 BTC</p>
+                        </div>
+                        <div class="bonuses_section_offer_item_text-container">
+                          <p class="bonuses_section_offer_item_text white">FREESPINS:</p>
+                          <p class="bonuses_section_offer_item_text yellow">100% UP TO €300 OR 0.5 BTC</p>
+                        </div>
+                        <div class="bonuses_section_offer_item_text-container">
+                          <p class="bonuses_section_offer_item_text white">Min deposit:</p>
+                          <p class="bonuses_section_offer_item_text yellow">€20 OR 0.5 BTC</p>
+                        </div>
+                        <div class="bonuses_section_offer_item_text-container">
+                          <p class="bonuses_section_offer_item_text white">WAGERING REQUIRMENT:</p>
+                          <p class="bonuses_section_offer_item_text yellow">x35</p>
+                        </div>
+                        <div class="bonuses_section_offer_item_text-container">
+                          <p class="bonuses_section_offer_item_text white">MAXBET PER GAME ROUND:</p>
+                          <p class="bonuses_section_offer_item_text yellow">€5 OR 0.5 BTC</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- <div class="col-12 col-xl-6 d-flex">
+                    <div class="bonuses_section__body-item">
+                      <img src="assets/img/general/cashback-rotate2.webp" alt="img"
+                        class="bonuses_section__body-item-img">
+                      <div>
+                        <h3 class="bonuses_section__body-item-title">5 Star Deposit Bonus
+                        </h3>
+                        <p class="bonuses_section__body-item-text-yellow">First Deposit Bonus</p>
+                        <p class="bonuses_section__body-item-text">100% Up to 300 EUR and 300 FREESPINS on X Game</p>
+                        <div class="bonuses_section__body-item_footer">
+                          <a class="bonuses_section__body-item-link" href="#" data-toggle="modal"
+                            data-target="#bonusInfoModal">See details</a>
+                          <a href="#" class="bonuses_section__body-item-btn">claim</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-xl-6 d-flex">
+                    <div class="bonuses_section__body-item">
+                      <img src="assets/img/general/bonusOffer.webp" alt="img" class="bonuses_section__body-item-img">
+                      <div>
+                        <h3 class="bonuses_section__body-item-title">Welcome bonus offer</h3>
+                        <p class="bonuses_section__body-item-text">How do juicy additional
+                          winnings sound to you? If the answer is positive, look no further!
+                          With our brand new Casino Boost</p>
+                        <a class="bonuses_section__body-item-link" href="#" data-toggle="modal"
+                          data-target="#bonusInfoModal">See details</a>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="bonuses_section__footer">
+                <h2 class="b-form__header-title">Active bonuses</h2>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                          <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                          <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                            <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                      </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                      <p class="bonuses_section__footer-item-text">Bonus amount : 300</p>
+                      <p class="bonuses_section__footer-item-text bold">NEEDS TO BE WAGERED UNTIL: 01/01/1995</p>
+                      <a href="#" class="bonuses_section__footer-item-link" data-toggle="modal"
+                        data-target="#bonusInfoModal">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <div class="bonuses_section__footer-item-progressBar-cont">
+                      <div class="bonuses_section__footer-item-progressBar-text-cont">
+                        <span class="bonuses_section__footer-item-progressBar-text">52% Completed</span>
+                        <span class="bonuses_section__footer-item-progressBar-text">435$ / 800$</span>
+                      </div>
+                      <div class="bonuses_section__footer-item-progressBar">
+                        <div class="bonuses_section__footer-item-progressBar-fill"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item_delete_bg" data-toggle="modal"
+                    data-target="#deleteBonusModal">
+                    <svg class="icon bonuses_section__footer-item_delete_icon">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon6.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon6.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon6.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <h4 class="bonuses_section__footer-item-title">Freespin bonus </h4>
+                      <p class="bonuses_section__footer-item-text">Bonus game: Books of ra</p>
+                      <p class="bonuses_section__footer-item-text bold">Wagering starts after using all freespins</p>
+                      <a href="#" class="bonuses_section__footer-item-link" data-toggle="modal"
+                        data-target="#bonusInfoModal">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <h3 class="bonuses_section__footer-item-right_title">
+                      <span class="bonuses_section__footer-item-right_title-yellow">30</span>
+                      <span>free spins </span>
+                    </h3>
+                    <a data-toggle="modal" data-target="#useNowModal"
+                      class="bonuses_section__footer-item_btn btn btn_green">Use now</a>
+                  </div>
+                  <div class="bonuses_section__footer-item_delete_bg" data-toggle="modal"
+                    data-target="#deleteBonusModal">
+                    <svg class="icon bonuses_section__footer-item_delete_icon">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <img src="assets/img/general/cashback-rotate2.webp" alt="img"
+                        class="bonuses_section__footer-item-img">
+                    </div>
+                    <div>
+                      <h4 class="bonuses_section__footer-item-title">Bonus name goes here</h4>
+                      <p class="bonuses_section__footer-item-text">How do juicy additional
+                        winnings sound to you? </p>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-right">
+                    <div class="bonuses_section__footer-item-datetime">
+                      <h4 class="bonuses_section__footer-item-datetime-title">Time left:</h4>
+                      <div class="bonuses_section__footer-item-datetime-cont">
+                        <div class="bonuses_section__footer-item-datetime-item">
+                          <h5 class="bonuses_section__footer-item-datetime-item-title">04</h5>
+                          <p class="bonuses_section__footer-item-datetime-item-text">day</p>
+                        </div>
+                        <div class="bonuses_section__footer-item-datetime-item">
+                          <h5 class="bonuses_section__footer-item-datetime-item-title">11</h5>
+                          <p class="bonuses_section__footer-item-datetime-item-text">hour</p>
+                        </div>
+                        <div class="bonuses_section__footer-item-datetime-item-symbol-cont">
+                          <h5 class="bonuses_section__footer-item-datetime-item-symbol">:</h5>
+                        </div>
+                        <div class="bonuses_section__footer-item-datetime-item">
+                          <h5 class="bonuses_section__footer-item-datetime-item-title">15</h5>
+                          <p class="bonuses_section__footer-item-datetime-item-text">min</p>
+                        </div>
+                        <div class="bonuses_section__footer-item-datetime-item">
+                          <h5 class="bonuses_section__footer-item-datetime-item-title">36</h5>
+                          <p class="bonuses_section__footer-item-datetime-item-text">sec</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="bonuses_section__footer-item-link" data-toggle="modal"
+                      data-target="#welcomePackModal">
+                      See details
+                      <svg class="icon">
+                        <use xlink:href="#ico-chevron-right"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div> -->
+              </div>
+              <div class="bonuses_section__footer">
+                <h2 class="b-form__header-title">Active bonuses</h2>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                      <p class="bonuses_section__footer-item-text">Bonus amount : 300</p>
+                      <p class="bonuses_section__footer-item-text bold">NEEDS TO BE WAGERED UNTIL: 01/01/1995</p>
+                      <a href="#" class="bonuses_section__footer-item-link" data-toggle="modal"
+                        data-target="#bonusInfoModal">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <div class="bonuses_section__footer-item-progressBar-cont">
+                      <div class="bonuses_section__footer-item-progressBar-text-cont">
+                        <span class="bonuses_section__footer-item-progressBar-text">52% Completed</span>
+                        <span class="bonuses_section__footer-item-progressBar-text">435$ / 800$</span>
+                      </div>
+                      <div class="bonuses_section__footer-item-progressBar">
+                        <div class="bonuses_section__footer-item-progressBar-fill"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-wager">
+                    <span>Weigering now</span>
+                  </div>
+                  <div class="bonuses_section__footer-item_delete_bg" data-toggle="modal"
+                    data-target="#deleteBonusModal">
+                    <svg class="icon bonuses_section__footer-item_delete_icon">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon6.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon6.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon6.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <h4 class="bonuses_section__footer-item-title">Freespin bonus </h4>
+                      <p class="bonuses_section__footer-item-text">Bonus game: Books of ra</p>
+                      <p class="bonuses_section__footer-item-text bold">Wagering starts after using all freespins</p>
+                      <a href="#" class="bonuses_section__footer-item-link" data-toggle="modal"
+                        data-target="#bonusInfoModal">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <div class="bonuses_section__footer-item-progressBar-cont">
+                      <div class="bonuses_section__footer-item-progressBar-text-cont">
+                        <span class="bonuses_section__footer-item-progressBar-text">52% Completed</span>
+                        <span class="bonuses_section__footer-item-progressBar-text">435$ / 800$</span>
+                      </div>
+                      <div class="bonuses_section__footer-item-progressBar">
+                        <div class="bonuses_section__footer-item-progressBar-fill"> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item_btn-container">
+                    <a href="#" class="bonuses_section__footer-item_btn btn btn_grey">Weiger</a>
+                  </div>
+                  <div class="bonuses_section__footer-item_delete_bg" data-toggle="modal"
+                    data-target="#deleteBonusModal">
+                    <svg class="icon bonuses_section__footer-item_delete_icon">
+                      <use xlink:href="#delete"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="bonuses_section__footer">
+                <h2 class="b-form__header-title">Bonus history</h2>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <p class="bonuses_section__footer-item-text bonuses_section__footer-item-text-completed">completed
+                      </p>
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <span class="bonuses_section__footer-item-right-text">You have won X Euros</span>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <a href="#" class="bonuses_section__footer-item-link purple" data-toggle="modal"
+                    data-target="#bonusInfoModal">
+                    See details
+                    <svg class="icon">
+                      <use xlink:href="#ico-chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <p class="bonuses_section__footer-item-text bonuses_section__footer-item-text-failed">failed</p>
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <span class="bonuses_section__footer-item-right-text">Wagering requirements haven't been met</span>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <a href="#" class="bonuses_section__footer-item-link purple" data-toggle="modal"
+                    data-target="#bonusInfoModal">
+                    See details
+                    <svg class="icon">
+                      <use xlink:href="#ico-chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <p class="bonuses_section__footer-item-text bonuses_section__footer-item-text-failed">expired</p>
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <span class="bonuses_section__footer-item-right-text">The bonus has expired</span>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <a href="#" class="bonuses_section__footer-item-link purple" data-toggle="modal"
+                    data-target="#bonusInfoModal">
+                    See details
+                    <svg class="icon">
+                      <use xlink:href="#ico-chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="bonuses_section__footer-item">
+                  <div class="bonuses_section__footer-item-left">
+                    <div class="bonuses_section__footer-item-img-cont">
+                      <picture class="bonuses_section__footer-item-img-picture">
+                        <source srcset="assets/img/general/bonus_icon1.webp" type="image/webp">
+                        <source srcset="assets/img/general/bonus_icon1.png" type="image/png"> 
+                          <img src="assets/img/general/bonus_icon1.png" alt="img" class="bonuses_section__footer-item-img">
+                    </picture>
+                      <div class="bonuses_section__footer-item_percent-cont">
+                        <span class="bonuses_section__footer-item_percent">100%</span>
+                      </div>
+                    </div>
+                    <div class="bonuses_section__footer-item-text-container">
+                      <p class="bonuses_section__footer-item-text bonuses_section__footer-item-text-failed">canceled</p>
+                      <h4 class="bonuses_section__footer-item-title">First Deposit Bonus</h4>
+                    </div>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <div class="bonuses_section__footer-item-right">
+                    <span class="bonuses_section__footer-item-right-text">You have canceled the bonus</span>
+                  </div>
+                  <div class="bonuses_section__footer-item-line"></div>
+                  <a href="#" class="bonuses_section__footer-item-link purple" data-toggle="modal"
+                    data-target="#bonusInfoModal">
+                    See details
+                    <svg class="icon">
+                      <use xlink:href="#ico-chevron-right"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="deposit-now" role="tabpanel" area-labelledby="deposit-now-tab">
+          <div class="b-form">
+            <div class="b-form__container">
+              <div class="b-form__header">
+                <h2 class="b-form__header-title">Choose Payment method</h2>
+              </div>
+              <div class="b-form__body">
+                <div class="payments">
+                  <div class="payments__card active">
+                    <div class="payments__card-header">
+                      <div class="payments__card-img light">
+                        <picture>
+                          <source srcset="assets/img/payment/visa-mastercard.webp" type="image/webp">
+                          <source srcset="assets/img/payment/visa-mastercard.png" type="image/png"> 
+                            <img src="assets/img/payment/visa-mastercard.png" alt="">
+                      </picture>
+                      </div>
+                      <div class="payments__card-text">
+                        <p>
+                          Limits: <span>min-5$ max-10 000$</span>
+                        </p>
+                        <p>
+                          Fee: <span>2.5 - 10%</span>
+                        </p>
+                        <p>
+                          Time: <span>instant</span>
+                        </p>
+                      </div>
+                      <div class="dropdown-btn">
+                        <svg class="icon">
+                          <use xlink:href="#ico-chevron-down"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="payments__card-body payments__card-section-body">
+                      <div class="row">
+                        <div class="col-12 col-xl-6">
+                          <div class="payments__card-body_choose-section">
+                            <h3 class="payments__card-body_choose-title">Choose your bonus</h3>
+                            <div>
+                              <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text">No bonus</div>
+                                </div>
+                              </div>
+                              <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn selected">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text yellow">5 Star Deposit</div>
+                                  <div class="payments__card-body_choose-item-text">100% up to 300 EUR + 300 Free Spins
+                                  </div>
+                                  <span class="payments__card-body_choose-item-minDep">
+                                    ( Min.Deposit €20 )
+                                  </span>
+                                  <div class='details'>
+                                    <a href="#" class="bonuses_section__footer-item-link text-left" data-toggle="modal"
+                                      data-target="#welcomePackModal">
+                                      See details
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text yellow">Deposit Bonus</div>
+                                  <div class="payments__card-body_choose-item-text">Get Up To 30 % Cashback</div>
+                                </div>
+                              </div> -->
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                          <div class="payments__card-body-withdraw-section position">
+                            <div class="verificationNew__section-withdraw-input-container">
+                              <div class="verificationNew__section-withdraw-input-btn">-</div>
+                              <input type="text" placeholder="50$">
+                              <div class="verificationNew__section-withdraw-input-btn">+</div>
+                            </div>
+                            <div class="b-form__amount">
+                              <div class="b-form__amount-btn-line verificationNew__section-withdraw-line md">
+                                <div class="b-form__amount-btn md">
+                                  10
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  20
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  50
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  150
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  500
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                              <button class="b-form__footer-btn green payments__card-body_btn-green btn-ripple">Deposit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payments__card">
+                    <div class="payments__card-header">
+                      <div class="payments__card-img light">
+                        <picture>
+                          <source srcset="assets/img/payment/neteller.webp" type="image/webp">
+                          <source srcset="assets/img/payment/neteller.png" type="image/png"> 
+                            <img src="assets/img/payment/neteller.png" alt="">
+                      </picture>
+                      </div>
+                      <div class="payments__card-text">
+                        <p>
+                          Limits: <span>min-5$ max-10 000$</span>
+                        </p>
+                        <p>
+                          Fee: <span>2.5 - 10%</span>
+                        </p>
+                        <p>
+                          Time: <span>instant</span>
+                        </p>
+                      </div>
+                      <div class="dropdown-btn">
+                        <svg class="icon">
+                          <use xlink:href="#ico-chevron-down"></use>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="payments__card-body payments__card-section-body">
+                      <div class="row">
+                        <div class="col-12 col-xl-6">
+                          <div class="payments__card-body_choose-section">
+                            <h3 class="payments__card-body_choose-title">Choose your bonus</h3>
+                            <div>
+                              <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text">No bonus</div>
+                                </div>
+                              </div>
+                              <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn selected">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text yellow">5 Star Deposit</div>
+                                  <div class="payments__card-body_choose-item-text">100% up to 300 EUR + 300 Free Spins
+                                  </div>
+                                  <div>
+                                    <a href="#" class="bonuses_section__footer-item-link text-left" data-toggle="modal"
+                                      data-target="#welcomePackModal">
+                                      See details
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="payments__card-body_choose-item">
+                                <div class="payments__card-body_choose-item-btn-margin">
+                                  <div class="payments__card-body_choose-item-btn">
+                                    <div class="payments__card-body_choose-item-btn-selected"></div>
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="payments__card-body_choose-item-text yellow">Deposit Bonus</div>
+                                  <div class="payments__card-body_choose-item-text">Get Up To 30 % Cashback</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                          <div class="payments__card-body-withdraw-section position">
+                            <div class="verificationNew__section-withdraw-input-container">
+                              <div class="verificationNew__section-withdraw-input-btn">-</div>
+                              <input type="text" placeholder="50$">
+                              <div class="verificationNew__section-withdraw-input-btn">+</div>
+                            </div>
+                            <div class="b-form__amount">
+                              <div class="b-form__amount-btn-line verificationNew__section-withdraw-line md">
+                                <div class="b-form__amount-btn md">
+                                  10
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  20
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  50
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  150
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                                <div class="b-form__amount-btn md">
+                                  500
+                                  <div class="b-form__amount-btn-dot"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                              <button class="b-form__footer-btn green payments__card-body_btn-green btn-ripple">Deposit</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="threestepverification" role="tabpanel"
+          area-labelledby="threestepverification-tab">
+
+          <div class="profile-tab__container for-tbl">
+            <h2 class="b-form__header-title b-form__header-title-verification mb-5">Verification</h2>
+            <div class="verificationNew__section-container">
+              <div class="row">
+                <div class="col-12 col-lg-4 d-lg-flex">
+                  <div class="verificationNew__section-item">
+                    <h2 class="verificationNew__section-title">Email verification</h2>
+                    <picture>
+                      <source srcset="assets/img/icons/verification__mail.webp" type="image/webp">
+                      <source srcset="assets/img/icons/verification__mail.png" type="image/png"> 
+                        <img src="assets/img/icons/verification__mail.png" alt="" class="verificationNew__section-img">
+                  </picture>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input verificationNew__section-b-form__input">
+                        <input id="emailAddress2" required="" type="text">
+                        <label for="emailAddress2">Email Address</label>
+                        <button type="button" class="b-form__input-btn confirm-btn">Confirm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-lg-flex">
+                  <div class="verificationNew__section-item">
+                    <h2 class="verificationNew__section-title">Mobile verification</h2>
+                    <picture>
+                      <source srcset="assets/img/icons/verification__mobile.webp" type="image/webp">
+                      <source srcset="assets/img/icons/verification__mobile.png" type="image/png"> 
+                        <img src="assets/img/icons/verification__mobile.png" alt="" class="verificationNew__section-img">
+                  </picture>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input verificationNew__section-b-form__input">
+                        <input id="mobileNumber" required="" type="text">
+                        <label for="mobileNumber">Mobile number</label>
+                        <button type="button" class="b-form__input-btn confirm-btn">Confirm</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 d-lg-flex">
+                  <div class="verificationNew__section-item">
+                    <h2 class="verificationNew__section-title">KYC Verification
+                      <svg class="icon ml-2 kyc_verification-info-btn">
+                        <use xlink:href="#ico-info"></use>
+                      </svg>
+                    </h2>
+                    <div class="kyc_verification-info">
+                      KYC or Know Your Customer is a mandatory process required by international
+                      and local regulations to identify and verify the identity of our clients.
+                      Please provide the listed documents to have full access to our features and
+                      offers.
+                    </div>
+                    <picture>
+                      <source srcset="assets/img/icons/verification__kyc.webp" type="image/webp">
+                      <source srcset="assets/img/icons/verification__kyc.png" type="image/png"> 
+                        <img src="assets/img/icons/verification__kyc.png" alt="" class="verificationNew__section-img">
+                  </picture>
+                    <div class="b-form__wrapper">
+                      <div class="b-form__input verificationNew__section-b-form__input">
+                        <a href="profile.html#verification">
+                          <input id="file-upload" type="" />
+                          <label for="file-upload" class="verificationNew__label">
+                            <span>Please upload documents</span>
+                          </label>
+                          <label for="file-upload" class="verificationNew__label verified d-none">
+                            <span>Verified</span>
+                            <svg class="icon">
+                              <use xlink:href="#checked"></use>
+                            </svg>
+                          </label>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="verificationNew__section-withdraw-container">
+              <div class="verificationNew__section-withdraw-top">
+                <h2 class="verificationNew__section-withdraw-title">Enter withdraw amount</h2>
+                <div class="verificationNew__section-withdraw-input-container">
+                  <div class="verificationNew__section-withdraw-input-btn">-</div>
+                  <input type="text" placeholder="50$">
+                  <div class="verificationNew__section-withdraw-input-btn">+</div>
+                </div>
+                <div class="b-form__amount">
+                  <div class="b-form__amount-btn-line verificationNew__section-withdraw-line">
+                    <div class="b-form__amount-btn">
+                      10
+                      <div class="b-form__amount-btn-dot"></div>
+                    </div>
+                    <div class="b-form__amount-btn">
+                      20
+                      <div class="b-form__amount-btn-dot"></div>
+                    </div>
+                    <div class="b-form__amount-btn">
+                      50
+                      <div class="b-form__amount-btn-dot"></div>
+                    </div>
+                    <div class="b-form__amount-btn">
+                      150
+                      <div class="b-form__amount-btn-dot"></div>
+                    </div>
+                    <div class="b-form__amount-btn">
+                      500
+                      <div class="b-form__amount-btn-dot"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="verificationNew__section-withdraw-bottom">
+                <button class="b-form__footer-btn green" data-toggle="modal" data-target="#WithdrawProcessModal">Withdraw</button>
+              </div>
+            </div>
+            <div class="verificationNew__section-withdraw-container-row">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                      <div>
+                          <h2 class="verificationNew__section-withdraw-title">Enter withdrawal amount</h2>
+                          <h3 class="verificationNew__section-withdraw-text">Withdrawable Amount: 65 USDC (EUR 250) </h3>
+                          <div class="verificationNew__section-withdraw-input-container">
+                              <div class="verificationNew__section-withdraw-input-btn">-</div>
+                              <input type="text" placeholder="50 USDC ">
+                              <div class="verificationNew__section-withdraw-input-btn">+</div>
+                          </div>
+                          <div class="b-form__amount">
+                              <div class="b-form__amount-btn-line verificationNew__section-withdraw-line md">
+                                  <div class="b-form__amount-btn md sm">
+                                      10
+                                      <div class="b-form__amount-btn-dot fill"></div>
+                                  </div>
+                                  <div class="b-form__amount-btn md sm">
+                                      20
+                                      <div class="b-form__amount-btn-dot fill"></div>
+                                  </div>
+                                  <div class="b-form__amount-btn md sm active">
+                                      50
+                                      <div class="b-form__amount-btn-dot"></div>
+                                  </div>
+                                  <div class="b-form__amount-btn md sm">
+                                      150
+                                      <div class="b-form__amount-btn-dot"></div>
+                                  </div>
+                                  <div class="b-form__amount-btn md sm">
+                                      500
+                                      <div class="b-form__amount-btn-dot"></div>
+                                  </div>
+                                  <div class="b-form__amount-btn-line__fill"></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                      <div class="verificationNew__section-withdraw-container-col">
+                          <h3 class="verificationNew__section-withdraw-text-md">Enter your wallet address</h3>
+                          <input type="text" placeholder="Example:  1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2."
+                              class="verificationNew__section-withdraw-container-col-input">
+                          <button class="verificationNew__section-withdraw-container-col-btn bt bt-green" data-toggle="modal"
+                              data-target="#WithdrawProcessModal">Withdraw</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="verificationNew__section-withdraw-container-row-line"></div>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-12">
+      <div class="profile_topGames_section-bg">
+        <h2 class="topGames_section-title">
+          Last winnings
+        </h2>
+        <div class="topGames_section-item-list profile_topGames_section-item-list">
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/medusa.webp" type="image/webp">
+                    <source srcset="assets/img/games/medusa.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/medusa.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">
+                    Mon*****</h3>
+                  <p class="topGames_section-item-text">Medus Fortune </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont topGames_section-item-text-right-cont-width">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">200$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">10$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/twinSpin.webp" type="image/webp">
+                    <source srcset="assets/img/games/twinSpin.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/twinSpin.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">Logo***
+                  </h3>
+                  <p class="topGames_section-item-text">Twin Spin </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">4500$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">0$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/jammin.webp" type="image/webp">
+                    <source srcset="assets/img/games/jammin.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/jammin.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">Gio***
+                  </h3>
+                  <p class="topGames_section-item-text">Jammin Jars </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">1500$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">22$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/cirque.webp" type="image/webp">
+                    <source srcset="assets/img/games/cirque.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/cirque.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">
+                    Makal***</h3>
+                  <p class="topGames_section-item-text">Cirques De La Fortune </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">15$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">0.5$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/fireJoker.webp" type="image/webp">
+                    <source srcset="assets/img/games/fireJoker.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/fireJoker.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">
+                    Makal*****</h3>
+                  <p class="topGames_section-item-text">Cirques De La Fortune </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">45$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">1.2$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="topGames_section-item">
+            <div class="topGames_section-item-content">
+              <div class="d-flex align-items-center">
+                <a href="game.html" class="topGames_section-item-img-cont">
+                  <picture>
+                    <source srcset="assets/img/games/fireJoker2.webp" type="image/webp">
+                    <source srcset="assets/img/games/fireJoker2.jpg" type="image/jpg"> 
+                      <img src="assets/img/games/fireJoker2.jpg" alt="img" class="topGames_section-item-img">
+                </picture>
+                </a>
+                <div class="topGames_section-item-text-cont">
+                  <h3 class="topGames_section-item-text topGames_section-item-text-white mg-b">
+                    Makal***</h3>
+                  <p class="topGames_section-item-text">Fire Lightinge </p>
+                </div>
+              </div>
+              <div class="topGames_section-item-text-right-cont">
+                <div class="topGames_section-item-text mg-b">Win: <span
+                    class="topGames_section-item-text-green">45$</span></div>
+                <div class="topGames_section-item-text">Bet: <span class="topGames_section-item-text-white">1.2$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.352" height="28.907" viewBox="0 0 42.352 28.907">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1.005" x2="0.5" y2="0.354" gradientUnits="objectBoundingBox">
+      <stop offset="0.067" stop-color="#1f60ab"/>
+      <stop offset="0.483" stop-color="#267fc3"/>
+      <stop offset="1" stop-color="#2fa3df"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_15648" data-name="Group 15648" transform="translate(0)">
+    <path id="Path_57108" data-name="Path 57108" d="M114.173,112.5a10.726,10.726,0,0,0-7.189-.119,3.44,3.44,0,0,1-1.232.227H95.581a3.44,3.44,0,0,1-1.232-.227,10.726,10.726,0,0,0-7.189.119,4.71,4.71,0,0,0-2.539,2.022c-1.557,2.556-4.549,8.645-5.131,18.456,0,5.183,1.957,6.979,3.424,7.594a2.157,2.157,0,0,0,2.373-.491l4.923-4.972a4.689,4.689,0,0,1,3.333-1.4h14.245a4.68,4.68,0,0,1,3.333,1.4l4.923,4.972a2.163,2.163,0,0,0,2.379.491c1.461-.615,3.419-2.411,3.419-7.594-.581-9.81-3.568-15.9-5.131-18.456A4.71,4.71,0,0,0,114.173,112.5Z" transform="translate(-79.491 -111.832)" fill="url(#linear-gradient)"/>
+    <ellipse id="Ellipse_232" data-name="Ellipse 232" cx="2.31" cy="2.336" rx="2.31" ry="2.336" transform="translate(27.525 3.939)" fill="#ffe153"/>
+    <ellipse id="Ellipse_233" data-name="Ellipse 233" cx="2.31" cy="2.336" rx="2.31" ry="2.336" transform="translate(32.145 8.727)" fill="#fff"/>
+    <ellipse id="Ellipse_234" data-name="Ellipse 234" cx="2.31" cy="2.336" rx="2.31" ry="2.336" transform="translate(27.525 13.515)" fill="#216947"/>
+    <ellipse id="Ellipse_235" data-name="Ellipse 235" cx="2.31" cy="2.336" rx="2.31" ry="2.336" transform="translate(22.79 8.727)" fill="#d90032"/>
+    <path id="Path_57109" data-name="Path 57109" d="M89.862,116.339H87.275v-2.616a.737.737,0,0,0-.736-.739H85.057a.737.737,0,0,0-.736.739v2.616H81.734a.742.742,0,0,0-.736.744v1.5a.742.742,0,0,0,.736.744h2.587v2.616a.742.742,0,0,0,.736.744h1.483a.742.742,0,0,0,.736-.744v-2.616h2.587a.742.742,0,0,0,.736-.744v-1.5A.742.742,0,0,0,89.862,116.339Z" transform="translate(-72.96 -106.771)" fill="#fff"/>
+  </g>
+</svg>

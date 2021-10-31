@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.53" x2="0.5" y2="1.518" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#025bf6"/>
+      <stop offset="1" stop-color="#27f09d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#addcff"/>
+      <stop offset="0.503" stop-color="#eaf6ff"/>
+      <stop offset="1" stop-color="#eaf6ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Speedometer_2_" transform="translate(0 -0.622)">
+    <g id="Group_20426" data-name="Group 20426" transform="translate(0 0.622)">
+      <g id="Group_20425" data-name="Group 20425" transform="translate(0 0)">
+        <circle id="Ellipse_689" data-name="Ellipse 689" cx="12" cy="12" r="12" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_20428" data-name="Group 20428" transform="translate(2.841 2.743)">
+      <g id="Group_20427" data-name="Group 20427">
+        <path id="Path_65618" data-name="Path 65618" d="M70.082,61A9.093,9.093,0,0,0,61,70.082a.7.7,0,0,0,.7.7h2.795a.7.7,0,0,0,.7-.7,4.89,4.89,0,0,1,9.781,0,.7.7,0,0,0,.7.7h2.795a.7.7,0,0,0,.7-.7A9.093,9.093,0,0,0,70.082,61Zm0,5.589a.7.7,0,0,0-.7.7V70.91a2.1,2.1,0,1,0,1.4,0V67.288A.7.7,0,0,0,70.082,66.589Zm2.795,9.781H67.288a.7.7,0,1,0,0,1.4h5.589a.7.7,0,0,0,0-1.4Z" transform="translate(-61 -61)" fill="url(#linear-gradient-2)"/>
+      </g>
+    </g>
+  </g>
+</svg>

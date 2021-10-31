@@ -1,0 +1,21 @@
+.loader{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: $bg-shade-1;
+  z-index: 99999999999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  #logo {
+    width: calc(18600px / 93);
+    height: 200px;
+    background: transparent url('../img/logoFrames.png') 0 0 no-repeat;
+    animation: logoAn 3s steps(93) infinite;
+  }
+  @keyframes logoAn {
+    100% { background-position: -18600px 0; }
+  }
+}

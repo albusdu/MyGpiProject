@@ -1,0 +1,845 @@
+---
+layout: welcome
+title: Betvili - Deposit
+---
+<div class='welcome deposit'>
+    <header class="header register">
+      <a href="" class="logo">
+        <img src="./../assets/img/welcome/img/logo.png" alt="betvili"/>
+      </a>
+    </header>
+    <div class="vili">
+      <img src="./../assets/img/vili.png" alt='vili' />
+    </div>
+    <main class="main__container deposit">
+      <button class="steps__container__navigation__prev">
+        <svg><use xlink:href="#back-arrow"></use></svg>
+        <span>
+          Back
+        </span>
+      </button>
+      <a class="main__container__back open-modal">
+        <svg><use xlink:href="#back-arrow"></use></svg>
+        <span>
+          Back
+        </span>
+      </a>
+      <div class="page__semiTitle hidden-desktop">
+        <h2 class="page__semiTitle__h2 page__semiTitle__h2--mobile">User registration was Successful<br>Make a deposit and claim your bonus</h2>
+      </div>
+      <div class="page__title hidden-mobile">
+        <div class="line"></div>
+        <h1 class="page__title__h1">Deposit</h1>
+      </div>
+      <div class="steps__container">
+        <div class="steps__container__left cash-payment deposit-item" style="display: block;">
+          <div class="page__semiTitle">
+            <h2 class="page__semiTitle__h2 small hidden-mobile">User registration was Successful<br>
+              Make a deposit and claim your bonus</h2>
+          </div>
+          <div class="payment-method">
+            <div class="payment-method__content">
+              <img src="assets/img/payment/widget/neteller.svg" alt="payment method" class="payment-method__content__img"/>
+              <a href="#!" class="payment-method__content__link deposit-link" for="payment-methods">Change</a>
+              <span class="payment-method__content__span">Instant Deposit , No Fees</span>
+            </div>
+          </div>
+          <div class="deposit">
+            <div class="deposit__content">
+              <div class="deposit__content__enter">
+                <div class="deposit__content__enter__minus"></div>
+                <input
+                  type="text"
+                  name="deposit"
+                  value="20€"
+                  class="deposit__content__enter__input"
+                />
+                <div class="deposit__content__enter__plus"></div>
+              </div>
+              <div class="deposit__content__fixed-deposit">
+                <div class="deposit__content__fixed-deposit__item active">20€</div>
+                <div class="deposit__content__fixed-deposit__item">25€</div>
+                <div class="deposit__content__fixed-deposit__item">50€</div>
+                <div class="deposit__content__fixed-deposit__item">100€</div>
+                <div class="deposit__content__fixed-deposit__item">150€</div>
+                <div class="deposit__content__fixed-deposit__item">200€</div>
+              </div>
+            </div>
+            <button class="steps__container__navigation__next">Deposit <svg><use xlink:href="#chevron-right"></use></svg></button>
+          </div>
+        </div>
+        <div class="steps__container__left crypto-payment deposit-item" style="display: none;">
+          <div class="page__semiTitle">
+            <h2 class="page__semiTitle__h2 small hidden-mobile">User registration was Successful<br>
+              Make a deposit and claim your bonus</h2>
+          </div>
+          <div class="widget-qr">
+            <div class="widget-qr__top">
+                <div class='widget-qr__top__title'>
+                    AWAITING PAYMENT
+                </div>
+            </div>
+            <div class="widget-qr__content">
+                <div class="widget-qr__address">
+                    <span class="successfull-copied">Address copied</span>
+                    <span class="widget-qr__address__span">Address</span>
+                    <span class="widget-qr__address__code" id="btc-address">36vuPXgmDABs73sbwssRPL2mzwGzHUTozp</span>
+                    <img class="widget-qr__address__img" src="assets/img/copy-white.svg" alt="copy btc address" title="copy to clipboard">
+                </div>
+                <div class='widget-qr__block'>
+                    <img src="assets/img/payment/widget/qr.png" alt="qr">
+                </div>
+                <div class="widget-qr__amount">
+                    <span class="widget-qr__amount__value">0.003</span>BTC
+                </div>
+                <span class="widget-qr__content__span">lorem ipsum dolor sit amet</span>
+                <a href="#!" class="buyBtc-btn deposit-link" for="crypto-payment-viaCard">
+                  Buy Bitcoin Via Card
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="steps__container__left crypto-payment-viaCard deposit-item" style="display: none;">
+          <div class="page__semiTitle">
+            <h2 class="page__semiTitle__h2 small hidden-mobile">User registration was Successful<br>
+              Make a deposit and claim your bonus</h2>
+          </div>
+          <div class="widget-buyCrypto">
+            <div class="widget-buyCrypto__top">
+                <div class="widget-buyCrypto__top__back deposit-link" for="crypto-payment">
+                    <svg class="icon">
+                        <use xlink:href="#back-arrow"></use>
+                    </svg>
+                </div>
+                <div class='widget-buyCrypto__top__title'>
+                    Buy Crypto
+                </div>
+            </div>
+            <form class="widget-buyCrypto__form">
+              <div class="widget-buyCrypto__form__row">
+                <div class="widget-buyCrypto__form__title">Buy Bitcoin</div>
+                <input type="tel" name='cardnumber' class="widget-buyCrypto__form__input widget-buyCrypto__form__input--66" placeholder="0.00038094">
+                <div class="dropdown__elem" id="1">
+                  <div class="dropdown__elem--inner dropdown--toggler">
+                    <span class="text--active dropdown--selected">
+                      <img src="assets/img/balance/btc.svg" alt="btc">
+                      <span>BTC</span>
+                    </span>
+                    <div class="svg__block">
+                      <svg class="icon">
+                        <use xlink:href="#ico-chevron-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="dropdown" data-for="1">
+                    <nav class="dropdown__nav">
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/btc.svg" alt="btc">
+                        <span>BTC</span>
+                      </li>
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/btc.svg" alt="btc">
+                        <span>XRP</span>
+                      </li>
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/btc.svg" alt="btc">
+                        <span>LTC</span>
+                      </li>
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/btc.svg" alt="btc">
+                        <span>ETH</span>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="widget-buyCrypto__form__row">
+                <div class="widget-buyCrypto__form__title">Pay With Euro</div>
+                <input type="tel" name='cardnumber' class="widget-buyCrypto__form__input widget-buyCrypto__form__input--66" placeholder="20">
+                <div class="dropdown__elem" id="2">
+                  <div class="dropdown__elem--inner dropdown--toggler">
+                    <span class="text--active dropdown--selected">
+                      <img src="assets/img/balance/euro.svg" alt="btc">
+                      <span>EUR</span>
+                    </span>
+                    <div class="svg__block">
+                      <svg class="icon">
+                        <use xlink:href="#ico-chevron-up"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="dropdown" data-for="2">
+                    <nav class="dropdown__nav">
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/euro.svg" alt="btc">
+                        <span>EUR</span>
+                      </li>
+                      <li class="dropdown__item">
+                        <img src="assets/img/balance/euro.svg" alt="btc">
+                        <span>USD</span>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="widget-buyCrypto__text">
+              <p>
+                Disclaimer: MoonPay is a 3rd party partner that facilitates the purchasing of crypto using fiat currencies. By registering on their platform, you are also accepting to their terms of service and will be required to pass their KYC process, which runs independently to ours.
+              </p>
+            </div>
+            <button class="widget-buyCrypto__btn steps__container__navigation__next">
+              Deposit
+            </button>
+        </div>
+        </div>
+        <div class="steps__container__left payment-methods deposit-item" style="display: none;">
+          <div class="page__semiTitle">
+            <h2 class="page__semiTitle__h2 small hidden-mobile">User registration was Successful<br>
+              Make a deposit and claim your bonus</h2>
+          </div>
+          <div class="payment-methods__container">
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/skrill.png" alt="skrill">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/qiwi.png" alt="qiwi">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/visa-mastercard.png" alt="visa mastercard">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/jeton.png" alt="jeton">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/yandex.png" alt="yandex">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            <a href="welcome-deposit.html" class="payment-methods__container__item">
+                <div class="payment-methods__container__item__left">
+                    <img src="./../assets/img/payment/neteller.png" alt="neteller">
+                </div>
+                <div class="payment-methods__container__item__right">
+                    <span class="payment-methods__container__item__right__span">
+                        Limits: <span>5$ - 10 000$</span>
+                    </span>
+                    <span class="payment-methods__container__item__right__span">
+                        Fee: <span>Free</span>
+                    </span>
+                </div>
+            </a>
+            
+          </div>
+        </div>
+        <div class="steps__container__right">
+          <div class='steps__container__right__bonus-block'>
+            <div class="deposit-widget__bonus">
+              <h3 class="deposit-widget__bonus__title">Select your bonus</h3>
+              <div class="deposit-widget__bonus__chevron">
+                  <svg class="icon">
+                      <use xlink:href="#ico-chevron-down"></use>
+                  </svg>
+              </div>
+              <div class="deposit-widget__bonus__clickable-box">
+                <div class="deposit-widget__bonus__block is-active" data-btn="play with 100€ + 300 freespins">
+                  <h4 class="deposit-widget__bonus__block__title">5 star deposit bonus</h4>
+                  <p class="deposit-widget__bonus__block__description">First Deposit Bonus 100%</p>
+                  <svg class="deposit-widget__bonus__block__info">
+                      <use xlink:href="#ico-info"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="deposit-widget__bonus__dropdown">
+                  <div class="deposit-widget__bonus__block is-last" data-btn="play with 100€">
+                      <p class="deposit-widget__bonus__block__description">I don't want a bonus</p>
+                  </div>
+                  <div class="deposit-widget__bonus__block is-active" data-btn="play with 100€ + 300 freespins">
+                      <h4 class="deposit-widget__bonus__block__title">5 star deposit bonus</h4>
+                      <p class="deposit-widget__bonus__block__description">First Deposit Bonus 100%</p>
+                      <svg class="deposit-widget__bonus__block__info">
+                          <use xlink:href="#ico-info"></use>
+                      </svg>
+                  </div>
+                  <div class="deposit-widget__bonus__block" data-btn="play with 100€ + 100 freespins">
+                      <h4 class="deposit-widget__bonus__block__title">5 star deposit bonus</h4>
+                      <p class="deposit-widget__bonus__block__description">Second Deposit Bonus 100%</p>
+                      <svg class="deposit-widget__bonus__block__info">
+                          <use xlink:href="#ico-info"></use>
+                      </svg>
+                  </div>
+              </div>
+          </div>
+          </div>
+          <nav class="bonus-list">
+            <li class="bonus-list__item">
+              <img src="assets/img/promo/5star/rec1.png" alt="rewards background" class="bg">
+              <div class="bonus-list__item__left">
+                <img src="assets/img/promo/5star/1.png" width="35" alt="betvili 5 star deposit bonus first bonus" class="number">
+                <img src="assets/img/promo/5star/gem1.png" width="28" alt="betvili gem" class="gem">
+              </div>
+              <div class="bonus-list__item__right">
+                <div class="bonus-list__item__title">first deposit</div>
+                <div class="bonus-list__item__info">100% up to <span> €300 or 0.5 BTC +300 freespins</span></div>
+                <a href="#!" class="bonus-list__item__details">see bonus details</a>
+              </div>
+            </li>
+            <li class="bonus-list__item">
+              <img src="assets/img/promo/5star/rec2.png" alt="rewards background" class="bg">
+              <div class="bonus-list__item__left">
+                <img src="assets/img/promo/5star/2.png" width="45" alt="betvili 5 star deposit bonus second bonus" class="number">
+                <img src="assets/img/promo/5star/gem2.png" width="28" alt="betvili gem" class="gem">
+              </div>
+              <div class="bonus-list__item__right">
+                <div class="bonus-list__item__title">second deposit</div>
+                <div class="bonus-list__item__info">50% up to <span> €300 or 0.5 BTC</span></div>
+                <a href="#!" class="bonus-list__item__details">see bonus details</a>
+              </div>
+            </li>
+            <li class="bonus-list__item">
+              <img src="assets/img/promo/5star/rec3.png" alt="rewards background" class="bg">
+              <div class="bonus-list__item__left">
+                <img src="assets/img/promo/5star/3.png" width="45" alt="betvili 5 star deposit bonus third bonus" class="number">
+                <img src="assets/img/promo/5star/gem3.png" width="28" alt="betvili gem" class="gem">
+              </div>
+              <div class="bonus-list__item__right">
+                <div class="bonus-list__item__title">third deposit</div>
+                <div class="bonus-list__item__info">60% up to <span> €400 or 0.5 BTC</span></div>
+                <a href="#!" class="bonus-list__item__details">see bonus details</a>
+              </div>
+            </li>
+            <li class="bonus-list__item">
+              <img src="assets/img/promo/5star/rec4.png" alt="rewards background" class="bg">
+              <div class="bonus-list__item__left">
+                <img src="assets/img/promo/5star/4.png" width="45" alt="betvili 5 star deposit bonus fourth bonus" class="number">
+                <img src="assets/img/promo/5star/gem4.png" width="28" alt="betvili gem" class="gem">
+              </div>
+              <div class="bonus-list__item__right">
+                <div class="bonus-list__item__title">fourth deposit</div>
+                <div class="bonus-list__item__info">70% up to <span> €500 or 0.5 BTC</span></div>
+                <a href="#!" class="bonus-list__item__details">see bonus details</a>
+              </div>
+            </li>
+            <li class="bonus-list__item">
+              <img src="assets/img/promo/5star/rec5.png" alt="rewards background" class="bg">
+              <div class="bonus-list__item__left">
+                <img src="assets/img/promo/5star/5.png" width="45" alt="betvili 5 star deposit bonus fifth bonus" class="number">
+                <img src="assets/img/promo/5star/gem5.png" width="28" alt="betvili gem" class="gem">
+              </div>
+              <div class="bonus-list__item__right">
+                <div class="bonus-list__item__title">fifth deposit</div>
+                <div class="bonus-list__item__info">100% up to <span> €500 or 0.5 BTC</span></div>
+                <a href="#!" class="bonus-list__item__details">see bonus details</a>
+              </div>
+            </li>
+          </nav>
+          <div class='bonus-termsCond'>
+            <div class="bonus-termsCond__title">Terms And Conditions</div>
+            <div class="bonus-termsCond__content">
+              <div class="bonus-termsCond__content__close">
+                <svg class="icon">
+                  <use xlink:href="#widgetCloseIcon"></use>
+                </svg>
+              </div>
+              <h3 class="bonus-termsCond__content__title">Who can receive Free Spins?</h3>
+              <p class="bonus-termsCond__content__text">This offer is only available for newly registered players, who verify their phone numbers and email address.</p>
+              <h3 class="bonus-termsCond__content__title">How does it work?</h3>
+              <p class="bonus-termsCond__content__text">- After registration player should verify his/her Email and Mobile to get free spins</p>
+              <p class="bonus-termsCond__content__text">- The Free Spins will be credited immediately after successful verification of mobile and email. Please contact customer support if Free Spins are not credited.</p>
+              <p class="bonus-termsCond__content__text">- Once the Free Spins are activated, they will be valid for 24 hours.</p>
+              <p class="bonus-termsCond__content__text">- Free spins are only available for use on a specific game - XXX</p>
+              <p class="bonus-termsCond__content__text">- To withdraw the winnings, the player needs to make a deposit of at least the same amount of money he/she had won and follow the general terms and conditions.</p>
+              <p class="bonus-termsCond__content__text">- If a player has made the first deposit before verification the winning amount will be compared with the deposit, in case the winning is higher the player would need to deposit the difference.</p>
+              <p class="bonus-termsCond__content__text">- This promotion is available from 20 February, 2021 until terminated by the Betvili group at their sole discretion.</p>
+              <div class="showGames-dropdown">
+                <div class="showGames-dropdown__header">
+                    <h5>show games</h5>
+                    <div class="icon-wrap">
+                        <svg class="icon">
+                            <use xlink:href="#ico-chevron-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="showGames-dropdown__body">
+                    <p>
+                        12 Animals, 15 Dragon Pearls, 15 Golden Eggs, 777 Gems, 777 Gems ReSpin, 88 Dragon, 88 Wild Dragon, Aztec Sun, Book of Sun, Book of Sun Multichance, Book of Sun: Choice, Buddha Fortune, Dragon Pearls, God's Temple Deluxe, Great Panda, Moon Sisters, Poisoned Apple 2, Scarab Riches, Sun of Egypt, Super Marble, Three Gems, Tiger's Gold, Vikings Winter, Wild 888, Beast Saga, sun of Egypt 2, 5x Magic, Agent Destiny, Annihilator, Banana Rock, Big Win 777, Big Win Cat, Black Mamba, Book of Dead, Cash Pump, Charlie Chance in Hell to Pay, Chronos Joker, Cloud Quest, Coywolf Cash, Crystal Sun, Dawn of Egypt, Divine Showdown, Dragon Maiden, Energoonz, European Roulette Pro, Eye of the Kraken, Fire Joker, Fortunes of Ali Baba, Fu Er Dai, Gemix, Honey Rush, Hugo 2, Hugos Adventure, Inferno Joker, Inferno Star, Iron Girl, Jackpot Poker, Legacy of Dead, Leprechaun goes Egypt, Leprechaun goes to Hell, Leprechaun Goes Wild, Mahjong 88, Mission Cash, Moon Princess, Pearl Lagoon, Pearls of India, Pimped, Raging Rex, Reactoonz, Rich Wilde and the Tome of Madness, Riches of Robin, Ring of Odin, Rise of Dead, Rise of Merlin, Rise of Olympus, Star Joker, Sticky Joker, Street Magic, Sweet Alchemy, Testament, That’s Rich, The Sword and The Grail, Troll Hunters, Viking Runecraft, Wild Blood, Wild Blood 2, Wild Falls, Wild Frames, Wildhound Derby, Saxon, Troll Hunters 2, Twisted Sister, Win a Beest, Nyjah Huston - Skate for Gold, Rich Wilde and The Shield of Athena, Riddle Reels: A Case of Riches, Diamond Vortex, Cat Wilde and the Doom of Dead, Bakers Treat, Golden Ticket 2, Jolly Roger 2, Madame Ink, Rabbit Hole Riches, Reactoonz 2, Feline Fury, Octopus Treasure, Joker Poker MH, 9kYeti, Age of Asgard, Aldos Journey, All Star Knockout Ultra Gamble, Baron Samedi, Bicicleta, Blood Moon Wilds, Brazil Bomba, Cazino Cosmos, Cazino Zeppelin, Dark Vortex, Doubles, Dr Fortuno Blackjack, Dwarf Mine, Easter Island, Gem Rocks, Golden Chip Roulette, Golden Fishtank, Hades, Hanzos Dojo, Holmes &amp; the stolen stones, Ice and Fire, Jungle Books, Legend of the Golden Monkey, Legend of the White Snake Lady, Lightning Joker, Liliths Inferno, Lucha Maniacs, Lucky Neko, MultiFly!, Neon Rush – Splitz, Niagara Falls, Nikola Tesla’s Incredible Machine, Nirvana, Orient Express, Ozwins Jackpots, Penguin City, Pirates: Smugglers Paradise, Pop Rocks, Rainbow Ryan, Reptoids, Sahara Nights, Seasons, Spina Colada, Sunny Shores, Super Heroes, Temple Stacks: Splitz, The One Armed Bandit, The Royal Family, Time Travel Tigers, Trolls Bridge, Tuts Twister, Valley of the Gods 2, Vault of Fortune, Vikings Go Berzerk, Vikings go to Hell, Vikings go wild, Wild Robo Factory, WildPops, Wilhelm Tell, Wolf Hunters, Yokozuna Clash, 2 Gods Zeus VS Thor, Cherry Pop, Rock the cash bar, Victoria Wild, Hyperburst, Aloha! Cluster Pays, No, No, No, No, No, No, No, European Roulette, Fortune Rangers, French Roulette, Gonzos Quest, Guns N Roses, Happy Riches, Hotline 2, Jingle Spin, Jungle Spirit: Call of the Wild, King of 3 Kingdoms, Lucky Angler: A Snowy Catch, Rise of Maya, Robin Hood: Shifting Riches, Secret of the Stones MAX, Serengeti Kings, Starburst, Temple of Nudges, The Wish Master, Trollpot 5000, Warlords - Crystals of Power, Whos The Bride?, Wild Worlds, No, Star Clusters, Book Of Gods, Royal Mint, Donuts, Survivor, Millionaire Mystery Box, White Rabbit, Lil Devil, Who Wants to be a Millionaire, Kingmaker, Opal Fruits, Extra Chilli, Bonanza, Danger! High Voltage, The Final Countdown, Adventure Palace, American Roulette, Aurora Wilds, Big Kahuna, Bush Telegraph, Cashapillar, Centre Court, Crazy Chameleons, Diamond Empire, Double Wammy, Dragon Dance, Dragonz, Electric Nights, Euro Golden Cup, European Roulette, Extra Chilli, Flower Fortunes, Fortune Falcon, Ho Ho Ho, Immortal Romance, Ivory Citadel, Karaoke Party, Kings Of Cash, Loaded, Lucky Leprechaun, Mermaids Millions, Mining Fever, Mystic Dreams, Rhyming Reels Georgie Porgie, Riviera Star, Rugby Star, Santa Paws, Sapphire Roulette, Secret Admirer, Sidewinder, So Much Candy, Sure Win, Sweet Chilli, Tally Ho, Tomb Raider, Treasure Heroes, What A Hoot, 1429 Uncharted Seas, Arcader, Barbershop: Uncut, Beat the Beast: Mighty Sphinx, Beat the Beast: Quetzalcoatl´s Trial, Birds On A Wire, Carnival Queen, Divine Lotus, Esqueleto Explosivo, Esqueleto Explosivo 2, Flame Busters, Flux, Fruit Warp, Full Moon Romance, Jaguar Temple, Luchadora, Magicious, Midas Golden Touch, Pink Elephants, Pink Elephants 2, Ravens Eye, Riders of the Storm, Rocket Fellas Inc, Spectra, Sword of Khans, The Falcon Huntress, The Rift, Tiger Rush, Toki Time, Turning Totems, Well of Wonders, Wild Heist at Peacock Manor, Yeti Battle of Greenhat peak, Zoom, Crystal Quest 1: DEEP JUNGLE, Jin Chans Pond of Riches, Scarab Temple, Thunder of Olympus, Tiger Stone, Roulettes, Casino Holdem, Baccarat, Blackjack, Texas Holdem Bonus Poker, Football studio, Monopoly Live, Side Bet City, Super Sic Bo, Lightning Dice, 2 Hand Casino Holdem, Deal or No Deal, American Roulette, Crazy Time, Mega Ball, Caribbean Stud Poker, THREE CARD POKER, Casino Holdem, No Commission Baccarat, Baccarat Squeeze, Lightning Baccarat, Auto-Roulette La Partage, Double Ball Roulette, French Roulette, Immersive Roulette, Immersive Roulette, Instant Roulette, Lightning Roulette, Roulette, Roulette VIP, Speed Roulette, Triple Card Poker, Blackjack B, Blackjack A, Blackjack VIP A, Blackjack VIP C, Free Bet Blackjack, Power Infinite Blackjack, Dream Catcher, Emoji Planet, Planet of the Apes
+                    </p>
+                </div>
+              </div>
+              <h3 class="bonus-termsCond__content__title">Other Terms & Conditions:</h3>
+              <p class="bonus-termsCond__content__text">· Welcome Bonus at Betvili.com can only be received once per person, household, IP address (including shared networks), device and/or credit/debit card number, or any other deposit method used. We reserve the right to close the User's account and confiscate existing funds if evidence of bonus abuse is found. Betvili.com retains all rights per these Bonus Policies and general Terms of Use to verify its players’ behavior and act accordingly.</p>
+              <p class="bonus-termsCond__content__text">· Betvili.com has a zero-tolerance policy towards bonus abuse and bonus related fraudulent activity on accounts. If any bonus abuses or bonus related fraudulent activity is suspected, we reserve the right to stop any further bonuses, promotions, and/or offers and remove bonuses and winnings from these and/or linked accounts. Examples of bonus-related fraudulent activity include, but are not limited to;</p>
+              <p class="bonus-termsCond__content__text">· Using more than one account to claim multiple bonuses;</p>
+              <p class="bonus-termsCond__content__text">· Two-tier betting (where large bets are placed on high variance outcomes before switching to normal variance outcomes to clear wagering requirements)</p>
+              <p class="bonus-termsCond__content__text">· Multiple account strategy / proxy account strategy;</p>
+              <p class="bonus-termsCond__content__text">· Using a VPN or masking IP address</p>
+              <p class="bonus-termsCond__content__text">· Minimal Risk or Risk-free bets on any games do not qualify for wagering requirements. Players deemed to be using minimal risk wagering tactics or risk-free bets tactics to redeem their bonuses risk having their bonuses, original deposit, and any subsequent winnings removed.</p>
+              <p class="bonus-termsCond__content__text">· Delaying any game round in any game, including free spins features and bonus features, to a later time when you have no more wagering requirement and/or performing new deposit(s) while having free spins features or bonus features still available in a game is prohibited. Players doing so agree to have their bonus, initial deposit, and associated winnings declared void.</p>
+              <p class="bonus-termsCond__content__text">· Any accounts linked to accounts that have already claimed the welcome bonus will not be eligible to claim the welcome bonus. If Betvili.com suspects two linked accounts that have claimed the welcome bonus, these funds could be confiscated from both accounts.</p>
+              <p class="bonus-termsCond__content__text">· Betvili.com reserves the right to change the terms and conditions, the promotion, or the eligibility of players for a promotion, at any point and without prior notice.</p>
+              <p class="bonus-termsCond__content__text">· General bonus terms and conditions apply.</p>
+            </div>
+          </div>
+        </div>
+        <div class="steps__container__faq">
+          <div class="steps__container__faq__title">
+            FAQ
+          </div>
+          <div class="steps__container__faq__dropdown">
+            <div class="steps__container__faq__dropdown__title">
+              <span>
+                How to deposit BTC?
+              </span>
+              <svg class="icon">
+                <use xlink:href="#ico-chevron-up"></use>
+              </svg>
+            </div>
+            <div class="steps__container__faq__dropdown__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+            </div>
+          </div>
+          <div class="steps__container__faq__dropdown">
+            <div class="steps__container__faq__dropdown__title">
+              <span>
+                How to deposit BTC?
+              </span>
+              <svg class="icon">
+                <use xlink:href="#ico-chevron-up"></use>
+              </svg>
+            </div>
+            <div class="steps__container__faq__dropdown__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+            </div>
+          </div>
+          <div class="steps__container__faq__dropdown">
+            <div class="steps__container__faq__dropdown__title">
+              <span>
+                How to deposit BTC?
+              </span>
+              <svg class="icon">
+                <use xlink:href="#ico-chevron-up"></use>
+              </svg>
+            </div>
+            <div class="steps__container__faq__dropdown__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+            </div>
+          </div>
+          <div class="steps__container__faq__dropdown">
+            <div class="steps__container__faq__dropdown__title">
+              <span>
+                How to deposit BTC?
+              </span>
+              <svg class="icon">
+                <use xlink:href="#ico-chevron-up"></use>
+              </svg>
+            </div>
+            <div class="steps__container__faq__dropdown__description">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis tempora quod quasi aliquam dolore, consequuntur sunt ratione suscipit dolores nihil iusto quas nemo nesciunt totam sit id, labore nobis omnis!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class='cancellation__modal'>
+      <div class='cancellation__modal__container'>
+        <div class='cancellation__modal__container__close'><svg><use xlink:href="#close"></use></svg></div>
+        <img src="./../assets/img/smile.png" class="cancellation__modal__container__img" alt="smile">
+        <span class="cancellation__modal__container__span">Are you sure to cancel depositing process</span>
+        <h2 class="cancellation__modal__container__h2">Make deposit right now and 
+          get additional 30 freespins</h2>
+        <button class="cancellation__modal__container__continue">Continue Depositing</button>
+        <a href="welcome-registration.html" class="cancellation__modal__container__link">Cancel</a>
+      </div>
+    </div>
+</div>
