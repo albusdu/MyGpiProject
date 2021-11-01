@@ -1,0 +1,181 @@
+$scaling-breakpoints: (
+  1800: 59%,
+  1700: 56%,
+  1600: 52%,
+  1500: 49%,
+  1400: 45%,
+  1300: 42%,
+  1200: 38%,
+  1100: 35%,
+  1000: 32%,
+  980: 62.5%,
+  360: 57.5%,
+);
+
+$media-breakpoints: (
+  small: 980px,
+  medium: 1300px,
+  large: 1800px,
+);
+
+$border-color: #eeeff3;
+
+$white: #fff;
+$sapphire: #0e215e;
+$gray: #b1b7ca;
+$dark-gray: #9199b4;
+$light-gray: #ebecee;
+$midnight-blue: #141c4f;
+$ruby: #ed1c7c;
+$violet-red: #ee2a7b;
+$amaranth: #e82a5e;
+$quartz: #dde3f5;
+$tangerine: #fcb618;
+$light-quartz: #f5f7fc;
+
+$gray-blue: #898da7;
+
+$transparent: #fff0;
+
+$border: #eeeff3;
+
+$primary: $sapphire;
+$accent: $ruby;
+$danger: $amaranth;
+$disabled: #898da7;
+
+$select-colors: (
+  main: (
+    normal: (
+      background: $white,
+      text: $primary,
+    ),
+  ),
+  panel: (
+    normal: (
+      background: $white,
+      text: $primary,
+      border: #eeeff3,
+    ),
+    hover: (
+      background: $light-quartz,
+    ),
+    active: (
+      background: $light-quartz,
+    ),
+  ),
+);
+
+$switch-colors: (
+  normal: (
+    text: $dark-gray,
+    background: $white,
+    border: $gray,
+  ),
+  active: (
+    text: $white,
+    background: $violet-red,
+    border: $gray,
+  ),
+) !default;
+
+$tooltip-colors: (
+  normal: (
+    background: $quartz,
+    border: $quartz,
+    text: $midnight-blue,
+  ),
+) !default;
+
+$input-colors: (
+  normal: (
+    label: $gray,
+    border: $gray,
+    background: $white,
+    text: $primary,
+    placeholder: $gray,
+  ),
+  focus: (
+    label: $accent,
+    border: $gray,
+    background: $white,
+    text: $primary,
+    placeholder: $gray,
+  ),
+  invalid: (
+    border: $danger,
+    label: $danger,
+    background: $white,
+    text: $primary,
+    placeholder: $gray,
+  ),
+) !default;
+
+$button-colors: (
+  primary: (
+    base: $primary,
+    inverse: $white,
+    border: $dark-gray,
+  ),
+  accent: (
+    base: $accent,
+    inverse: $white,
+    border: $accent,
+  ),
+  danger: (
+    base: $danger,
+    inverse: $white,
+    border: $danger,
+  ),
+  disabled: (
+    base: $disabled,
+    inverse: $white,
+    border: $disabled,
+  ),
+  clear: (
+    base: $transparent,
+    inverse: $transparent,
+    border: $transparent,
+  ),
+  link: (
+    base: $light-gray,
+    inverse: $transparent,
+    border: $transparent,
+  ),
+) !default;
+
+$icon-colors: (
+  primary: (
+    base: $ruby,
+  ),
+  info: (
+    base: $sapphire,
+  ),
+  warning: (
+    base: $tangerine,
+  ),
+  danger: (
+    base: $amaranth,
+  ),
+  disabled: (
+    base: $dark-gray,
+  ),
+  white: (
+    base: $white,
+  ),
+  light: (
+    base: $gray-blue,
+  ),
+  none: (
+    base: $transparent,
+  ),
+) !default;
+
+$icon-sizes: (
+  xs: 1.1rem,
+  s: 1.4rem,
+  m: 2rem,
+  l: 2.4rem,
+  xl: 3rem,
+  xxl: 4rem,
+) !default;

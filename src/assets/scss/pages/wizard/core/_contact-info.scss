@@ -1,0 +1,110 @@
+.gpi-contact-info {
+  @include media-below(small) {
+    width: unset;
+  }
+
+  width: 34rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+
+  &--m {
+    width: 400px;
+
+    @include media-below(small) {
+      width: 100%;
+    }
+
+    .gpi-search__result {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.gpi-cancer-additional-info__checkbox.gpi-cancer-additional-info__checkbox--m {
+  .gpi-checkbox {
+    flex-direction: column-reverse;
+  }
+  .gpi-checkbox__icon{
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-top: 10px;
+  }
+  .gpi-checkbox__label {
+    margin-left: 0;
+    font-size: 16px;
+    color: $midnight-blue;
+  }
+}
+
+.separator {
+  border-top: 1px solid var(--color-calendar-border);
+  margin-top: 22px;
+  padding-top: 32px;
+}
+.u-checkbox--m {
+  .gpi-checkbox__icon{
+      width: 18px;
+      height: 18px;
+      .gpi-icon{
+          width: 10px;
+          height: 10px;
+      }
+  }
+}
+.gpi-icon.gpi-icon--none{
+    color: transparent;
+}
+.checkbox-theme--1 {
+  padding: 16px;
+  border-radius: 8px;
+
+  .gpi-checkbox {
+    padding: 0;
+    align-items: flex-start;
+
+    &:hover {
+
+      .gpi-checkbox__icon {
+        border-color: $ruby;
+        background: transparent;
+      }
+    }
+
+    &.checked {
+      &:hover {
+        .gpi-checkbox__icon {
+          background: $ruby;
+        }
+      }
+
+      .gpi-checkbox__icon {
+        background: $ruby;
+        border-color: $ruby;
+
+        .gpi-icon {
+          color: white;
+        }
+      }
+    }
+
+    .gpi-checkbox__icon {
+      border-color: $midnight-blue;
+      transition: .3s ease-in-out;
+
+      &:hover {
+        border-color: $ruby;
+        background: initial;
+      }
+    }
+  }
+
+  .gpi-checkbox__label {
+    font-size: 16px;
+    line-height: 22px;
+    font-family: NotoSemiBold;
+    margin-left: 13px;
+  }
+}

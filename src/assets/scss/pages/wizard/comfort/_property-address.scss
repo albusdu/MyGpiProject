@@ -1,0 +1,11 @@
+﻿.gpi-comfort-property-address {
+  width: 63.5rem;
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+
+.gpi-comfort-property-address__input {
+
+}

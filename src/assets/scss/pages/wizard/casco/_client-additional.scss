@@ -1,0 +1,84 @@
+.gpi-casco-client-additional {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.gpi-casco-client-additional__politically-active {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gpi-casco-client-additional__politically-active-label {
+  font-family: NotoSemiBold, sans-serif;
+  font-size: 2.1rem;
+  line-height: 1.4;
+  color: $primary;
+  margin-bottom: 4rem;
+}
+
+
+.gpi-casco-client-additional__politically-active-options {
+  width: 100%;
+}
+
+
+.gpi-casco-client-additional__politically-active-options-item {
+
+  cursor: pointer;
+  border: 1px solid $border-color;
+  border-radius: 0.8rem;
+  padding: 1rem 1.9rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto 1.2rem;
+  min-width: 25.5rem;
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &.active {
+    border: 1px solid $gray;
+  }
+}
+
+.gpi-casco-client-additional__politically-active-options-item-checkmark {
+  border: 1px solid $border-color;
+  transition: all 1s ease;
+  border-radius: 50%;
+
+}
+
+.gpi-casco-client-additional__politically-active-options-item-label {
+  margin-left: 1rem;
+}
+
+
+.gpi-casco-client-additional__inputs {
+  @include media-below(small) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  padding-left: 13rem;
+  padding-right: 13rem;
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top: 1px dashed $border-color;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

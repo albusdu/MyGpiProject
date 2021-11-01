@@ -1,0 +1,21 @@
+@function get-nested($map, $keys...) {
+  $get: $map;
+  @each $key in $keys {
+    @if $get == null {
+      @return $get;
+    }
+
+    $get: map-get($get, $key)
+  }
+  @return $get;
+}
+
+@function get-media-breakpoint($name) {
+  @return map-get($media-breakpoints, $name);
+}
+
+$browser-context: 16; // Default
+
+@function vw($pixels) {
+  @return #{($pixels/1920) * 100}vw;
+}

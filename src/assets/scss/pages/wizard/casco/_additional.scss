@@ -1,0 +1,105 @@
+.gpi-casco-additional {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 67.2rem;
+  color: $primary;
+}
+
+
+.gpi-casco-additional__payment-standard {
+  @include media-below(small) {
+    flex-wrap: wrap;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed $border-color;
+}
+
+.gpi-casco-additional__payment-standard-label {
+  @include media-below(small) {
+    width: 100%;
+    text-align: center;
+  }
+  font-family: NotoSemiBold, sans-serif;
+  font-size: 1.6rem;
+  color: $sapphire;
+  margin-bottom: 2rem;
+}
+
+.gpi-casco-additional__payment-standard-input {
+  width: 37.5rem;
+}
+
+.gpi-casco-additional__service {
+  @include media-below(small) {
+    position: relative;
+    margin-top: 2.4rem;
+    padding: 56px 16px 25px;
+    text-align: center;
+  }
+  cursor: pointer;
+  width: 100%;
+  padding: 3rem 3.2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  border: 1px solid $border;
+  border-radius: 0.5rem;
+
+  &.active {
+    border: 1px solid $primary;
+  }
+}
+
+.gpi-casco-additional__service-checkmark {
+  @include media-below(small) {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+  }
+  border-radius: 50%;
+  border: 1px solid $border;
+  transition: all 1s ease;
+}
+
+.gpi-casco-additional__service-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.9rem;
+}
+
+.gpi-casco-additional__service-text-header {
+  font-family: NotoBold, sans-serif;
+  font-size: 2rem;
+  color: $primary;
+  margin-bottom: 1rem;
+  max-width: 35rem;
+  line-height: 1.2;
+}
+
+.gpi-casco-additional__service-text-description {
+  font-family: NotoSemiBold, sans-serif;
+  color: $gray-blue;
+  font-size: 1.4rem;
+  max-width: 35rem;
+}
+
+.gpi-casco-additional__service-input {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid $border-color;
+  width: 100%;
+
+  & .gpi-control-container {
+    margin-bottom: 0;
+  }
+}

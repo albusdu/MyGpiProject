@@ -1,0 +1,45 @@
+.gpi-confirm {
+  display: flex;
+  flex-direction: column;
+  min-width: 55rem;
+
+  padding: 2rem;
+
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+.gpi-confirm__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpi-confirm__header-action {
+}
+
+.gpi-confirm__header-text {
+  font-family: MiriadBold;
+  font-size: 2.4rem;
+  color: var(--color-dialog-title);
+}
+
+.gpi-confirm__actions {
+  margin: 2rem 0;
+  width: 15rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.gpi-confirm__body {
+  @include media-below(small) {
+    padding: 2rem;
+  }
+  width: 100%;
+  padding: 2rem 4rem;
+  font-family: 'NotoSemiBold';
+  font-weight: bold;
+  color: $sapphire;
+  font-size: 1.3rem;
+}

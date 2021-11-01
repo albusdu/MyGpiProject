@@ -1,0 +1,8 @@
+.gpi-birth-date-form{
+  &__input-container{
+    width: vw(428);
+    @include media-below(small) {
+      width: 100%;
+    }
+  }
+}

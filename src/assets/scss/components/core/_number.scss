@@ -1,0 +1,37 @@
+﻿.gpi-input__number::-webkit-outer-spin-button,
+.gpi-input__number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.gpi-input__number[inputstyle="buttons"] {
+  text-align: center;
+}
+
+.gpi-input__number-button {
+  user-select: none;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  vertical-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $sapphire;
+  font-weight: bold;
+  top: calc(50% - 1.5rem);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+.gpi-input__number-plus {
+  background-color: $tangerine;
+  right: -1.5rem;
+}
+
+.gpi-input__number-minus {
+  background-color: $quartz;
+  left: -1.5rem;
+}

@@ -1,0 +1,145 @@
+.gpi-travel-policy-info {
+  @include media-below(small) {
+    width: unset;
+  }
+
+  width: 63.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.gpi-travel-policy-info__territorial-scopes {
+  display: flex;
+  flex-direction: column;
+  width: 42.8rem;
+  align-self: center;
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+.gpi-travel-policy-info__territorial-scopes-item {
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+
+  background-color: var(--color-radio-with-border-background);
+  height: 4.5rem;
+  border: 0.1rem solid var(--color-radio-with-border-border);
+  border-radius: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &.active {
+    border: 0.1rem solid $sapphire;
+  }
+}
+
+.gpi-travel-policy-info__territorial-scopes-item-check {
+  background-color: var(--color-radio-with-border-background);
+  border: 0.1rem solid var(--color-radio-with-border-border);
+  border-radius: 50%;
+  margin: 1.7rem;
+  transition: 0.3s ease all;
+}
+
+.gpi-travel-policy-info__territorial-scopes-item-text {
+  font-family: NotoMedium, sans-serif;
+  font-size: 1.6rem;
+  text-align: start;
+  line-height: 4.5rem;
+  color: var(--color-radio-with-border-text);
+}
+
+.gpi-travel-policy-info__currency .gpi-switch__wrapper {
+  flex-grow: unset;
+  width: 10rem;
+}
+
+.gpi-travel-policy-info__currency .gpi-switch__item-text {
+  font-weight: bold;
+  color: $sapphire;
+}
+
+.gpi-travel-policy-info__currency .gpi-switch__label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.gpi-travel-policy-info__deductible {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-top: 2rem;
+
+  border: 0.1rem solid $border;
+  border-radius: 0.5rem !important;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  padding: 2.5rem;
+  min-height: 8.8rem;
+  box-sizing: border-box;
+
+  &.active {
+    border: 0.1rem solid $sapphire;
+  }
+}
+
+.gpi-travel-policy-info__deductible-check {
+  border: 0.1rem solid $border;
+  border-radius: 50%;
+}
+
+.gpi-travel-policy-info__deductible-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 2rem;
+}
+
+.gpi-travel-policy-info__deductible-text-header {
+  font-family: NotoBold, sans-serif;
+  font-weight: bold;
+  color: $sapphire;
+  font-size: 1.8rem;
+}
+
+.gpi-travel-policy-info__deductible-text-description {
+  margin-top: 1rem;
+  font-family: NotoSemiBold, sans-serif;
+  color: $gray;
+  font-size: 1.2rem;
+}
+
+.gpi-travel-policy-info__deductible-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+  font-family: NotoBold, sans-serif;
+  color: $sapphire;
+
+  font-weight: bold;
+
+  .amount {
+    font-size: 3.5rem;
+  }
+
+  .currency {
+    font-size: 1.5rem;
+  }
+}
+
+

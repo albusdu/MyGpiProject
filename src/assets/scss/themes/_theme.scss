@@ -1,0 +1,208 @@
+body {
+  /* Common */
+  --color-separator-underline: #E9EBF0;
+  /* Common */
+  /* Input */
+  --color-input-background: White;
+  --color-input-text: #0E215E;
+  --color-input-border: #B1B7CA;
+  --color-input-active: #ED1C7C;
+  --color-input-label: #B1B7CA;
+  --color-input-invalid-border: White;
+  --color-input-invalid: #E82A5E;
+  /* Input */
+  /* Button */
+  --color-button-active-pink: #ED1C7C;
+  --color-button-active-white: White;
+  --color-button-active-purple: #898DA7;
+  --color-button-border: #B1B7CA;
+  --color-button-text-white: White;
+  --color-button-text-blue: #292562;
+  --color-button-fab-background: #2E55F1;
+  --color-button-calendar-background: #F1F4FF;
+  /* Button */
+  /* Header */
+  --color-Header-underline: #F0F0F0;
+  --color-Header-hotline: #0E215E;
+  --color-Header-number: #ED1C7C;
+  /* Header */
+  /* Tabs */
+  --color-tabs-selected: #EE2A7B;
+  --color-tabs-text: #B1B7CA;
+  --color-tabs-selected-text: White;
+  /* Tabs */
+  /* Fab Button */
+  --color-fab-button-background: #2E55F1;
+  /* Fab Button */
+  /* Product */
+  --color-product-normal-border: #EEEFF3;
+  --color-product-name: #0E215E;
+  --color-product-checked: #0E215E;
+  --color-product-popular-background: #EE2A7B;
+  --color-product-popular-color: White;
+  --color-product-sale-background: #FCB618;
+  --color-product-sale-color: Black;
+  --color-product-info-cart-normal: #C8CCD9;
+  --color-product-info-cart-selected: #EE2A7B;
+  /* Product */
+  /* Navigation */
+  --color-navigation-disable-text-color: #9199B4;
+  --color-navigation-selected-text-color: #0E215E;
+  --color-navigation-item-step-background: #FCB618;
+  --color-navigation-item-step-text: #0E215E;
+  --color-navigation-item-active-border: #B1B7CA;
+  --color-navigation-item-active-bacground: White;
+  --color-navigation-item-subitem-indicator: #9199B4;
+  --color-navigation-item-subitem-indicator-active: #FCB618;
+  --color-navigation-item-subitem-disable-text: #9199B4;
+  --color-navigation-item-subitem-active-text: #141C4F;
+  /* Navigation */
+  /* Main Content */
+  --color-main-content-product-name-text: #ED1C7C;
+  --color-main-content-product-title-text: #0E215E;
+  /* Main Content */
+  /* Quick Login Button */
+  --color-quick-login-button-background: #F5F7FF;
+  --color-quick-login-button-title: #0E215E;
+  --color-quick-login-button-text: #898DA7;
+  /* Quick Login Button */
+  /* Add Insurer Person Button */
+  --color-add-insurer-person-button-background: White;
+  --color-add-insurer-person-button-border: #B1B7CA;
+  --color-add-insurer-person-button-text: #898DA7;
+  /* Add Insurer Person Button */
+  /* Dialog */
+  --color-dialog-overlay: rgba(0,0,0,0.4);
+  --color-dialog-content: White;
+  --color-dialog-title: #0E215E;
+  --color-dialog-title-separator: #EBEDF5;
+  /* Dialog */
+  /* Radio with border */
+  --color-radio-with-border-background: White;
+  --color-radio-with-border-border: #DEE0E8;
+  --color-radio-with-border-checked-border: #0E215E;
+  --color-radio-with-border-text: #0E215E;
+  --color-radio-with-border-checked-circle: #ED1C7C;
+  /* Radio with border */
+  /* Tooltip */
+  --color-tooltip-background: #DDE3F5;
+  --color-tooltip-border: #DDE3F5;
+  --color-tooltip-text: #141C4F;
+  /* Tooltip */
+  /* Date */
+  --color-date-background: #DDE3F5;
+  --color-date-border: #DDE3F5;
+  --color-date-text: #0E215E;
+  /* Date */
+  /* Tabs */
+  --color-tabs-background: White;
+  --color-tabs-active-background: #EE2A7B;
+  --color-tabs-border: #B1B7CA;
+  --color-tabs-text: #9199B4;
+  --color-tabs-active-text: White;
+  /* Tabs */
+  /* Dropdown */
+  --color-dropdown-background: White;
+  --color-dropdown-text: #0E215E;
+  --color-dropdown-border: #B1B7CA;
+  --color-dropdown-active: #ED1C7C;
+  --color-dropdown-label: #B1B7CA;
+  --color-dropdown-selected-text: #0E215E;
+  --color-dropdown-content-background: White;
+  --color-dropdown-content-hover-background: #F5F7FC;
+  --color-dropdown-content-border: #EEEFF3;
+  /* Dropdown */
+  /* Insurer Person */
+  --color-insurer-person-border: #EEEFF3;
+  --color-insurer-person-background: White;
+  --color-insurer-person-title: #0E215E;
+  --color-insurer-person-text: #898DA7;
+  --color-insurer-person-price: #898DA7;
+  /* Insurer Person */
+  /* Insurer Person */
+  --color-price-with-title-text: #898DA7;
+  --color-price-with-title-price: #ED1C7C;
+  /* Insurer Person */
+  /* Clinic Item */
+  --color-gpi-clinic-item-background: White;
+  --color-gpi-clinic-item-border: #EEEFF3;
+  --color-gpi-clinic-item-checked-border: #0E215E;
+  --color-gpi-clinic-item-checked-circle: #ED1C7C;
+  --color-gpi-clinic-item-name: #0E215E;
+  --color-gpi-clinic-item-address: #898DA7;
+  --color-gpi-clinic-item-globe: #EBECEE;
+  --color-gpi-clinic-item-sale-text: White;
+  --color-gpi-clinic-item-sale-background: #FCB618;
+  /* Clinic Item */
+  /* Payment Amount */
+  --color-payment-amount-text: #0E215E;
+  --color-payment-amount-price: #ED1C7C;
+  --color-payment-amount-sale: #B5BBCD;
+  /* Payment Amount */
+  /* Expander */
+  --color-expander-background: White;
+  --color-expander-border: #EEEFF3;
+  --color-expander-header: #25215D;
+  /* Expander */
+  /* Row Item */
+  --color-row-item-header-text: #9199B4;
+  --color-row-item-value-text: #141C4F;
+  /* Row Item */
+  /* Eco Coins */
+  --color-eco-coins-background: #F5F7FF;
+  --color-eco-coins-promocode-text: #141C4F;
+  --color-eco-coins-promocode-button: #292562;
+  --color-eco-coins-promocode-button-text: White;
+  --color-eco-coins-amount-text: #141C4F;
+  --color-eco-coins-coins-amount-text: #EE2A7B;
+  /* Eco Coins */
+  /* Normal Checkbox */
+  --color-normal-checkbox-border: #DEE0E8;
+  --color-normal-checkbox-text: #141C4F;
+  --color-normal-checkbox-link: #ED1C7C;
+  --color-normal-checkbox-blue-background: #F1F4FF;
+  /* Normal Checkbox */
+  /* Policy Validate Period */
+  --color-policy-validate-period-background: White;
+  --color-policy-validate-period-border: #EEEFF3;
+  --color-policy-validate-period-text: #141C4F;
+  --color-policy-validate-period-date: #ED1C7C;
+  /* Policy Validate Period */
+  /* Monthly Payment */
+  --color-monthly-payment-header: #8690AE;
+  --color-monthly-payment-line: #E2E2E2;
+  --color-monthly-payment-price: #ED1C7C;
+  /* Monthly Payment */
+  /* Final Page */
+  --color-final-page-header: #0E215E;
+  --color-final-page-text: #141C4F;
+  --color-final-page-other-text: #9199B4;
+  --color-final-page-policy-background: White;
+  --color-final-page-policy-border: #CACEDB;
+  --color-final-page-policy-header: #9199B4;
+  --color-final-page-policy-number: #ED1C7C;
+  /* Final Page */
+  /* Calendar */
+  --color-calendar-border: #DEE0E8;
+  --color-calendar-top-label-text: #0E215E;
+  --color-calendar-date-label: #898DA7;
+  --color-calendar-checked-background: #FCB618;
+  --color-calendar-separator-line: #F0F0F0;
+  --color-calendar-month: #363636;
+  --color-calendar-year: #898DA7;
+  --color-calendar-weeks: #141C4F;
+  --color-calendar-day-active: #2B2B2B;
+  --color-calendar-day-deactive: #D5D5D5;
+  --color-calendar-day-selected-color: White;
+  --color-calendar-day-selected-bacground: #EE2A7B;
+  --color-calendar-day-selected-middle-bacground: #FCD1E5;
+  --color-calendar-button-border: White;
+  /* Calendar */
+  /* Notification */
+  --color-notification-background: #F5F7FF;
+  --color-notification-text: #141C4F;
+  /* Notification */
+  --color-holder-list-active: #0E215E;
+  --color-holder-list-fullname: #9199B4;
+  --color-clinics-text-box: #f1f4ff;
+}

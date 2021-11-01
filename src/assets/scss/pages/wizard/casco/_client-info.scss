@@ -1,0 +1,8 @@
+.gpi-casco-client-info {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 43.2rem;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,49 @@
+.gpi-casco-franchise {
+  @include media-below(small) {
+   width: 100%;
+  }
+  width: 49.5rem;
+}
+
+
+.gpi-casco-franchise__options {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 42.8rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpi-casco-franchise__options-item {
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  border: 1px solid $border;
+  border-radius: 1rem;
+
+
+  &.active {
+    border-color: $primary;
+  }
+}
+
+.gpi-casco-franchise__options-item-checkmark {
+  transition: all 2s ease;
+  border: 1px solid $border;
+  border-radius: 50%;
+}
+
+.gpi-casco-franchise__options-item-text {
+  margin-left: 1.7rem;
+  font-size: 2rem;
+  font-family: NotoMedium, sans-serif;
+  color: $sapphire;
+}

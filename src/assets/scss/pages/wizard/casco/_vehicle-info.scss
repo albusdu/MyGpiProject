@@ -1,0 +1,111 @@
+.gpi-casco-vehicle-info {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 41rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gpi-casco-vehicle-info_year,
+.gpi-casco-vehicle-info_price {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 38.3rem;
+}
+
+.gpi-casco-vehicle-info__type {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+  padding-top: 2.3rem;
+  border-top: 1px solid $border-color;
+}
+
+.gpi-casco-vehicle-info__type-label {
+  font-size: 2rem;
+  font-family: NotoBold;
+  color: $sapphire;
+  margin-bottom: 3rem;
+}
+
+.gpi-casco-vehicle-info__type-options {
+  @include media-below(small) {
+   flex-wrap: wrap;
+  }
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpi-casco-vehicle-info__type-options-item {
+  @include media-below(small) {
+    width: 100%;
+    flex-direction: row;
+    padding: 20px;
+    margin-bottom: 16px;
+    justify-content: start;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.25rem 1rem 4.3rem;
+
+  border-radius: 1rem;
+  border: 1px solid $border;
+  width: calc((100% - 2rem) / 3);
+
+  transition: all 0.2s ease;
+
+  &.active {
+    border: 1px solid $primary;
+  }
+}
+
+.gpi-casco-vehicle-info__type-options-item-icon {
+  @include media-below(small) {
+    margin-right: 15px;
+    margin-left: 27px;
+    order: 2;
+  }
+  svg {
+    width: 6rem;
+  }
+}
+
+.gpi-casco-vehicle-info__type-options-item-label {
+  @include media-below(small) {
+    margin-top: 0;
+    order: 2;
+  }
+  font-size: 1.6rem;
+  font-family: NotoMedium;
+  color: $sapphire;
+  margin-top: 1rem;
+}
+
+.gpi-casco-vehicle-info__type-options-item-checkmark {
+  @include media-below(small) {
+    order: 1;
+    position: relative;
+    bottom: auto;
+  }
+  position: absolute;
+  bottom: -1.5rem;
+  background: $white;
+  border-radius: 50%;
+  border: 1px solid $border;
+}

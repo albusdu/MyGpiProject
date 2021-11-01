@@ -1,0 +1,44 @@
+﻿.gpi-wizard__step-advice-container {
+  @include media-below(small) {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  width: 30rem;
+}
+
+.gpi-wizard__step-advice {
+  @include media-below(small) {
+    position: relative;
+    top: auto;
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+  position: absolute;
+  width: 30rem;
+  right: 4rem;
+  top: 17rem;
+  padding: 2rem 2rem 2rem 2rem;
+  box-sizing: border-box;
+  border-radius: 1.1rem;
+
+  background-color: var(--color-notification-background);
+  color: var(--color-notification-text);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gpi-wizard__step-advice-text {
+  font-size: 1.4rem;
+  line-height: 1.57;
+  text-align: left;
+
+  font-family: NotoRegular, sans-serif;
+}
+
+.gpi-wizard__step-advice-action {
+  margin-left: 1rem;
+}

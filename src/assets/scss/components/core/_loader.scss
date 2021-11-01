@@ -1,0 +1,17 @@
+
+.gpi-loader-container {
+/*  display: none;*/
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  // background: rgba( 255, 255, 255, .8 ) url(../../media/lottie-loader.gif) 50% 50% no-repeat;
+  background: rgba( 255, 255, 255, .8 );
+  display: flex;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}

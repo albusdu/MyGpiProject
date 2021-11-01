@@ -1,0 +1,122 @@
+.gpi-wizard-success {
+  @include media-below(small) {
+    height: 100%;
+    position: unset;
+    width:100%;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*width: 100%;
+  padding-top: 21rem;*/
+  font-family: NotoBold, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  height: calc(100% - 12rem);
+  width: calc(100% - 7.2rem);
+  position: absolute;
+}
+
+.gpi-wizard-success__icon {
+  @include media-below(small) {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  width: 11.7rem;
+  height: 11.7rem;
+  margin-bottom: 3rem;
+}
+
+.gpi-wizard-success__text {
+  @include media-below(small) {
+    margin-bottom: 3.2rem;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6.8rem;
+}
+
+.gpi-wizard-success__text-header {
+  @include media-below(small) {
+    font-size: 3.4rem;
+  }
+
+  font-family: MiriadBold;
+  font-size: 5.5rem;
+  line-height: 1.33;
+  color: $primary;
+  margin-bottom: 0.5rem;
+}
+
+.gpi-wizard-success__text-description {
+  @include media-below(small) {
+    font-size: 1.6rem;
+  }
+
+  font-family: NotoSemiBold;
+  font-size: 2.1rem;
+  line-height: 1.43;
+  color: $midnight-blue;
+}
+
+.gpi-wizard-success__print {
+  @include media-below(small) {
+    margin-bottom: 3.5rem;
+  }
+
+  margin-bottom: 7.0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gpi-wizard-success__print-text {
+  font-size: 1.4rem;
+  opacity: 0.7;
+  color: $dark-gray;
+  margin-bottom: 1rem;
+}
+
+.gpi-wizard-success__print-button {
+  margin-bottom: 1rem;
+  border: solid 1px rgba($primary, 0.22);
+  border-radius: 0.8rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 1.3rem 2.2rem;
+}
+
+
+.gpi-wizard-success__print-button-text {
+  opacity: 0.7;
+  font-size: 1.3rem;
+  color: $dark-gray;
+}
+
+.gpi-wizard-success__print-button-policy {
+  margin-left: 0.5rem;
+  font-size: 1.4rem;
+  color: $accent;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.gpi-wizard-success__footer {
+
+  opacity: 0.7;
+  font-size: 1.4rem;
+
+  line-height: 1.57;
+  color: $dark-gray;
+}
+

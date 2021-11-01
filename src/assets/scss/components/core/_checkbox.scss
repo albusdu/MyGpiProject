@@ -1,0 +1,47 @@
+.gpi-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.gpi-checkbox.checked .gpi-checkbox__icon {
+  background-color: #fff;
+}
+
+.gpi-checkbox:hover .gpi-checkbox__icon {
+  background-color: #141C4F3B;
+}
+
+.gpi-checkbox__icon {
+  height: 1.6rem;
+  width: 1.6rem;
+  border: 1px solid #141C4F3B;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+
+  &.checked {
+
+  }
+}
+
+.gpi-checkbox__label {
+  margin-left: 1.3rem;
+  flex: 1;
+}
+
+.gpi-checkbox-blue-wrapper-with-label {
+  cursor: pointer;
+  background: #F1F4FF;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+  font-family: NotoSemiBold;
+
+  .gpi-checkbox  {
+    padding: 0.9rem 1.1rem 0.9rem 1.4rem;
+  }
+}

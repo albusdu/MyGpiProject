@@ -1,0 +1,139 @@
+﻿.gpi-comfort-property-info {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 67.2rem;
+}
+
+.gpi-comfort-property-info__usage-type {
+  @include media-below(small) {
+    flex-wrap: wrap;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-separator-underline);
+}
+
+.gpi-comfort-property-info__usage-type-label {
+  @include media-below(small) {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 100%;
+  }
+  font-family: NotoBold, sans-serif;
+  margin-bottom: 2.4rem;
+  font-size: 2rem;
+  color: $sapphire;
+
+}
+
+.gpi-comfort-property-info__usage-type-input {
+  width: 37.4rem;
+}
+
+
+.gpi-comfort-property-info__property-type {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.gpi-comfort-property-info__property-type-label {
+  font-family: NotoBold, sans-serif;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: $sapphire;
+}
+
+.gpi-comfort-property-info__property-type-options {
+  @include media-below(small) {
+    flex-wrap: wrap;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.gpi-comfort-property-info__property-type-options-header{
+  @include media-below(small) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gpi-comfort-property-info__property-type-options-item {
+  @include media-below(small) {
+    width: 100%;
+    margin-bottom: 1.6rem;
+    padding: 2rem;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  position: relative;
+  width: 49%;
+  border: 0.1rem solid var(--color-gpi-clinic-item-border);
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &.active {
+    border: 0.1rem solid var(--color-gpi-clinic-item-checked-border);
+  }
+
+  cursor: pointer;
+  color: $sapphire;
+  padding: 2rem 3.6rem;
+}
+
+.gpi-comfort-property-info__property-type-options-item-icon {
+  @include media-below(small) {
+    margin-left: 2.3rem;
+    margin-right: 1.6rem;
+  }
+}
+
+.gpi-comfort-property-info__property-type-options-item-text {
+  @include media-below(small) {
+    margin-top: 0;
+  }
+  font-family: NotoBold, sans-serif;
+  margin-top: 1rem;
+  display: inline-flex;
+}
+
+.gpi-comfort-property-info__property-type-options-item-inputs {
+  @include media-below(small) {
+    margin-top: 2rem;
+  }
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.gpi-comfort-property-info__property-type-options-item-check {
+  @include media-below(small) {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    display: inline-block;
+  }
+  position: absolute;
+  bottom: -1.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.1rem solid var(--color-gpi-clinic-item-border);
+  border-radius: 50%;
+  background-color: $white;
+}

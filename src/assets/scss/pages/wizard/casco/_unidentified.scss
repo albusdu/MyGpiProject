@@ -1,0 +1,56 @@
+.gpi-casco-unidentified {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 49.5rem;
+  text-align: center;
+}
+
+.gpi-casco-unidentified__label {
+  font-family: NotoMedium, sans-serif;
+  color: $primary;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  color: $sapphire;
+  line-height: 1.3;
+}
+
+
+.gpi-casco-unidentified__options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.gpi-casco-unidentified__options-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  min-width: 14.5rem;
+  padding: 1.6rem 1.9rem;
+  border: 1px solid $border;
+  border-radius: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  &.active {
+    border: 1px solid $primary;
+  }
+}
+
+.gpi-casco-unidentified__options-item-checkmark {
+  transition: all 1s ease;
+  border-radius: 50%;
+  border: 1px solid $border;
+}
+
+.gpi-casco-unidentified__options-item-text {
+  color: $sapphire;
+  font-size: 1.6rem;
+  font-family: NotoMedium, sans-serif;
+  margin-left: 1.7rem;
+}

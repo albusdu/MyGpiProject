@@ -1,0 +1,23 @@
+.gpi-cancer-additional-info {
+  width: 63.5rem;
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+.gpi-cancer-additional-info .gpi-checkbox{
+  align-items: flex-start;
+}
+
+.gpi-cancer-additional-info .gpi-checkbox .gpi-checkbox__icon{
+  margin-top: 0.7rem;
+}
+
+.gpi-cancer-additional-info__checkbox  .gpi-checkbox__label{
+  font-family: NotoSemiBold;
+  font-size: 1.4rem;
+  color: $midnight-blue;
+  flex: 1;
+
+}
+

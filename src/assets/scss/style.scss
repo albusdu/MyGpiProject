@@ -1,11 +1,28 @@
-// *******************
-//     utilities
-// *******************
-@import "theme/color";
-@import "theme/fonts";
-// @import 'general/mixins';
-@import "theme/variables";
+@import "abstract/variables";
+@import "abstract/functions";
+@import "abstract/mixins";
 
-//     stylesheet
-// *******************
-@import "theme/reboot";
+@import "vendor/bootstrap";
+@import "vendor/material";
+
+@import "base/base";
+@import "base/fonts";
+@import "base/typography";
+
+@import "components/core/index";
+@import "components/purchase-wizard/index";
+
+@import "layout/wizard/index";
+
+@import "pages/wizard/core/index";
+@import "pages/wizard/comfort/index";
+@import "pages/wizard/cancer/index";
+@import "pages/wizard/travel/index";
+@import "pages/wizard/medi-exclusive/index";
+@import "pages/wizard/casco/index";
+
+@import "pages/compensation/index";
+
+@import "themes/theme";
+
+@import "error/error";

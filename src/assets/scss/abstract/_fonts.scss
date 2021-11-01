@@ -1,0 +1,23 @@
+
+@font-face {
+  font-family: NotoMedium;
+  src: url("../../fonts/NotoSansGeorgian-Medium.ttf");
+}
+
+@font-face {
+  font-family: NotoRegular;
+  src: url("../../fonts/NotoSansGeorgian-Regular.ttf");
+}
+
+@font-face {
+  font-family: NotoSemiBold;
+  src: url("../../fonts/NotoSansGeorgian-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: NotoBold;
+  src: url("/fonts/NotoSansGeorgian-Bold.ttf");
+  src: url("../../fonts/NotoSansGeorgian-Bold.ttf");
+}
+
+$notoSemiBold: NotoSemiBold;

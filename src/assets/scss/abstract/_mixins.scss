@@ -1,0 +1,29 @@
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+@mixin media-below($width) {
+  @media (max-width: #{get-media-breakpoint($width)}) {
+    @content;
+  }
+}
+
+@mixin media-above($width) {
+  @media (min-width: #{get-media-breakpoint($width) + 1px}) {
+    @content;
+  }
+}
+
+@mixin media-range($from, $to) {
+  @media (min-width: #{get-media-breakpoint($from) + 1px}) and (max-width: #{get-media-breakpoint($to)}) {
+    @content;
+  }
+}

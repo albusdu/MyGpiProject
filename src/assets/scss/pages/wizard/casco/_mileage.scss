@@ -1,0 +1,38 @@
+.gpi-casco-mileage {
+  @include media-below(small) {
+    width: 100%;
+  }
+  width: 49.5rem;
+}
+
+.gpi-casco-mileage__label {
+  color: $primary;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: NotoMedium, sans-serif;
+  text-align: center;
+}
+
+.gpi-casco-mileage__inputs {
+  @include media-below(small) {
+    width: 100%;
+  }
+  display: flex;
+  width: 37rem;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gpi-casco-mileage__inputs-amount {
+  flex-grow: 1;
+  @include media-below(small) {
+    flex-grow: unset;
+  }
+}
+
+.gpi-casco-mileage__inputs-system {
+  margin-left: 1rem;
+  flex-grow: 1;
+}

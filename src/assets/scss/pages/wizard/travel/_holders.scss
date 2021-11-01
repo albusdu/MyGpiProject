@@ -1,0 +1,294 @@
+.gpi-travel-holders {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 67rem;
+  @include media-below(small) {
+    width: 100%;
+  }
+
+}
+
+
+.gpi-travel-holders__holder {
+  @include media-below(small) {
+    padding: 2rem 2rem;
+  }
+
+  width: 100%;
+  background-color: var(--color-insurer-person-background);
+  border: 0.1rem solid var(--color-insurer-person-border);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gpi-travel-holders__holder-main {
+  @include media-below(small) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+  flex-grow: 1;
+}
+
+.gpi-travel-holders__holder-price {
+  display: flex;
+  @include media-below(small) {
+    align-items: center
+  }
+}
+
+.gpi-travel-holders__holder-main-price {
+  @include media-below(small) {
+    margin-top: 0.7rem;
+  }
+
+  font-family: MiriadBold;
+  color: var(--color-quick-login-button-title);
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.gpi-travel-holders__holder-main-price-text {
+  @include media-below(small) {
+    font-size: 2.8rem;
+  }
+
+  font-size: 4.9rem;
+}
+
+.gpi-travel-holders__holder-main-price-sign {
+  @include media-below(small) {
+    font-size: 1.6rem;
+  }
+
+  font-size: 2rem;
+  margin-left: 0.5rem;
+}
+
+.gpi-travel-holders__holder-price-original {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  color: $gray;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 0.3rem solid;
+    border-color: inherit;
+    transform: skewY(-13deg);
+  }
+}
+
+.gpi-travel-holders__holder-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.gpi-travel-holders__holder-main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.gpi-travel-holders__holder-main-text-name {
+  @include media-below(small) {
+    font-size: 1.4rem;
+  }
+
+  font-family: NotoBold, sans-serif;
+  font-size: 2rem;
+  color: var(--color-insurer-person-title);
+}
+
+.gpi-travel-holders__holder-main-text-name-en {
+  font-family: MiriadBold, sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-insurer-person-title);
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  margin-bottom: 2.5rem;
+}
+
+
+.gpi-travel-holders__add {
+  height: 10.4rem;
+  width: 100%;
+  background-color: var(--color-add-insurer-person-button-background);
+  border: 1px dashed var(--color-add-insurer-person-button-border);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.gpi-travel-holders__add-icon {
+
+}
+
+.gpi-travel-holders__add-text {
+  font-family: NotoSemiBold;
+  font-size: 1.4rem;
+  color: var(--color-add-insurer-person-button-text);
+  line-height: 2.4rem;
+  margin-left: 2rem;
+}
+
+
+.gpi-travel-holder__total {
+  @include media-below(small) {
+    width: 100%;
+    justify-content: unset;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.gpi-travel-holder__total-text {
+  @include media-below(small) {
+    margin-right: unset;
+  }
+
+  font-family: NotoSemiBold;
+  font-size: 1.4rem;
+  color: var(--color-price-with-title-text);
+  line-height: 4.8rem;
+  margin-right: 5rem;
+}
+
+.gpi-travel-holder__total-price {
+  @include media-below(small) {
+    margin-left: auto;
+  }
+
+  font-family: MiriadBold;
+  font-size: 3.8rem;
+  color: var(--color-price-with-title-price);
+}
+
+.gpi-travel-holder__total-icon {
+  margin-left: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--color-price-with-title-price);
+  font-weight: bold;
+}
+
+.gpi-travel-holders__holder-luggage {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: $quartz;
+  border-radius: .8rem;
+  cursor: pointer;
+  padding: .5rem .5rem .5rem 2rem;
+  user-select: none;
+  align-items: center;
+}
+
+.gpi-travel-holders__holder-luggage .gpi-checkbox__label {
+  color: $midnight-blue;
+  font-family: NotoBold, sans-serif;
+  font-size: 1.2rem;
+}
+
+.gpi-travel-holders__calculation-result-wrapper {
+  width: 100%;
+}
+
+.gpi-travel-holders__holder-discount-gift {
+  @include media-below(small) {
+    padding: 8px;
+  }
+  display: flex;
+  width: auto;
+  background: $tangerine;
+  padding: 0.3rem 2rem;
+  justify-content: space-around;
+  border-radius: 1rem;
+  position: relative;
+
+  &:hover .gpi-travel-holders__discount-text-tooltip,
+  &:active .gpi-travel-holders__discount-text-tooltip,
+  &:active .gpi-travel-holders__discount-text-tooltip {
+    display: block;
+  }
+}
+
+.gpi-travel-holders__holder-discount-gift-text {
+  @include media-below(small) {
+    display: none;
+  }
+}
+
+.gpi-travel-holders__holder-disscount-gift-icon {
+  @include media-below(small) {
+    margin-right: 0;
+  }
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: NotoRegular, sans-serif;
+  color: $sapphire;
+  position: relative;
+}
+
+.gpi-travel-holders__discount-text-tooltip {
+  top: calc(100% + 0.8rem);
+  right: 0;
+  background-color: $white;
+  display: none;
+  box-shadow: 0px 3px 20px #00000029;
+  border: none;
+  border-radius: 1rem;
+  line-height: 1.6;
+}
+
+.gpi-travel-holders .gpi-tooltip:after {
+  @include media-below(small) {
+    right: .5rem;
+  }
+  top: -0.8rem;
+  right: 2.5rem;
+  width: 0;
+  border-bottom: 0.9rem solid white;
+}
+

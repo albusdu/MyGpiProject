@@ -1,0 +1,135 @@
+.gpi-comfort-payment-schema {
+  width: 67.2rem;
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+
+.gpi-comfort-payment-schema__payment-standard {
+  @include media-below(small) {
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px dashed $border-color;
+
+}
+
+.gpi-comfort-payment-schema__payment-standard-name {
+  @include media-below(small) {
+    width: 100%;
+    text-align: center;
+  }
+  margin-bottom: 2.4rem;
+  font-family: NotoBold, sans-serif;
+  font-size: 1.6rem;
+  color: $sapphire;
+}
+
+.gpi-comfort-payment-schema__payment-standard-input {
+  width: 37.4rem;
+}
+
+.gpi-comfort-payment-schema__tpl {
+  @include media-below(small) {
+    margin-top: 2.4rem;
+    padding: 56px 16px 25px;
+    position: relative;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3.5rem;
+  border: 0.1rem solid $border;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  padding: 2.6rem 5rem 2.6rem 3.2rem;
+  min-height: 11.8rem;
+  box-sizing: border-box;
+
+  &.active {
+    border: 0.1rem solid $sapphire;
+  }
+
+}
+
+.gpi-comfort-payment-schema__tpl-check {
+  @include media-below(small) {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+  }
+  border: 0.1rem solid $border;
+  border-radius: 50%;
+}
+
+.gpi-comfort-payment-schema__tpl-text {
+  @include media-below(small) {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 2.9rem;
+  margin-right: 2rem;
+}
+
+.gpi-comfort-payment-schema__tpl-text-header {
+  @include media-below(small) {
+    width: 100%;
+  }
+  font-family: NotoBold;
+  color: $sapphire;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.gpi-comfort-payment-schema__tpl-text-description {
+  @include media-below(small) {
+   width: 100%;
+  }
+  font-family: NotoSemiBold;
+  color: $gray-blue;
+  font-size: 1.4rem;
+}
+
+.gpi-comfort-payment-schema__tpl-price {
+  @include media-below(small) {
+    position: absolute;
+    right: 16px;
+    top: 17px;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  font-family: NotoBold, sans-serif;
+  color: $sapphire;
+}
+
+.gpi-comfort-payment-schema__tpl-price-amount {
+  @include media-below(small) {
+    font-size: 3.2rem;
+  }
+  font-size: 4.9rem;
+  font-family: MiriadBold;
+}
+
+.gpi-comfort-payment-schema__tpl-price-currency {
+  @include media-below(small) {
+    font-size: 1.6rem;
+  }
+  margin-left: .5rem;
+  font-size: 2rem;
+}

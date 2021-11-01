@@ -1,3 +1,8 @@
 $(document).ready(function(){
-    alert('asd')
+    //toggle modal
+    $('.open-modal').click(function(){
+        let modal = $(this).attr('data-modal');
+        $(modal).addClass('active')
+    })
+    //toggle modal
 })

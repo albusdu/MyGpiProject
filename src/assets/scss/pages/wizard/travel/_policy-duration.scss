@@ -1,0 +1,61 @@
+.gpi-travel-policy-duration {
+  @include media-below(small) {
+    width: unset;
+  }
+
+  width: 67.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.gpi-travel-policy-duration__count {
+  @include media-below(small) {
+    line-height: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: bold;
+  font-family: NotoBold, sans-serif;
+
+}
+
+.gpi-travel-policy-duration__count-label {
+  @include media-below(small) {
+    line-height: 3.5rem;
+    height: 3.5rem;
+  }
+  font-size: 2rem;
+  color: $sapphire;
+}
+
+.gpi-travel-policy-duration__count-amount {
+  color: $ruby;
+  white-space: nowrap;
+  font-family: MiriadBold, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.gpi-travel-policy-duration__count-amount-digits {
+  font-size: 4.9rem;
+  padding-top: 1rem;
+  margin-right: 0.7rem;
+}
+
+.gpi-travel-policy-duration__count-amount-days {
+  font-size: 1.6rem;
+  font-family: NotoBold, sans-serif;
+}
+
+
+.gpi-travel-policy-duration .gpi-separator {
+  margin-top: 5rem;
+}

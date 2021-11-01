@@ -1,0 +1,61 @@
+.gpi-person-modal__content {
+  justify-self: flex-start;
+  width: 35rem;
+  padding: 3rem 0;
+
+  @include media-below(small) {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &--m {
+    width: 562px;
+    padding-bottom: 0;
+
+    @include media-below(small) {
+     width: 100%;
+    }
+  }
+}
+
+.gpi-person-modal__actions {
+  width: 35rem;
+  padding: 3rem 0;
+  @include media-below(small) {
+    width: 100%;
+    padding: 3rem;
+  }
+  &--m{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      padding: 62px 0 48px;
+  }
+}
+
+
+.gpi-person-form {
+    &--m{
+        width: 562px;
+
+      .gpi-input__wrap--m{
+          margin-bottom: 22px;
+      }
+    }
+}
+
+.gpi-person-form__input {
+  display: flex;
+  @include media-below(small) {
+    flex-wrap: wrap;
+  }
+}
+
+.gpi-person-form__input gpi-input-container:nth-child(even) {
+  margin-left: 2rem;
+  @include media-below(small) {
+    margin-left: 0;
+  }
+}
+

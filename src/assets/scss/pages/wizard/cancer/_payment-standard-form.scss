@@ -1,0 +1,9 @@
+.gpi-payment-standard-form {
+}
+
+.gpi-payment-standard-form .gpi-holder-list{
+  width: 60rem;
+  @include media-below(small) {
+    width: unset;
+  }
+}

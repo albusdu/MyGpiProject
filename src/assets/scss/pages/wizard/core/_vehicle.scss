@@ -1,0 +1,137 @@
+.gpi-vehicle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50rem;
+
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+.gpi-vehicle__switch .gpi-switch__item-text {
+  @include media-below(small) {
+    font-size: 12px;
+  }
+}
+
+.gpi-vehicle__switch {
+  width: 100%;
+}
+
+.gpi-vehicle__manual {
+  width: 35rem;
+  margin-top: 5rem;
+}
+
+.gpi-vehicle__automatic {
+  @include media-below(small) {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: 1px dashed $border;
+    margin-bottom: 2.5rem;
+  }
+  margin-top: 2.7rem;
+  position: relative;
+  border: 1px dashed $border;
+  border-radius: 1rem;
+  padding: 4.8rem 3.8rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;;
+}
+
+.gpi-vehicle__automatic-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gpi-vehicle__automatic-search-label {
+  font-family: NotoSemiBold, sans-serif;
+  color: $primary;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0 1rem;
+}
+
+.gpi-vehicle__automatic-search-input {
+  color: $primary;
+  width: 24rem;
+}
+
+.gpi-vehicle__automatic-search-failed {
+  text-align: center;
+  color: $danger;
+  margin-bottom: 5rem;
+  font-family: NotoSemiBold, sans-serif;
+  font-size: 1.4rem;
+}
+
+.gpi-vehicle__automatic-search-automatic {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.gpi-vehicle__automatic-search-automatic-item {
+  @include media-below(small) {
+    align-items: center;
+  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.gpi-vehicle__automatic-search-automatic-item-key {
+  @include media-below(small) {
+    width: auto;
+  }
+  font-family: NotoSemiBold, sans-serif;
+  font-size: 1.4rem;
+  color: $disabled;
+}
+
+.gpi-vehicle__automatic-search-automatic-item-value {
+  @include media-below(small) {
+    width: auto;
+    flex: 1;
+    text-align: right;
+  }
+  font-family: NotoSemiBold, sans-serif;
+  font-size: 1.4rem;
+  color: $primary;
+  font-weight: 600;
+}
+
+.gpi-vehicle__automatic-search-manual {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.gpi-vehicle__manual-input {
+  width: 100%;
+}
+
+.gpi-vehicle__automatic-search-button {
+  position: absolute;
+  bottom: -2.2rem;
+
+  .gpi-btn {
+    padding: 1.6rem 4.4rem 1.5rem;
+  }
+}
+
+.gpi-vehicle__automatic-search-check {
+  margin-top: 2.5rem;
+}

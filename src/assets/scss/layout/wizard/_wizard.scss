@@ -1,0 +1,34 @@
+.gpi-wizard {
+  @include media-below(small) {
+    padding: 0 2rem;
+    height: 100%;
+  }
+
+  padding: 0 3.6rem;
+}
+
+.text-box {
+  padding: 16px 24px;
+  background: #F1F4FF;
+  border-radius: 8px;
+  color: #141C4F;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: NotoSemiBold,sans-serif;
+  width: 542px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 1;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #F1F4FF;
+    left: 37px;
+    bottom: -9px;
+  }
+}

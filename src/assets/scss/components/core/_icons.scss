@@ -1,0 +1,21 @@
+// Base
+.gpi-icon {
+  float: left;
+
+  transition: color .3s ease;
+
+  color: #{get-nested($icon-colors, info, base)};
+
+  @each $name, $color in $icon-colors {
+    &.gpi-icon--#{"" + $name} {
+      color: #{map-get($color, base)};
+    }
+  }
+
+  @each $name, $size in $icon-sizes {
+    &--#{$name} {
+      height: $size;
+      width: $size;
+    }
+  }
+}

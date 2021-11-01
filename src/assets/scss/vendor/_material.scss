@@ -1,0 +1,11 @@
+.mat-dialog-container {
+  @include media-below(small) {
+    border-radius: 0 !important;
+    height: auto!important;
+    max-height: 100%;
+  }
+
+  padding: 0 !important;
+  border-radius: 1.2rem !important;
+  box-shadow: none;
+}

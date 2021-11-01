@@ -1,0 +1,82 @@
+
+.gpi-wizard__header {
+  @include media-below(small) {
+    height: 9.7rem;
+  }
+
+  height: 12rem;
+  width: 100%;
+  border-bottom: 1px solid var(--color-Header-underline);
+}
+
+.gpi-wizard__header-logo {
+  @include media-below(small) {
+    width: 11.3rem;
+    height: 5rem;
+  }
+
+  width: 16.5rem;
+  height: 7.3rem;
+  margin-top: 2.1rem;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gpi-wizard__header-cabinet {
+  @include media-below(small) {
+    margin-top: 3rem;
+  }
+
+  float: right;
+  margin-top: 4rem;
+  display: flex;
+}
+
+.gpi-wizard__header-cabinet-button {
+  @include media-below(small) {
+    width: 5rem;
+    height: 3.5rem;
+    padding: 0;
+  }
+
+  text-decoration: none;
+  width: 17rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}
+
+.gpi-wizard__header-hotline {
+  float: left;
+  margin-right: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.gpi-wizard__header-hotline-text {
+  color: var(--color-Header-hotline);
+  float: left;
+  font-family: NotoSemiBold;
+  font-size: 1.2rem;
+  display: block;
+
+}
+
+.gpi-wizard__header-hotline-number {
+  color: var(--color-Header-number);
+  float: left;
+  font-family: MiriadBold;
+  font-size: 2.4rem;
+  display: block;
+
+}
+
+.gpi-wizard__header-hotline-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 2rem;
+  padding: 0;
+}
+

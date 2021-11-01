@@ -1,0 +1,36 @@
+.gpi-tooltip {
+  display: none;
+  width: max-content;
+  max-width: 30rem;
+  background-color: get-nested($tooltip-colors, normal, background);
+  border: 0.1rem solid get-nested($tooltip-colors, normal, border);
+  color: get-nested($tooltip-colors, normal, text);
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 3rem;
+  font-family: NotoBold;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+  &:after {
+    position: absolute;
+    top: -0.6rem;
+    right: 0.6rem;
+    width: 0;
+    border-bottom: 0.5rem solid get-nested($tooltip-colors, normal, border);
+    border-right: 0.5rem solid transparent;
+    border-left: 0.5rem solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+  }
+
+  &.show {
+    display: block !important;
+  }
+}
+

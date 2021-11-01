@@ -1,0 +1,35 @@
+﻿.gpi-comfort-property-area {
+  width: 63.5rem;
+  @include media-below(small) {
+    width: 100%;
+  }
+}
+
+.gpi-comfort-property-area__input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  @include media-below(small) {
+    flex-wrap: wrap;
+  }
+}
+
+.gpi-comfort-property-area__input-label {
+  @include media-below(small) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+  margin-bottom: 2.4rem;
+  font-family: NotoBold, sans-serif;
+  font-size: 1.6rem;
+  color: $sapphire;
+}
+
+.gpi-comfort-property-area__input-input {
+  @include media-below(small) {
+    margin: auto;
+    width: 75%;
+  }
+}

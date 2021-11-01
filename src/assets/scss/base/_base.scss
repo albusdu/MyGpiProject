@@ -1,0 +1,40 @@
+html {
+  @each $size, $percentage in $scaling-breakpoints {
+    @media (max-width: #{$size}px) {
+      font-size: $percentage;
+    }
+  }
+
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: NotoRegular, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.mobile {
+  @include media-above(small) {
+    display: none !important;
+  }
+}
+
+.desktop {
+  @include media-below(small) {
+    display: none !important;
+  }
+}
