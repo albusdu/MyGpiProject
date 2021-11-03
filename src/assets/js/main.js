@@ -157,12 +157,12 @@ $(document).ready(function(){
             addRemoveAction('.add-btn', 'add', 'active')
         }
     })
-    $('.add-btn.ambulatory-block--item').click(function(){
+    $('.add-btn').click(function(){
         $('.chips-container').show()
     })
     $('.mat-chip--m').click(function(){
-        $('.add-btn.ambulatory-block--item .icon').hide()
-        $('.add-btn.ambulatory-block--item .icon-check').show()
+        $('.add-btn .icon').hide()
+        $('.add-btn .icon-check').show()
     })
     function addRemoveAction(el, action, cl) {
         if(action == 'remove'){
