@@ -1,5 +1,5 @@
-
 .gpi-wizard__body {
+  flex: 1 0 0;
   @include media-below(small) {
     flex-direction: column;
     height: calc(100% - 10rem);
@@ -20,19 +20,49 @@
     .gpi-wizard__step-product {
       font-size: 34px;
       line-height: 42px;
+      font-family: "NotoBold", sans-serif;
+      @media (max-width: 1580px) {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      @media (max-width: 1080px) {
+        font-size: 22px;
+        line-height: 26px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
 
-    .gpi-wizard__step-title{
-        font-size: 55px;
+    .gpi-wizard__step-title {
+      font-size: 55px;
+      line-height: 66px;
+      margin-bottom: 60px;
+      font-family: "NotoBold", sans-serif;
+      @media (max-width: 1580px) {
+        font-size: 45px;
         line-height: 55px;
-        margin-bottom: 50px;
-    } .gpi-wizard__step-content {
-      margin-bottom: 32px;
+        margin-bottom: 38px;
+      }
+      @media (max-width: 1080px) {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 30px;
+      }
+      @media (max-width: 768px) {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 22px;
+      }
     }
 
-    .gpi-wizard__navigation-buttons {
-      margin-top: auto;
-      padding: 45px 0;
+    .gpi-wizard__step-content {
+      margin-bottom: 32px;
+      @media (max-width: 768px) {
+        margin-bottom: initial;
+        padding-bottom: 69px;
+      }
     }
   }
 }
@@ -46,7 +76,6 @@
   flex-direction: column;
   align-items: center;
 
-
   @include media-below(small) {
     .gpi-wizard__main-content {
       margin-left: 0;
@@ -54,14 +83,12 @@
   }
 }
 
-
 .gpi-wizard__step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &--m{
-      min-height: 100vh;
-      
+  &--m {
+    min-height: 100vh;
   }
 }
 
@@ -86,7 +113,7 @@
   font-family: MiriadBold;
   text-align: center;
   margin-bottom: 6rem;
-  line-height: 5.5rem;  
+  line-height: 5.5rem;
 
   @include media-below(small) {
     font-size: 3.5rem;
@@ -105,8 +132,3 @@
   display: flex;
   justify-content: center;
 }
-
-
-
-
-

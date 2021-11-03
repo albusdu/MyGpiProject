@@ -1,0 +1,319 @@
+<div class="modal" id="appealModal">
+    <div class="modal-overlay"></div>
+    <div class="gpi-modal__container gpi-modal__container--m">
+        <div class="gpi-modal__header gpi-modal__header--m">
+            <div class="gpi-modal__header-title gpi-modal__header-title--m"> მიმართვის დამატება </div>
+            <div class="gpi-modal__header-action">
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon close-btn" data-modal="#appealModal">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-modal__container__content">
+            <div class="gpi-radio">
+                <div class="gpi-radio__title">აირჩიე მომსახურება</div>
+                <label class="gpi-radio__label">
+                    <input type="radio" name="service-radio" id="ambulatory">
+                    <span class="checkmark"></span> ამბულატორია 
+                </label>
+                <label class="gpi-radio__label">
+                    <input type="radio" name="service-radio" id="medicines">
+                    <span class="checkmark"></span> მედიკამენტი
+                </label>
+            </div>
+            <div class="medicines-block" style="display: none;">
+                <div class="gpi-input__wrap--m medicines-block--item">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label">
+                            მედიკამენტის დასახელება
+                        </label>
+                        <div class="gpi-input__container">
+                            <input type="text" class="gpi-input gpi-input--m" id="medicines-input"/>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">შეიყვანე მინ. 3 სიმბოლო</p>
+                </div> 
+                <div class="gpi-input__wrap--m medicines-block--item disabled" id="quantity-wrap">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label">
+                            რაოდენობა
+                        </label>
+                        <div class="gpi-input__container">
+                            <input type="text" class="gpi-input gpi-input--m" id="quantity-input"/>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">აბი / ფლაკონი</p>
+                </div>
+                <div class="medicines-block--item add-btn">
+                    <div class="sonar-emitter">
+                        <div class="sonar-wave"></div>
+                        <svg class="icon">
+                            <use xlink:href="#plus-icon"></use>
+                        </svg>
+                        <svg class="icon icon-check" style="display: none;">
+                            <use xlink:href="#checkmark-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="error-text" style="display: none;">მედიკამენტი ვერ მოიძებნა. გთხოვ, სწორად მიუთითე დასახელება და აირჩიე სიიდან</div>
+                <div class="chips-container" style="display: none;">
+                    <div class="mat-chip mat-chip--m">
+                        ნუროფერი / 3 
+                        <div class="icon-bg">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>   
+                        </div>
+                    </div>
+                    <div class="mat-chip mat-chip--m">
+                        იბუპროფენი / 3 
+                        <div class="icon-bg">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ambulatory-block" style="display: none;">
+                <div class="gpi-select__wrap gpi-input__wrap--m">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label" for="gpi-select-10">კლინიკა
+                        </label>
+                        <div class="gpi-input__container">
+                            <div class="gpi-select--m">
+                                <div class="gpi-select">
+                                    <div class="gpi-select__main">
+                                        <input class="gpi-select__main-input" id="clinics-select">
+                                        <div class="gpi-select__main-icon">
+                                            <svg class='icon'>
+                                                <use xlink:href="#arrow-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="gpi-select__panel">
+                                        <div class="gpi-select__panel-scroll">
+                                            <span class="gpi-select__panel-option"> შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი </span>
+                                            <span class="gpi-select__panel-option"> შპს კურაციო </span>
+                                            <span class="gpi-select__panel-option"> შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი </span>
+                                            <span class="gpi-select__panel-option"> შპს კურაციო </span>
+                                            <span class="gpi-select__panel-option"> შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი </span>
+                                            <span class="gpi-select__panel-option"> შპს კურაციო </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gpi-select__wrap gpi-input__wrap--m disabled" id="chip">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label" for="gpi-select-10">შეიყვანე მომსახურების დასახელება
+                        </label>
+                        <div class="gpi-input__container">
+                            <div class="gpi-select--m">
+                                <div class="gpi-select">
+                                    <div class="gpi-select__main">
+                                        <input class="gpi-select__main-input" id="chip-input">
+                                        <div class="add-btn ambulatory-block--item">
+                                            <div class="sonar-emitter">
+                                                <div class="sonar-wave"></div>
+                                                <svg class="icon">
+                                                    <use xlink:href="#plus-icon"></use>
+                                                </svg>
+                                                <svg class="icon icon-check" style="display: none;">
+                                                    <use xlink:href="#checkmark-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gpi-select__panel">
+                                        <div class="gpi-select__panel-scroll">
+                                            <span class="gpi-select__panel-option"> სისხლის საერთო ანალიზი </span>
+                                            <span class="gpi-select__panel-option"> გლუკოზა კაპილარული (სისხლი) </span>
+                                            <span class="gpi-select__panel-option"> განავლის ფარული სისხლდენასა და სტენკობილინზე გამოკვლევა </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">შეიყვანე მინ. 3 სიმბოლო</p>
+                </div>
+                <div class="chips-container">
+                </div>
+            </div>
+        </div>
+        <div class="gpi-person-modal__actions gpi-person-modal__actions--m">
+            <button type="submit" class="gpi-modal__btn gpi-btn gpi-btn-accent gpi-btn-flat"> დაამატე </button>
+        </div>
+    </div>
+</div>
+<div class="modal" id="medicinesModal">
+    <div class="modal-overlay"></div>
+    <div class="gpi-modal__container gpi-modal__container--m">
+        <div class="gpi-modal__header gpi-modal__header--m">
+            <div class="gpi-modal__header-title gpi-modal__header-title--m"> მედიკამენტი </div>
+            <div class="gpi-modal__header-action">
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon close-btn" data-modal="#medicinesModal">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-modal__container__content gpi-modal__container__content--mModal">
+            <div class="medicines-block medicines-block">
+                <div class="gpi-input__wrap--m medicines-block--item">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label">
+                            მედიკამენტის დასახელება
+                        </label>
+                        <div class="gpi-input__container">
+                            <input type="text" class="gpi-input gpi-input--m"/>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">შეიყვანე მინ. 3 სიმბოლო</p>
+                </div> 
+                <div class="gpi-input__wrap--m medicines-block--item">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label">
+                            რაოდენობა
+                        </label>
+                        <div class="gpi-input__container">
+                            <input type="text" class="gpi-input gpi-input--m"/>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">აბი / ფლაკონი</p>
+                </div>
+                <div class="medicines-block--item add-btn active">
+                    <div class="sonar-emitter">
+                        <div class="sonar-wave"></div>
+                        <svg class="icon" style="display: none;">
+                            <use xlink:href="#plus-icon"></use>
+                        </svg>
+                        <svg class="icon icon-check">
+                            <use xlink:href="#checkmark-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="error-text" style="display: block;">მედიკამენტი უკვე დამატებულია, დაარედაქტირე რაოდენობა ან აირჩიე სხვა მედიკამენტი</div>
+                <div class="chips-container">
+                    <div class="mat-chip mat-chip--m">
+                        ნუროფერი / 3 
+                        <div class="icon-bg">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>   
+                        </div>
+                    </div>
+                    <div class="mat-chip mat-chip--m">
+                        იბუპროფენი / 3 
+                        <div class="icon-bg">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gpi-person-modal__actions gpi-person-modal__actions--m">
+            <button type="submit" class="gpi-modal__btn gpi-btn gpi-btn-accent gpi-btn-flat"> დაამატე </button>
+        </div>
+    </div>
+</div>
+<div class="modal" id="ambulatoryModal">
+    <div class="modal-overlay"></div>
+    <div class="gpi-modal__container gpi-modal__container--m">
+        <div class="gpi-modal__header gpi-modal__header--m">
+            <div class="gpi-modal__header-title gpi-modal__header-title--m"> ამბულატორია </div>
+            <div class="gpi-modal__header-action">
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon close-btn" data-modal="#ambulatoryModal">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-modal__container__content gpi-modal__container__content--aModal">
+            <div class="ambulatory-block">
+                <div class="chosen-clinic">
+                    <p class="name">არჩეული კლინიკა</p>
+                    <p class='value'>შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი</p>
+                </div>
+                <div class="gpi-select__wrap gpi-input__wrap--m" id="chip">
+                    <div class="gpi-control-container">
+                        <label class="gpi-input__label" for="gpi-select-10">შეიყვანე მომსახურების დასახელება
+                        </label>
+                        <div class="gpi-input__container">
+                            <div class="gpi-select--m">
+                                <div class="gpi-select">
+                                    <div class="gpi-select__main">
+                                        <input class="gpi-select__main-input" id="chip-input">
+                                        <div class="add-btn ambulatory-block--item">
+                                            <div class="sonar-emitter">
+                                                <div class="sonar-wave"></div>
+                                                <svg class="icon">
+                                                    <use xlink:href="#plus-icon"></use>
+                                                </svg>
+                                                <svg class="icon icon-check" style="display: none;">
+                                                    <use xlink:href="#checkmark-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gpi-select__panel">
+                                        <div class="gpi-select__panel-scroll">
+                                            <span class="gpi-select__panel-option"> სისხლის საერთო ანალიზი </span>
+                                            <span class="gpi-select__panel-option"> გლუკოზა კაპილარული (სისხლი) </span>
+                                            <span class="gpi-select__panel-option"> განავლის ფარული სისხლდენასა და სტენკობილინზე გამოკვლევა </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="gpi-modal__announce">შეიყვანე მინ. 3 სიმბოლო</p>
+                    <div class="error-text">მომსახურება უკვე დამატებულია, მიუთითეთ სხვა მომსახურება</div>
+                </div>
+                <div class="chips-container">
+                    <div class="mat-chip mat-chip--m">
+                        სისხლის საერთო ანალიზი 
+                        <div class="icon-bg">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gpi-person-modal__actions gpi-person-modal__actions--m">
+            <button type="submit" class="gpi-modal__btn gpi-btn gpi-btn-accent gpi-btn-flat"> დაამატე </button>
+        </div>
+    </div>
+</div>
+<div class="modal" id="removeModal">
+    <div class="modal-overlay"></div>
+    <div class="gpi-modal__container gpi-modal__container--m">
+        <div class="gpi-modal__header gpi-modal__header--m">
+            <div class="gpi-modal__header-action">
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon close-btn" data-modal="#removeModal">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-modal__container__content gpi-modal__container__content--rModal">
+            <p class="modal-question">ნამდვილად გსურს წაშლა?</p>
+            <div class="gpi-person-modal__actions gpi-person-modal__actions--m">
+                <button type="submit" class="gpi-modal__btn gpi-btn gpi-btn-primary gpi-btn-raised gpi-btn-flat close-modal" data-modal="#removeModal"> დიახ </button>
+                <button type="submit" class="gpi-modal__btn gpi-btn gpi-btn-accent gpi-btn-flat close-modal" data-modal="#removeModal"> არა </button>
+            </div>
+        </div>
+    </div>
+</div>

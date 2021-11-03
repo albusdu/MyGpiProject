@@ -12,8 +12,9 @@
     width: 562px;
     padding-bottom: 0;
 
-    @include media-below(small) {
+    @media (max-width: 768px) {
      width: 100%;
+     padding: 24px 16px 0;
     }
   }
 }
@@ -31,6 +32,10 @@
       display: flex;
       justify-content: center;
       padding: 62px 0 48px;
+      @media (max-width: 768px){
+          padding: 24px 0;
+          width: calc(100% - 32px)
+      }
   }
 }
 
@@ -39,8 +44,15 @@
     &--m{
         width: 562px;
 
+        @media (max-width: 768px){
+            width: 100%;
+        }
+
       .gpi-input__wrap--m{
           margin-bottom: 22px;
+          @media (max-width: 768px){
+              margin-bottom: 16px;
+          }
       }
     }
 }

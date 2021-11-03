@@ -18,6 +18,9 @@
 
     .gpi-search__result {
       margin-bottom: 32px;
+      @media (max-width: 768px) {
+        margin-bottom: 17px;
+      }
     }
   }
 }
@@ -26,16 +29,19 @@
   .gpi-checkbox {
     flex-direction: column-reverse;
   }
-  .gpi-checkbox__icon{
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      margin-top: 10px;
+  .gpi-checkbox__icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-top: 10px;
   }
   .gpi-checkbox__label {
     margin-left: 0;
     font-size: 16px;
     color: $midnight-blue;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -43,32 +49,49 @@
   border-top: 1px solid var(--color-calendar-border);
   margin-top: 22px;
   padding-top: 32px;
-}
-.u-checkbox--m {
-  .gpi-checkbox__icon{
-      width: 18px;
-      height: 18px;
-      .gpi-icon{
-          width: 10px;
-          height: 10px;
-      }
+  @media (max-width: 768px) {
+    margin-top: 16px;
+    padding-top: 16px;
+    &--mt6 {
+      margin-top: 6px;
+    }
   }
 }
-.gpi-icon.gpi-icon--none{
-    color: transparent;
+.u-checkbox--m {
+  .gpi-checkbox__icon {
+    width: 18px;
+    height: 18px;
+    .gpi-icon {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+.gpi-icon.gpi-icon--none {
+  color: transparent;
 }
 .checkbox-theme--1 {
   padding: 16px;
   border-radius: 8px;
+
+  @media (max-width: 768px) {
+    padding: 14px 16px;
+  }
+
+  &.gpi-summary__confirm {
+    .gpi-checkbox__label {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
 
   .gpi-checkbox {
     padding: 0;
     align-items: flex-start;
 
     &:hover {
-
       .gpi-checkbox__icon {
-        border-color: $ruby;
+        border-color: initial;
         background: transparent;
       }
     }
@@ -77,6 +100,7 @@
       &:hover {
         .gpi-checkbox__icon {
           background: $ruby;
+          border-color: $ruby;
         }
       }
 
@@ -88,23 +112,28 @@
           color: white;
         }
       }
+
+      .gpi-checkbox__label {
+        color: $sapphire;
+      }
     }
 
     .gpi-checkbox__icon {
       border-color: $midnight-blue;
-      transition: .3s ease-in-out;
-
-      &:hover {
-        border-color: $ruby;
-        background: initial;
-      }
+      transition: 0.3s ease-in-out;
     }
   }
 
   .gpi-checkbox__label {
     font-size: 16px;
     line-height: 22px;
-    font-family: NotoSemiBold;
+    font-family: NotoSemiBold, sans-serif;
     margin-left: 13px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 19px;
+      margin-left: 16px;
+    }
   }
 }

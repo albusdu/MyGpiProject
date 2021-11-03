@@ -6,14 +6,12 @@
   color: get-nested($select-colors, main, normal, text);
 }
 
-
 .gpi-select__main {
   border-radius: 0.8rem;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
-
 
 .gpi-select__main-input {
   font-family: NotoMedium, sans-serif;
@@ -28,9 +26,7 @@
   background-color: transparent;
   color: get-nested($input-colors, normal, text);
   border: none;
-
 }
-
 
 .gpi-select__main-value {
   font-family: NotoMedium, sans-serif;
@@ -45,11 +41,13 @@
   position: absolute;
   right: 0.9rem;
   top: 0.9rem;
+  .icon {
+    width: 10px;
+    height: 7px;
+  }
 }
 
-
 .gpi-select__panel {
-
   display: none;
   background-color: get-nested($select-colors, panel, normal, background);
   border: 0.1rem solid get-nested($select-colors, panel, normal, border);
@@ -68,11 +66,9 @@
   &.active {
     display: flex;
   }
-
 }
 
 .gpi-select__panel-option {
-
   float: left;
   height: 3.5rem;
   width: 100%;
@@ -97,7 +93,7 @@
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   overflow: auto;
-  &::-webkit-scrollbar-thumb{
-      background: $sapphire;
+  &::-webkit-scrollbar-thumb {
+    background: $sapphire;
   }
 }

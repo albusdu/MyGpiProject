@@ -1,38 +1,68 @@
 .gpi-btn {
   border-radius: 0.8rem;
-
   padding: 1.4rem 1rem 1.5rem 1rem;
-
   font-size: 1.6rem;
   line-height: 1.3rem;
-
   text-align: center;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
-
   border: none;
   cursor: pointer;
-
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
   width: 100%;
+  transition: box-shadow 0.2s ease-in-out;
 
-  transition: box-shadow .2s ease-in-out;
-   &--m{
-       font-size: 16px;
-       line-height: 16px;
-       padding: 14px 53px;
-       border-radius: 8px;
-   }
+  &--m {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 14px 53px;
+    border-radius: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 19px;
+      padding: 10px 67px;
+    }
+  }
+  &.close-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #9199b4;
+    .icon {
+      width: 14px;
+      height: 14px;
+    }
+  }
+  @media (max-width: 768px) {
+    &--back {
+      padding: 14px;
+      height: 39px;
+      padding: initial;
+      color: transparent !important;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 16px;
+        height: 12px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(180deg);
+        background-image: url("https://cdn-user-icons.flaticon.com/14438/14438682/1634337219810.svg?token=exp=1634338120~hmac=5fd0f788ac2d695fe20f9602aeb12b17");
+        background-size: 16px 12px;
+      }
+    }
+  }
+
   &:focus {
     outline: none;
   }
-
 }
 
 .gpi-btn-flat {
@@ -48,7 +78,6 @@
       background-color: get-nested($color, base);
     }
   }
-
 }
 
 .gpi-btn-raised {
@@ -57,11 +86,9 @@
   font-weight: bold;
   font-family: NotoBold, sans-serif;
 
-
   &:hover:not(.disabled) {
     box-shadow: 0 1rem 2rem 0 rgba(0, 153, 255, 0.19);
   }
-
 
   @each $name, $color in $button-colors {
     &.gpi-btn-#{$name} {
@@ -88,5 +115,3 @@
   padding: 0;
   background: none;
 }
-
-

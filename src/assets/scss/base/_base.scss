@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: NotoRegular, sans-serif;
@@ -26,7 +31,6 @@ body {
   box-shadow: none;
 }
 
-
 .mobile {
   @include media-above(small) {
     display: none !important;
@@ -36,5 +40,75 @@ body {
 .desktop {
   @include media-below(small) {
     display: none !important;
+  }
+}
+
+.icon {
+  height: inherit;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  &-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .gpi-modal__container {
+    position: relative;
+    z-index: 1;
+    background: white;
+    border-radius: 12px;
+    &__content {
+      width: 100%;
+      padding: 32px 48px 0 48px;
+      &--mModal {
+        .medicines-block {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+      }
+      &--aModal {
+        .ambulatory-block {
+          margin: 0;
+          padding: 0;
+          border: 0;
+        }
+      }
+      &--rModal {
+        .gpi-person-modal__actions--m {
+          display: flex;
+          justify-content: space-between;
+          button {
+            width: calc(50% - 20px);
+          }
+        }
+        .modal-question {
+          margin: 38px 0 0 0;
+          text-align: center;
+          font-size: 18px;
+          line-height: 28px;
+          color: #0e215e;
+          font-family: NotoSemiBold, sans-serif;
+        }
+      }
+    }
   }
 }

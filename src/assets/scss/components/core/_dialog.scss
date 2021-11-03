@@ -8,6 +8,9 @@
     width: 100%;
     max-height: 100%;
   }
+  @media (max-width: 768px){
+      height: 100%;
+  }
 }
 
 .gpi-modal__container {
@@ -35,10 +38,17 @@ width: 100%;
       position: absolute;
       top: 24px;
       right: -24px;
+      @media (max-width: 768px){
+          right: 0;
+      }
 
       .gpi-icon {
         width: 40px;
         height: 40px;
+        @media (max-width: 768px){
+            width: 30px;
+            height: 30px;
+        }
       }
     }
   }
@@ -52,7 +62,7 @@ width: 100%;
 
 .gpi-modal__header {
   @include media-below(small) {
-    border-bottom: 0 !important;
+    border-bottom: 0;
     width: calc(100% - 4rem);
   }
 
@@ -67,6 +77,12 @@ width: 100%;
     width: calc(100% - 96px);
     margin: 0 48px;
     position: relative;
+
+    @media (max-width: 768px) {
+      width: calc(100% - 32px);
+      margin: 0 16px;
+      border-bottom: 1px solid #EBEDF5;
+    }
   }
 }
 
@@ -75,15 +91,25 @@ width: 100%;
     font-size: 2.1rem;
   }
 
-  font-family: MiriadBold;
+  font-family: MiriadBold, sans-serif;
   font-size: 2.4rem;
   color: var(--color-dialog-title);
   margin-top: 4rem;
   margin-bottom: 3rem;
-  &--m{
-      margin-top: 48px;
-      font-size: 24px;
-      margin-bottom: 32px;
+
+  &--m {
+    margin-top: 48px;
+    font-size: 24px;
+    margin-bottom: 32px;
+
+    @media (max-width: 768px) {
+      margin-top: 24px;
+      margin-bottom: 0;
+      padding-bottom: 24px;
+      font-size: 20px;
+      line-height: 22px;
+      max-width: 238px;
+    }
   }
 }
 
@@ -102,6 +128,9 @@ width: 100%;
   margin-left: 48px;
   position: relative;
   cursor: pointer;
+  @media (max-width: 768px){
+      margin-left: 16px;
+  }
   &:hover {
     .hidden-content {
       opacity: 1;
@@ -165,7 +194,11 @@ width: 100%;
     font-size: 14px;
     font-family: NotoSemiBold;
     padding: 0 16px;
-
+    @media (max-width: 768px){
+        width: 288px;
+        height: 161px;
+        left: 0;
+    }
     &__title {
       color: $ruby;
       margin-bottom: 8px;
@@ -180,17 +213,31 @@ width: 100%;
     width: 350px;
     height: 50px;
     font-size: 16px;
+    line-height: 22px;
     border-radius: 8px;
+    @media (max-width: 768px){
+        font-size: 14px;
+        line-height: 19px;
+        height: 39px;
+    }
 }
 .gpi-modal__announce {
   font-size: 14px;
-  font-family: NotoSemiBold;
+  font-family: NotoSemiBold,sans-serif;
   color: $dark-gray;
   margin: 7px 0 0 0!important;
+  @media (max-width: 768px){
+      font-size: 12px;
+      margin: 4px 0 0 0 !important;
+  }
 }
 .gpi-modal__error {
   color: #E30000;
   font-size: 14px;
-  font-family: NotoSemiBold;
-  margin: 7px 0 0 0!important;
+  font-family: NotoSemiBold, sans-serif;
+  margin: 7px 0 0 0 !important;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }

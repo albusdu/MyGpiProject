@@ -7,25 +7,28 @@
 
 .gpi-checkbox.checked .gpi-checkbox__icon {
   background-color: #fff;
+  .icon {
+    opacity: 1;
+  }
 }
 
 .gpi-checkbox:hover .gpi-checkbox__icon {
-  background-color: #141C4F3B;
+  background-color: #141c4f3b;
 }
 
 .gpi-checkbox__icon {
-  height: 1.6rem;
-  width: 1.6rem;
-  border: 1px solid #141C4F3B;
+  border: 1px solid #141c4f3b;
   border-radius: 4px;
   transition: all 0.2s ease;
   display: flex;
   justify-content: center;
   align-items: center;
   background: $white;
-
-  &.checked {
-
+  .icon {
+    width: 12px;
+    height: 8px;
+    opacity: 0;
+    transition: all 0.2s ease;
   }
 }
 
@@ -36,12 +39,12 @@
 
 .gpi-checkbox-blue-wrapper-with-label {
   cursor: pointer;
-  background: #F1F4FF;
+  background: #f1f4ff;
   border-radius: 0.8rem;
   font-size: 1.2rem;
   font-family: NotoSemiBold;
 
-  .gpi-checkbox  {
+  .gpi-checkbox {
     padding: 0.9rem 1.1rem 0.9rem 1.4rem;
   }
 }

@@ -1,10 +1,437 @@
 ---
-layout: default
+layout: wizard
 title: MyGpi - Home
 ---
 
-<section>
+<section class="step-section">
     <div class="text-box">
         პოლისის ნომერის მითითებით მოითხოვე ანაზღაურება შენთვის ან სხვისთვის
+    </div>
+    <div class="gpi-input__wrap--m">
+        <div class="gpi-control-container">
+            <label class="gpi-input__label">
+                პოლისის ნომერი
+            </label>
+            <div class="gpi-input__container">
+                <input type="text" class="gpi-input gpi-input--m">
+                <button class="gpi-input__search">
+                    <svg class="gpi-input__search__icon">
+                        <use xlink:href="#search-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="gpi-search__result">
+        <span class="gpi-search__result__title">პოლისის მფლობელი&nbsp;</span>
+        <span class="gpi-search__result__value">დვალი სოფიკო</span>
+    </div>
+    <div class="gpi-holder-list gpi-holder-list--m">
+        <div class="gpi-holder-list__header">
+            <span class="span"> ან აირჩიე საიდან </span>
+            <div class="line"></div>
+        </div>
+        <div class="holder-container">
+            <div class="gpi-holder-list__holder gpi-holder-list__holder--m">
+                <div class="gpi-holder-list__holder-icon gpi-holder-list__holder-icon--m">
+                    <svg class="icon">
+                        <use xlink:href="#checkmark-icon"></use>
+                    </svg>
+                </div>
+                <div class="gpi-holder-list__holder-text">
+                    <div class="gpi-holder-list__holder-text-name"> GPIH 20/1107 </div>
+                    <div class="gpi-holder-list__holder__fullname"> დვალი სოფიკო </div>
+                </div>
+            </div>
+        </div>
+        <div class="holder-container">
+            <div class="gpi-holder-list__holder gpi-holder-list__holder--m">
+                <div class="gpi-holder-list__holder-icon gpi-holder-list__holder-icon--m">
+                    <svg class="icon">
+                        <use xlink:href="#checkmark-icon"></use>
+                    </svg>
+                </div>
+                <div class="gpi-holder-list__holder-text">
+                    <div class="gpi-holder-list__holder-text-name"> GPIH 20/1108 </div>
+                    <div class="gpi-holder-list__holder__fullname"> დვალი სოფიკო </div>
+                </div>
+            </div>
+        </div>
+        <div class="holder-container">
+            <div class="gpi-holder-list__holder gpi-holder-list__holder--m">
+                <div class="gpi-holder-list__holder-icon gpi-holder-list__holder-icon--m">
+                    <svg class="icon">
+                        <use xlink:href="#checkmark-icon"></use>
+                    </svg>
+                </div>
+                <div class="gpi-holder-list__holder-text">
+                    <div class="gpi-holder-list__holder-text-name"> GPIH 20/1109 </div>
+                    <div class="gpi-holder-list__holder__fullname"> დვალი სოფიკო </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section class="step-section">
+    <div class="gpi-contact-info gpi-contact-info--m">
+        <div class="gpi-search__result">
+            <span class="gpi-search__result__title">პოლისის მფლობელი</span>
+            <span class="gpi-search__result__result">სოფო დვალი</span>
+        </div>
+        <div class="gpi-input__wrap--m">
+            <div class="gpi-control-container">
+                <label class="gpi-input__label">
+                    საკონტაქტო ტელეფონი
+                </label>
+                <div class="gpi-input__container">
+                    <input type="text" class="gpi-input gpi-input--m" />
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+<section class="step-section">
+    <div class="gpi-holders gpi-holders--m">
+        <!--items-->
+        <div class="gpi-holder">
+            <div class="gpi-holder__main">
+                <div class="gpi-holder__holder">
+                <div class="gpi-holder__title">
+                    მედიკამენტები
+                </div>
+                <div class="gpi-holder__holder-name">
+                    <p>ნუროფენი / 3</p>
+                    <p>იბუპროფენი / 4</p>
+                </div>
+                </div>
+            </div>
+            <div class="gpi-holder__actions">
+                <button class="f-btn gpi-btn gpi-btn-primary gpi-btn-icon open-modal" data-modal="#removeModal">
+                    <svg class="icon icon--xs">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon edit-btn open-modal" data-modal="#medicinesModal">
+                    <svg class="icon">
+                        <use xlink:href="#pencil-icon"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-holder">
+            <div class="gpi-holder__main">
+                <div class="gpi-holder__holder">
+                <div class="gpi-holder__title">
+                    ამბულატორია
+                </div>
+                <div class="gpi-holder__holder-hospital">
+                    <h3>
+                        შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი
+                    </h3>
+                </div>
+                <div class="gpi-holder__holder-name">
+                    <p>პედიატრის კონსულტაცია</p>
+                    <p>სისხლის საერთო ანალიზი</p>
+                </div>
+                </div>
+            </div>
+            <div class="gpi-holder__actions">
+                <button class="f-btn gpi-btn gpi-btn-primary gpi-btn-icon open-modal" data-modal="#removeModal">
+                    <svg class="icon icon--xs">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon edit-btn open-modal" data-modal="#ambulatoryModal">
+                <svg class="icon">
+                    <use xlink:href="#pencil-icon"></use>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <div class="gpi-holder">
+            <div class="gpi-holder__main">
+                <div class="gpi-holder__holder">
+                <div class="gpi-holder__title">
+                    ამბულატორია
+                </div>
+                <div class="gpi-holder__holder-hospital">
+                    <h3>
+                        შპს კურაციო
+                    </h3>
+                </div>
+                <div class="gpi-holder__holder-name">
+                    <p>პედიატრის კონსულტაცია</p>
+                </div>
+                </div>
+            </div>
+            <div class="gpi-holder__actions">
+                <button class="f-btn gpi-btn gpi-btn-primary gpi-btn-icon open-modal" data-modal="#removeModal">
+                    <svg class="icon icon--xs">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                </button>
+                <button class="gpi-btn gpi-btn-primary gpi-btn-icon edit-btn open-modal" data-modal="#ambulatoryModal">
+                <svg class="icon">
+                    <use xlink:href="#pencil-icon"></use>
+                </svg>
+                </button>
+            </div>
+        </div>
+        <!--items-->
+        <div class="gpi-holder__choose gpi-holder__choose--m open-modal" data-modal="#appealModal">
+            <div class="gpi-holder__choose-icon">
+                <svg class="icon">
+                    <use xlink:href="#plus-icon"></use>
+                </svg>
+            </div>    
+            <div class="gpi-holder__choose-text">
+            მომსახურების დამატება
+            </div>
+        </div>
+    </div>
+</section>
+<section class="step-section">
+    <form>
+        <div class="container">
+          <div class="gpi-vehicle__automatic-search-automatic-item-key gpi-upload-container">
+            <label for="uploadFiles" class="gpi-upload">
+                <div class="icon-bg">
+                    <svg class="icon">
+                        <use xlink:href="#upload-icon"></use>
+                    </svg>
+                </div>
+                <span>ატვირთე ფაილები<br /><span class="hint">ჯამურად არაუმეტეს 20 mb</span></span>
+            </label>
+            <input type="file" multiple id="uploadFiles" style="opacity:0;" /><br />
+        </div>
+        <div class="gpi__text-box">
+            <div class="gpi__text-box__title">
+              <div class="icon">
+                <svg class="icon">
+                    <use xlink:href="#info-icon"></use>
+                </svg>
+              </div>
+              <span class="text">სავალდებულოა მხოლოდ <a href="#!" class="link"> მედიკამენტებსა და კვლევებზე </a> (ბეჭედდარტყმული ექიმის დანიშნულება ან ფორმა #100 )</span>
+            </div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="gpi-upload__content">
+            <div class="gpi-upload__content__title">ატვირთული დოკუმენტები</div>
+            <!--items-->
+            <div>
+              <div class="gpi-uploaded-item">
+                <div class="file-icon">
+                    <div class="specific-bg specific-bg--png">PNG</div>
+                    <svg class="icon">
+                        <use xlink:href="#blank-icon"></use>
+                    </svg>
+                </div>
+                <div class="left-cont">
+                  <div class="left-cont__title">Imagename.png</div>
+                  <div class="gpi-vehicle__automatic-search-automatic-item-key" style="display: none;">125 Kb</div>
+                  <div class="progress__container" style="background-color: #DEE0E8;">
+                      <div class="progress-bar progress-bar-success" style="width: 55%; height: 5px;"></div>
+                  </div>
+                </div>
+                <span class="upload-success-icon">
+                    <svg class="icon">
+                        <use xlink:href="#success-icon"></use>
+                    </svg>
+                </span>
+                <div class="btn__container" style="display: none;">
+                  <button type="button" class="btn btn-xs">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="upload-error" style="display: none;">
+                <span>ფაილი ვერ აიტვირთა, გთხოვთ სცადოთ თავიდან</span>
+              </div>
+            </div>
+            <div>
+              <div class="gpi-uploaded-item">
+                <div class="file-icon">
+                    <div class="specific-bg specific-bg--pdf">PDF</div>
+                    <svg class="icon">
+                        <use xlink:href="#blank-icon"></use>
+                    </svg>
+                </div>
+                <div class="left-cont">
+                  <div class="left-cont__title">Filename.pdf</div>
+                  <div class="gpi-vehicle__automatic-search-automatic-item-key">125 Kb</div>
+                  <div class="progress__container" style="background-color: #DEE0E8; display: none;">
+                      <div class="progress-bar progress-bar-success" style="width: 55%; height: 5px;"></div>
+                  </div>
+                </div>
+                <span class="upload-success-icon" style="display: none;">
+                    <svg class="icon">
+                        <use xlink:href="#success-icon"></use>
+                    </svg>
+                </span>
+                <div class="btn__container">
+                  <button type="button" class="btn btn-xs">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="upload-error" style="display: none;">
+                <span>ფაილი ვერ აიტვირთა, გთხოვთ სცადოთ თავიდან</span>
+              </div>
+            </div>
+            <div>
+              <div class="gpi-uploaded-item hasError">
+                <div class="file-icon">
+                    <div class="specific-bg specific-bg--error"></div>
+                    <svg class="icon">
+                        <use xlink:href="#blank-icon"></use>
+                    </svg>
+                </div>
+                <div class="left-cont">
+                  <div class="left-cont__title">Imagename.png</div>
+                  <div class="gpi-vehicle__automatic-search-automatic-item-key" style="display: none;">125 Kb</div>
+                  <div class="progress__container" style="background-color: #DEE0E8; display: none;">
+                      <div class="progress-bar progress-bar-success" style="width: 55%; height: 5px;"></div>
+                  </div>
+                </div>
+                <span class="upload-success-icon" style="display: none;">
+                    <svg class="icon">
+                        <use xlink:href="#success-icon"></use>
+                    </svg>
+                </span>
+                <div class="btn__container" style="display: none;">
+                  <button type="button" class="btn btn-xs">
+                    <svg class="icon">
+                        <use xlink:href="#close-icon"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="upload-error">
+                <span>ფაილი ვერ აიტვირთა, გთხოვთ სცადოთ თავიდან</span>
+              </div>
+            </div>
+            <!--items-->
+            <div class="upload-error-box">
+                <div class="icon-bg">
+                    <svg class="icon">
+                        <use xlink:href="#alert-icon"></use>
+                    </svg>
+                </div>
+                <div class="text">
+                    დოკუმენტების ჯამური ზომა აღემატება 20 მეგაბაიტს.
+                </div>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="gpi-input__wrap--m comment-container">
+            <textarea maxlength="250" formControlName="comment" class="comment-area" placeholder="დამატებითი კომენტარი"></textarea>
+        </div>
+    </form>
+</section>
+<section class="step-section">
+    <div class="gpi-summary gpi-summary--m">
+        <div class="gpi-summary__groups">
+            <div class="gpi-summary-group">
+                <div class="gpi-summary-group__header">
+                    <div class="gpi-summary-group__header-title">
+                        <div class="gpi-summary-group__header-title-icon">
+                            <svg class="icon">
+                                <use xlink:href="#file-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="gpi-summary-group__header-title-text"> პოლისი </div>
+                    </div>
+                </div>
+                <div class="gpi-summary-group__body gpi-summary-group__body--m">
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">პოლისის ნომერი:</span>
+                        <span class="gpi-summary-group__item-value">OPPMED 5029382/20</span>
+                    </div>
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">სახელი, გვარი:</span>
+                        <span class="gpi-summary-group__item-value">თამარ ახვლედიანი</span>
+                    </div>
+                </div>          
+            </div>
+            <div class="gpi-summary-group">
+                <div class="gpi-summary-group__header">
+                    <div class="gpi-summary-group__header-title">
+                        <div class="gpi-summary-group__header-title-icon">
+                            <svg class="icon">
+                                <use xlink:href="#pi-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="gpi-summary-group__header-title-text"> პირადი ინფორმაცია </div>
+                    </div>
+                </div>
+                <div class="gpi-summary-group__body gpi-summary-group__body--m">
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">სახელი, გვარი:</span>
+                        <span class="gpi-summary-group__item-value">გიორგი გიორგაძე</span>
+                    </div>
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">დაბ. თარიღი:</span>
+                        <span class="gpi-summary-group__item-value">06/12/1984</span>
+                    </div>
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">მობილურის ნომერი:</span>
+                        <span class="gpi-summary-group__item-value">555 66 54 75</span>
+                    </div>
+                </div>          
+            </div>
+            <div class="gpi-summary-group">
+                <div class="gpi-summary-group__header">
+                    <div class="gpi-summary-group__header-title">
+                        <div class="gpi-summary-group__header-title-icon">
+                            <svg class="icon icon-is">
+                                <use xlink:href="#is-icon"></use>
+                            </svg>
+                        </div>
+                        <div class="gpi-summary-group__header-title-text"> ინფორმაცია მომსახურებაზე </div>
+                    </div>
+                </div>
+                <div class="gpi-summary-group__body gpi-summary-group__body--m">
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">მედიკამენტები:</span>
+                        <span class="gpi-summary-group__item-value">
+                            <p>ბისეპტოლი / 20 აბი</p>
+                            <p>სუპრასტინი / 20 აბი</p>
+                            <p>ნუროფენი / 10 აბი</p>
+                        </span>
+                    </div>
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">ამბულატორია:</span>
+                        <span class="gpi-summary-group__item-value">
+                            <p class="hospital">შპს მარდალეიშვილის სამედიცინო ცენტრი-რუსთავი</p>
+                            <p>ექიმის კონსულტაცია</p>
+                            <p>სისხლის საერთო ანალიზის განსაზღვრა</p>
+                            <p>ექიმის კონსულტაცია</p>
+                        </span>
+                    </div>
+                    <div class='gpi-summary-group--separator'></div>
+                    <div class="gpi-summary-group__item">
+                        <span class="gpi-summary-group__item-label">ატვირთული ფაილები:</span>
+                        <span class="gpi-summary-group__item-value">5 დოკუმენტი</span>
+                    </div>
+                </div>          
+            </div>
+        </div>
+        <div class="gpi-summary__confirm gpi-checkbox-blue-wrapper-with-label checkbox-theme--1 mt-24">
+            <div class="gpi-checkbox">
+                <div class="gpi-checkbox__icon">
+                    <svg class="icon">
+                        <use xlink:href="#checkmark-icon"></use>
+                    </svg>
+                </div>
+                <div class="gpi-checkbox__label">
+                    ვეთანხმები <a class="gpi-summary__link" href="#!" target="_blank">დაზღვევისა</a> და <a class="gpi-summary__link" href="#!" target="_blank">მომსახურების</a> პირობებს
+                </div>
+            </div>
+        </div>
     </div>
 </section>

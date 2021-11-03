@@ -1,0 +1,208 @@
+{{!-- This is the base layout for your project, and will be used on every page.
+--}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=0, shrink-to-fit=no"
+    />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#1A1F26" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#1A1F26" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1A1F26" />
+    <title>{{title}}</title>
+    <link rel="icon" href="assets/img/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/style.css?v=1.7" />
+  </head>
+
+  <body>
+    <!--svg sprite all used icons-->
+    <svg width="0" height="0" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.626 22.126" id="copy-icon">
+        <path d="M11.711 22.126H3.457A3.461 3.461 0 010 18.669V6.958A3.461 3.461 0 013.457 3.5h8.254a3.461 3.461 0 013.457 3.457v11.712a3.461 3.461 0 01-3.457 3.457zM3.457 5.229a1.731 1.731 0 00-1.728 1.729v11.711A1.731 1.731 0 003.457 20.4h8.254a1.731 1.731 0 001.729-1.729V6.958a1.731 1.731 0 00-1.729-1.729zm15.169 11.279V3.457A3.461 3.461 0 0015.169 0H5.575a.864.864 0 100 1.729h9.594A1.731 1.731 0 0116.9 3.457v13.051a.864.864 0 101.729 0zm0 0"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" id="search-icon"><g transform="translate(-0.109 0)"><path d="M13.888,11.713A7.321,7.321,0,0,0,12.08,1.365,7.693,7.693,0,0,0,1.5,3.135,7.321,7.321,0,0,0,3.313,13.482a7.726,7.726,0,0,0,8.242.333l3.816,3.7a1.612,1.612,0,0,0,2.244.056,1.53,1.53,0,0,0,.058-2.2c-.019-.02-.038-.038-.058-.057Zm-6.2.507A4.842,4.842,0,0,1,2.8,7.435,4.841,4.841,0,0,1,7.688,2.646a4.841,4.841,0,0,1,4.893,4.778,4.842,4.842,0,0,1-4.886,4.8Zm0,0" transform="translate(0)"></path></g></symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus-icon" viewBox="0 0 15 15">
+        <g id="Group_2540" data-name="Group 2540" transform="translate(-1.553 -1.553)">
+          <g id="Group_2539" data-name="Group 2539" transform="translate(3.941 2.053)">
+            <g id="Group_2863" data-name="Group 2863" transform="translate(0 0)">
+              <line id="Line_164" data-name="Line 164" y2="12" transform="translate(5.111 1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_191" data-name="Line 191" y2="12" transform="translate(11.111 7) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+            </g>
+          </g>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="close-icon" viewBox="0 0 13.535 13.536">
+        <g id="Group_2703" data-name="Group 2703" transform="translate(0.267 2.268)">
+          <path id="Path_6656" data-name="Path 6656" d="M-11735.652,2044.786l10,10" transform="translate(11737.152 -2045.286)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2.5"/>
+          <path id="Path_6657" data-name="Path 6657" d="M-11725.652,2044.786l-10,10" transform="translate(11737.152 -2045.286)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2.5"/>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="pencil-icon" viewBox="0 0 13.01 13.01">
+        <path id="Path_5879" data-name="Path 5879" d="M8.034,82.473.876,89.639A.286.286,0,0,0,.8,89.77L.008,92.958a.282.282,0,0,0,.273.35A.28.28,0,0,0,.349,93.3l3.185-.794a.281.281,0,0,0,.131-.074l7.159-7.166Zm0,0" transform="translate(0 -80.298)" fill="#9199b4"/>
+        <path id="Path_5880" data-name="Path 5880" d="M338.094,1.444l-.8-.8a1.442,1.442,0,0,0-1.993,0l-.976.977,2.79,2.792.976-.977a1.412,1.412,0,0,0,0-1.995Zm0,0" transform="translate(-325.496 -0.246)" fill="#9199b4"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="checkmark-icon" viewBox="0 0 10.951 8.164">
+        <g id="Group_58" data-name="Group 58">
+          <path id="Path_55" data-name="Path 55" d="M4.957,13.606a1.272,1.272,0,0,1-1.8,0L.372,10.82a1.272,1.272,0,1,1,1.8-1.8l1.66,1.66a.322.322,0,0,0,.454,0l4.5-4.5a1.272,1.272,0,1,1,1.8,1.8Z" transform="translate(0 -5.814)" fill="#fff"/>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="upload-icon" viewBox="0 0 15.994 16.408">
+        <g id="Group_2540" data-name="Group 2540" transform="translate(1 1.414)">
+          <g id="Group_2539" data-name="Group 2539">
+            <line id="Line_164" data-name="Line 164" y2="9.621" transform="translate(7.012 0.543)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <line id="Line_165" data-name="Line 165" y2="5.248" transform="translate(6.997) rotate(45)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <line id="Line_166" data-name="Line 166" y1="5.248" transform="translate(10.737 3.711) rotate(135)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+            <path id="Path_6616" data-name="Path 6616" d="M0,0H6.413V13.994H0" transform="translate(13.994 7.581) rotate(90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+          </g>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="info-icon" viewBox="0 0 3 14" xml:space="preserve">
+        <g id="Group_2571" transform="translate(1.5 -0.422)">
+          <g id="Line_169">
+            <path d="M0,14.4c-0.8,0-1.5-0.7-1.5-1.5v-6c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v6C1.5,13.8,0.8,14.4,0,14.4z" style="fill:#FFFFFF" />
+          </g>
+          <g id="Line_170">
+            <path d="M0,3.4c-0.4,0-0.8-0.2-1.1-0.4c-0.3-0.3-0.4-0.7-0.4-1.1s0.2-0.8,0.4-1.1c0.4-0.4,0.9-0.5,1.4-0.4
+              c0.1,0,0.2,0.1,0.3,0.1c0.1,0,0.2,0.1,0.3,0.1C0.9,0.7,1,0.8,1.1,0.9c0.3,0.3,0.4,0.7,0.4,1.1c0,0.4-0.2,0.8-0.4,1.1
+              C1,3.1,0.9,3.1,0.8,3.2c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0.1-0.3,0.1C0.2,3.4,0.1,3.4,0,3.4z" style="fill:#FFFFFF" />
+          </g>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="success-icon" viewBox="0 0 16.242 12.28">
+          <path style="fill: none; stroke: #fff; stroke-linecap: round; stroke-width: 3px;" d="M-21714.424,1504.011l4.266,4.422,7.734-8" transform="translate(21716.545 -1498.312)" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="blank-icon" viewBox="0 0 37.859 50">
+        <g id="Group_3518" data-name="Group 3518" transform="translate(-697.141 -681)">
+          <path id="Path_6639" data-name="Path 6639" d="M99.155,0A3.149,3.149,0,0,0,96,3.125v43.75A3.149,3.149,0,0,0,99.155,50H130.7a3.149,3.149,0,0,0,3.155-3.125V12.5L121.24,0Z" transform="translate(601.141 681)" fill="#e2e5e7"/>
+          <path id="Path_6640" data-name="Path 6640" d="M355.07,12.281h9.211L352,0V9.211A3.079,3.079,0,0,0,355.07,12.281Z" transform="translate(370.719 681)" fill="#b0b7bd"/>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="alert-icon" viewBox="0 0 3 14" xml:space="preserve">
+        <g id="Group_2571" transform="translate(1.5 1.5)">
+          <g id="Line_169">
+            <path style="fill: #FFFFFF;" d="M0,8.5c-0.8,0-1.5-0.7-1.5-1.5V0c0-0.8,0.7-1.5,1.5-1.5S1.5-0.8,1.5,0v7C1.5,7.8,0.8,8.5,0,8.5z" />
+          </g>
+          <g id="Line_170">
+            <path style="fill: #FFFFFF;" d="M0,12.5c-0.2,0-0.4,0-0.6-0.1c-0.2-0.1-0.4-0.2-0.5-0.3s-0.2-0.3-0.3-0.5c-0.1-0.2-0.1-0.4-0.1-0.6
+              c0-0.1,0-0.2,0-0.3c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.1-0.3c0.1-0.1,0.1-0.2,0.2-0.2s0.1-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1
+              c0.1,0,0.2-0.1,0.3-0.1c0.2,0,0.4,0,0.6,0c0.1,0,0.2,0,0.3,0.1c0.1,0,0.2,0.1,0.3,0.1C0.9,9.8,1,9.9,1.1,9.9s0.1,0.1,0.2,0.2
+              c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0,0.2,0,0.3c0,0.2,0,0.4-0.1,0.6c-0.1,0.2-0.2,0.4-0.3,0.5s-0.3,0.2-0.5,0.3
+              C0.4,12.5,0.2,12.5,0,12.5z" />
+          </g>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="file-icon" viewBox="0 0 16 20">
+        <path id="file" d="M13.164,19.219a.785.785,0,0,1-.788.781H3.154A3.143,3.143,0,0,1,0,16.875V3.125A3.143,3.143,0,0,1,3.154,0h9.693A3.143,3.143,0,0,1,16,3.125V16.287a.788.788,0,0,1-1.577,0V3.125a1.572,1.572,0,0,0-1.577-1.562H3.154A1.572,1.572,0,0,0,1.577,3.125v13.75a1.572,1.572,0,0,0,1.577,1.563h9.222A.785.785,0,0,1,13.164,19.219ZM12.058,4.688H3.938a.781.781,0,1,0,0,1.563h8.12a.781.781,0,1,0,0-1.562Zm.788,3.906a.785.785,0,0,0-.788-.781H3.938a.781.781,0,1,0,0,1.563h8.12A.785.785,0,0,0,12.846,8.594ZM3.938,10.938a.781.781,0,1,0,0,1.563H8.081a.781.781,0,1,0,0-1.562Z" fill="#25215d"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="pi-icon" viewBox="0 0 17 20">
+        <g transform="translate(-3.467)">
+          <path id="Path_6544" data-name="Path 6544" d="M20.467,15.79l-.068.081A11,11,0,0,1,11.967,20a11,11,0,0,1-8.432-4.129l-.068-.081.016-.1A8.57,8.57,0,0,1,7.65,9.362l.16-.091.128.132A5.606,5.606,0,0,0,16,9.4l.128-.132.16.091a8.572,8.572,0,0,1,4.167,6.324Zm-8.5-5.8a5.033,5.033,0,0,0,5.06-4.994,5.061,5.061,0,0,0-10.121,0A5.034,5.034,0,0,0,11.967,9.988Z" fill="#25215d"/>
+        </g>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="is-icon" viewBox="0 0 22 20">
+        <g transform="translate(0 -30)">
+          <path d="M136.294,227v-2H135v2a.647.647,0,1,0,1.294,0Z" transform="translate(-129.176 -186.333)" fill="#25215d"/>
+          <path d="M19.822,32.667H15.529v-.711A1.93,1.93,0,0,0,13.631,30H8.369a1.93,1.93,0,0,0-1.9,1.956v.711H2.178A2.215,2.215,0,0,0,0,34.911v4.422H4.529v-2H8.412v2h5.176v-2h3.882v2H22V34.911A2.215,2.215,0,0,0,19.822,32.667Zm-12.057,0v-.711a.614.614,0,0,1,.6-.622h5.263a.614.614,0,0,1,.6.622v.711Z" fill="#25215d"/>
+          <path d="M346.294,227v-2H345v2a.647.647,0,1,0,1.294,0Z" transform="translate(-330.118 -186.333)" fill="#25215d"/>
+          <path d="M44.235,272a1.973,1.973,0,0,1-1.941-2H37.118a1.942,1.942,0,1,1-3.882,0H30v7.089a2.215,2.215,0,0,0,2.178,2.244h1.057v-6H46.176v6h1.057a2.215,2.215,0,0,0,2.178-2.244V270H46.176A1.973,1.973,0,0,1,44.235,272Z" transform="translate(-28.706 -229.333)" fill="#25215d"/>
+          <path d="M142.118,375H135v4.667h10.353V375h-3.235Z" transform="translate(-129.176 -329.667)" fill="#25215d"/>
+        </g>
+      </symbol>
+      <symbol viewBox="0 0 256 256" id="arrow-icon">
+        <polygon points="225.813,48.907 128,146.72 30.187,48.907 0,79.093 128,207.093 256,79.093"></polygon>
+      </symbol>
+    </svg>
+    <!--svg sprite all used icons end-->
+
+    
+      <!--all modals here-->
+      {{>modals}}
+      <!--******-->
+      <div class="gpi-wizard">
+          <div class="gpi-wizard__header">
+            <a href="https://mygpi.ge" class="gpi-wizard__header-logo" style="background-image: url('http://devnew.mygpi.ge:4042/media/logo.svg');"></a>
+            <div class="gpi-wizard__header-cabinet">
+              <div class="gpi-wizard__header-hotline desktop">
+                <a href="https://mygpi.ge/account/login" class="gpi-wizard__header-cabinet-button gpi-btn gpi-btn-accent gpi-btn-flat">
+                  <span class="desktop"> ჩემი კაბინეტი </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="gpi-wizard__body">
+              <div class="gpi-wizard__navigation">
+                <div class="gpi-wizard__navigation-item">
+                  <div class="gpi-wizard__navigation-item-container">
+                    <div class="gpi-wizard__navigation-item-header">
+                      <div class="gpi-wizard__navigation-item-step">1</div>
+                      <div class="gpi-wizard__navigation-item-text">პოლისის არჩევა</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gpi-wizard__navigation-item">
+                  <div class="gpi-wizard__navigation-item-container">
+                    <div class="gpi-wizard__navigation-item-header">
+                      <div class="gpi-wizard__navigation-item-step">2</div>
+                      <div class="gpi-wizard__navigation-item-text">პირადი ინფორმაცია</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gpi-wizard__navigation-item">
+                  <div class="gpi-wizard__navigation-item-container">
+                    <div class="gpi-wizard__navigation-item-header">
+                      <div class="gpi-wizard__navigation-item-step">3</div>
+                      <div class="gpi-wizard__navigation-item-text">ინფორმაცია მომსახურებაზე</div>
+                    </div>
+                    <div class="gpi-wizard__navigation-item-line "></div>
+                    <div class="gpi-wizard__navigation-item-subitem active">
+                      <div class="gpi-wizard__navigation-item-subitem-indicator"></div>
+                      <div class="gpi-wizard__navigation-item-subitem-text"> მიმართვის დამატება </div>
+                    </div>
+                    <div class="gpi-wizard__navigation-item-subitem">
+                      <div class="gpi-wizard__navigation-item-subitem-indicator"></div>
+                      <div class="gpi-wizard__navigation-item-subitem-text"> ფაილების ატვირთვა </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gpi-wizard__navigation-item">
+                  <div class="gpi-wizard__navigation-item-container">
+                    <div class="gpi-wizard__navigation-item-header">
+                      <div class="gpi-wizard__navigation-item-step">4</div>
+                      <div class="gpi-wizard__navigation-item-text">გადამოწმება</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="gpi-wizard__body gpi-wizard__body--m">
+                  <div class="gpi-wizard__main-content">
+                      <div class="gpi-wizard__step-header">
+                          <div class="gpi-wizard__step-product"> სამედიცინო ანაზღაურება </div>
+                          <div class="gpi-wizard__step-title"> პოლისის არჩევა </div>
+                      </div>
+                      <div class="gpi-wizard__step-content">
+                        {{>body}}
+                      </div>
+                      <div class="gpi-wizard__navigation-buttons gpi-wizard__navigation-buttons--m">
+                        <div class="gpi-wizard__navigation-buttons-item gpi-wizard__navigation-buttons-item--m left">
+                          <button class="gpi-btn--m gpi-btn--back gpi-btn gpi-btn-primary gpi-btn-raised">უკან</button>
+                        </div>
+                        <div class="gpi-wizard__navigation-buttons-item gpi-wizard__navigation-buttons-item--m right">
+                          <button class="gpi-btn--m gpi-btn gpi-btn-accent gpi-btn-flat">შემდეგ</button>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    <script src="assets/vendors/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

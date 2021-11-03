@@ -18,8 +18,6 @@ $media-breakpoints: (
   large: 1800px,
 );
 
-$border-color: #eeeff3;
-
 $white: #fff;
 $sapphire: #0e215e;
 $gray: #b1b7ca;
@@ -38,6 +36,7 @@ $gray-blue: #898da7;
 $transparent: #fff0;
 
 $border: #eeeff3;
+$border-color: $border;
 
 $primary: $sapphire;
 $accent: $ruby;
